@@ -6,7 +6,7 @@
     <title>Hello, world!</title>
 </head>
 <body>
-<h1>Привет, мир!!!</h1>
+<h1>Привет, мир!!</h1>
 
 </body>
 </html>
