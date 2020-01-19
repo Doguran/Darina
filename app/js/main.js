@@ -5,3 +5,11 @@
 //= ../../node_modules/@fortawesome/fontawesome-free/js/fontawesome.js
 //= control-modal-b4.js
 //= auth-modal.js
+
+$(document).on("scroll",function(){
+    if($(document).scrollTop()>100){
+        $("header").removeClass("large").addClass("small");
+    } else{
+        $("header").removeClass("small").addClass("large");
+    }
+});

@@ -4,3 +4,38 @@ $fa-font-path:  "../fonts";
 @import "node_modules/@fortawesome/fontawesome-free/scss/solid";
 @import "node_modules/@fortawesome/fontawesome-free/scss/regular";
 @import "node_modules/@fortawesome/fontawesome-free/scss/fontawesome";
+header {
+  position: fixed; z-index: 10; width: 100%;
+  -webkit-transform: translateZ(0);
+}
+
+header.large img{
+  height: 80px;
+}
+header.large p{
+  margin-top: 1.5em;
+}
+header.small p{
+  margin-top: 1em;
+}
+header.small img{
+  height: 30px;
+}
+header.small {
+  font-size: 80%;
+}
+header.small .nav-link,  header.small .navbar {
+  padding: .1rem 1rem .3rem;
+}
+header.large ~ #carouselExampleCaptions {
+  top: 120px;
+}
+header.small ~ #carouselExampleCaptions {
+  top: 68px;
+}
+header img{
+  transition: all 1s;
+  -moz-transition: all 1s; /* Firefox 4 */
+  -webkit-transition: all 1s; /* Safari and Chrome */
+  -o-transition: all 1s; /* Opera */
+}
