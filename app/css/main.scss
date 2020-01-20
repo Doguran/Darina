@@ -12,14 +12,14 @@ header {
 header.large img{
   height: 80px;
 }
-header.large p{
+header.large div.phone{
   margin-top: 1.5em;
 }
-header.small p{
+header.small div.phone{
   margin-top: 1em;
 }
 header.small img{
-  height: 30px;
+  height: 40px;
 }
 header.small {
   font-size: 80%;
@@ -38,4 +38,7 @@ header img{
   -moz-transition: all 1s; /* Firefox 4 */
   -webkit-transition: all 1s; /* Safari and Chrome */
   -o-transition: all 1s; /* Opera */
+}
+.navbar-toggler {
+  padding: 3px;
 }

@@ -4,16 +4,20 @@
             <div class="float-left mb-3">
                 <a href="/">
                     <img src="<?php echo TEMPLATE_PATH ?>img/logo.png"
-                         height="70" alt="" class="img-fluid">
+                        alt="" class="img-fluid">
                 </a>
             </div>
 
-                <p class="pr-lg-4 mb-lg-0 text-right"> <i class="fas fa-phone"></i> +7 499 394 48 55 +7 965 377 44 84</p>
+                <div class="pr-lg-4 mb-lg-0 text-right phone">
+                    <i class="fas fa-phone"></i><span>+7(499)394-48-55</span>
+                    <br class="d-sm-none"><span class="ml-md-3">+7(965)377-44-84</span>
+                </div>
 
 
-            <div class="clearfix d-lg-none my-3"></div>
+<!--            <div class="clearfix d-lg-none mt-3"></div>-->
 
-                <nav class="navbar navbar-expand-lg navbar-light bg-white">
+                <nav class="navbar navbar-expand-lg navbar-light bg-white px-0 px-lg-2">
+                    <div></div>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
