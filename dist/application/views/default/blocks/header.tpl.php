@@ -1,22 +1,21 @@
 <header class="large bg-white">
     <div class="container">
 
-            <div class="float-left mb-3">
+            <div class="float-left logo">
                 <a href="/">
                     <img src="<?php echo TEMPLATE_PATH ?>img/logo.png"
                         alt="" class="img-fluid">
                 </a>
             </div>
 
-                <div class="pr-lg-4 mb-lg-0 text-right phone">
-                    <i class="fas fa-phone"></i><span>+7(499)394-48-55</span>
-                    <br class="d-sm-none"><span class="ml-md-3">+7(965)377-44-84</span>
+                <div class="pr-lg-3 mb-lg-0 text-right phone">
+                   <i class="fas fa-phone"></i> <span> +7(499)394-48-55</span><br class="d-sm-none"><span class="ml-sm-3">+7(965)377-44-84</span>
                 </div>
 
 
 <!--            <div class="clearfix d-lg-none mt-3"></div>-->
 
-                <nav class="navbar navbar-expand-lg navbar-light bg-white px-0 px-lg-2">
+                <nav class="navbar navbar-expand-lg navbar-primary bg-white px-0 px-lg-2">
                     <div></div>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>

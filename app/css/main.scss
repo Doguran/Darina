@@ -1,3 +1,5 @@
+$primary: #FD9801;
+
 @import "node_modules/bootstrap/scss/bootstrap";
 
 $fa-font-path:  "../fonts";
@@ -14,9 +16,34 @@ header.large img{
 }
 header.large div.phone{
   margin-top: 1.5em;
+  font-size: 1rem;
+  transition: all 1s;
+  -moz-transition: all 1s; /* Firefox 4 */
+  -webkit-transition: all 1s; /* Safari and Chrome */
+  -o-transition: all 1s; /* Opera */
+
 }
 header.small div.phone{
   margin-top: 1em;
+  font-size: 0;
+}
+@media (min-width: 992px) {
+  header.small div.phone{
+    font-size: 1rem;
+
+  }
+}
+header.small div.logo{
+  margin-top: 7px;
+  margin-bottom: 7px;
+}
+header.large div.logo{
+  margin-bottom: 1.5rem;
+}
+@media (min-width: 992px) {
+  header.small div.logo{
+    margin-top: 0;
+  }
 }
 header.small img{
   height: 40px;
@@ -25,15 +52,15 @@ header.small {
   font-size: 80%;
 }
 header.small .nav-link,  header.small .navbar {
-  padding: .1rem 1rem .3rem;
+  padding: .1rem 0 .3rem;
 }
 header.large ~ #carouselExampleCaptions {
-  top: 120px;
+  top: 126px;
 }
 header.small ~ #carouselExampleCaptions {
   top: 68px;
 }
-header img{
+header img, header.small div.phone{
   transition: all 1s;
   -moz-transition: all 1s; /* Firefox 4 */
   -webkit-transition: all 1s; /* Safari and Chrome */
@@ -41,4 +68,19 @@ header img{
 }
 .navbar-toggler {
   padding: 3px;
+}
+.navbar-collapse ul li {
+  text-align: right;
+}
+.navbar-toggler {
+  margin-top: 7px;
+}
+.navbar-primary .navbar-toggler {
+  color: rgba(0,0,0,.5);
+  border-color: rgba(0,0,0,.1);
+}
+.navbar-primary {
+  .navbar-toggler-icon {
+    background-image: escape-svg($navbar-light-toggler-icon-bg);
+  }
 }
