@@ -7,9 +7,18 @@
 //= auth-modal.js
 
 $(document).on("scroll",function(){
+    var screen = 992;
+    var windowWidth;
+    windowWidth = $(window).width();
     if($(document).scrollTop()>100){
         $("header").removeClass("large").addClass("small");
+        if ((windowWidth < screen)) {
+            $(".phone").slideUp("slow");
+        }
     } else{
         $("header").removeClass("small").addClass("large");
+        if ((windowWidth < screen)) {
+            $(".phone").slideDown();
+        }
     }
 });

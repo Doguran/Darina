@@ -25,11 +25,9 @@ header.large div.phone{
 }
 header.small div.phone{
   margin-top: 1em;
-  font-size: 0;
 }
 @media (min-width: 992px) {
   header.small div.phone{
-    font-size: 1rem;
 
   }
 }
@@ -60,7 +58,7 @@ header.large ~ #carouselExampleCaptions {
 header.small ~ #carouselExampleCaptions {
   top: 68px;
 }
-header img, header.small div.phone{
+header img{
   transition: all 1s;
   -moz-transition: all 1s; /* Firefox 4 */
   -webkit-transition: all 1s; /* Safari and Chrome */
