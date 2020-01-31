@@ -29,7 +29,7 @@ set_include_path(get_include_path()
 unset($controllers, $models, $views);
 
 /* Имена файлов: views */
-define('INDEX_TPL', 'index.tpl.php');
+define('INDEX_TPL', 'index2.tpl.php');
 
 
 

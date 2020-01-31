@@ -5,20 +5,47 @@
 //= ../../node_modules/@fortawesome/fontawesome-free/js/fontawesome.js
 //= control-modal-b4.js
 //= auth-modal.js
+//= jquery.slicknav.min.js
 
-$(document).on("scroll",function(){
-    var screen = 992;
-    var windowWidth;
-    windowWidth = $(window).width();
-    if($(document).scrollTop()>100){
-        $("header").removeClass("large").addClass("small");
-        if ((windowWidth < screen)) {
-            $(".phone").slideUp("slow");
-        }
-    } else{
-        $("header").removeClass("small").addClass("large");
-        if ((windowWidth < screen)) {
-            $(".phone").slideDown();
-        }
+
+// $(document).on("scroll",function(){
+//     var screen = 992;
+//     var windowWidth;
+//     windowWidth = $(window).width();
+//     if($(document).scrollTop()>100){
+//         $("header").removeClass("large").addClass("small");
+//         if ((windowWidth < screen)) {
+//             $(".phone").slideUp("slow");
+//         }
+//     } else{
+//         $("header").removeClass("small").addClass("large");
+//         if ((windowWidth < screen)) {
+//             $(".phone").slideDown();
+//         }
+//     }
+// });
+
+$(document).ready(function(){
+
+// mobile_menu
+    var menu = $('ul#navigation');
+    if(menu.length){
+        menu.slicknav({
+            prependTo: ".mobile_menu",
+            closedSymbol: '+',
+            openedSymbol:'-'
+        });
+    };
+});
+
+// TOP Menu Sticky
+$(window).on('scroll', function () {
+    var scroll = $(window).scrollTop();
+    if (scroll < 400) {
+        $("#sticky-header").removeClass("sticky");
+        $('#back-top').fadeIn(500);
+    } else {
+        $("#sticky-header").addClass("sticky");
+        $('#back-top').fadeIn(500);
     }
 });
