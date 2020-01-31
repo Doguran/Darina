@@ -85,7 +85,6 @@
     .slicknav_btn {
       margin: 5px 5px 6px;
       text-decoration: none;
-      background-color: none;
     }
 
 .slicknav_nav {
@@ -115,9 +114,9 @@
     text-decoration: none;
     color: #fff; }
     .slicknav_nav a:hover {
-      -webkit-border-radius: 0px;
-      -moz-border-radius: 0px;
-      border-radius: 0px;
+      -webkit-border-radius: 0;
+      -moz-border-radius: 0;
+      border-radius: 0;
       background: #ccc;
       color: #222; }
   .slicknav_nav .slicknav_txtnode {
@@ -138,7 +137,7 @@
 
 
 
-  /*===== mobile menu slicknav =====*/
+  /*  mobile menu slicknav  */
 
 .mobile_menu {
 	position: absolute;
@@ -223,7 +222,6 @@
 .slicknav_nav .slicknav_row:hover,
 .slicknav_nav .slicknav_row:hover .slicknav_arrow {
     border-radius: 0;
-    background-color: #F79960;
     background-color: transparent;
     color: #000;
 }
@@ -236,7 +234,6 @@
 	z-index: 99;
 	border: none;
 	border-radius: 3px;
-  top: 5px;
   padding: 5px;
   right: 5px;
   margin-top: -5px;

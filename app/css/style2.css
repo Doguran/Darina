@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:200,200i,300,300i,400,400i,500,500i,600,600i,700&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Poppins:200,200i,300,300i,400,400i,500,500i,600,600i,700&display=swap");
 .ti-angle-down:before {
   content: "\e64b";
 }/* line 1, ../../Arafath/CL/CL October/213. Business/HTML/scss/_extend.scss */
@@ -3771,7 +3770,7 @@ h3 {
   background-image: url(../img/banner/emergency-2.png);
 }
 
-/*=================== contact banner start ====================*/
+/*  contact banner start  */
 /* line 3, ../../Arafath/CL/CL October/213. Business/HTML/scss/_contact.scss */
 .dropdown .dropdown-menu {
   -webkit-transition: all 0.3s;
@@ -3815,8 +3814,8 @@ h3 {
   color: #8a8a8a;
 }
 
-/*=================== contact banner end ====================*/
-/*=================== contact form start ====================*/
+/*  contact banner end  */
+/*  contact form start  */
 /* line 45, ../../Arafath/CL/CL October/213. Business/HTML/scss/_contact.scss */
 .contact-title {
   font-size: 27px;
@@ -3862,9 +3861,9 @@ h3 {
   height: 100% !important;
 }
 
-/*=================== contact form end ====================*/
+/*  contact form end  */
 /* Contact Success and error Area css
-============================================================================================ */
+ */
 /* line 97, ../../Arafath/CL/CL October/213. Business/HTML/scss/_contact.scss */
 .modal-message .modal-dialog {
   position: absolute;
@@ -5249,7 +5248,7 @@ h6 {
 }
 
 /* Start Blog Area css
-============================================================================================ */
+ */
 /* line 5, ../../Arafath/CL/CL October/213. Business/HTML/scss/_blog.scss */
 .latest-blog-area .area-heading {
   margin-bottom: 70px;
@@ -5468,9 +5467,9 @@ h6 {
 }
 
 /* End Blog Area css
-============================================================================================ */
+*/
 /* Latest Blog Area css
-============================================================================================ */
+*/
 /* line 224, ../../Arafath/CL/CL October/213. Business/HTML/scss/_blog.scss */
 .l_blog_item .l_blog_text .date {
   margin-top: 24px;
@@ -5499,9 +5498,9 @@ h6 {
 }
 
 /* End Latest Blog Area css
-============================================================================================ */
+*/
 /* Causes Area css
-============================================================================================ */
+ */
 /* line 263, ../../Arafath/CL/CL October/213. Business/HTML/scss/_blog.scss */
 .causes_slider .owl-dots {
   text-align: center;
@@ -5602,8 +5601,8 @@ h6 {
 }
 
 /* End Causes Area css
-============================================================================================ */
-/*================= latest_blog_area css =============*/
+*/
+/* latest_blog_area css */
 /* line 374, ../../Arafath/CL/CL October/213. Business/HTML/scss/_blog.scss */
 .latest_blog_area {
   background: #f9f9ff;
@@ -5664,7 +5663,7 @@ h6 {
   margin-left: 2px;
 }
 
-/*========= blog_categorie_area css ===========*/
+/* blog_categorie_area css */
 /* line 438, ../../Arafath/CL/CL October/213. Business/HTML/scss/_blog.scss */
 .blog_categorie_area {
   padding-top: 30px;
@@ -5745,7 +5744,7 @@ h6 {
   background: rgba(222, 99, 32, 0.85);
 }
 
-/*============ blog_left_sidebar css ==============*/
+/*  blog_left_sidebar css  */
 /* line 525, ../../Arafath/CL/CL October/213. Business/HTML/scss/_blog.scss */
 .blog_item {
   margin-bottom: 50px;
@@ -6144,7 +6143,7 @@ h6 {
   margin-right: 0;
 }
 
-/*============ Start Blog Single Styles  =============*/
+/*Start Blog Single Styles  */
 /* line 1049, ../../Arafath/CL/CL October/213. Business/HTML/scss/_blog.scss */
 .single-post-area .blog_details {
   box-shadow: none;
@@ -6636,7 +6635,7 @@ h6 {
   color: #777;
 }
 
-/*============ End Blog Single Styles  =============*/
+/* End Blog Single Styles  */
 /**************** blog part css start ****************/
 /* line 2, ../../Arafath/CL/CL October/213. Business/HTML/scss/_blog_part.scss */
 .blog_part {
