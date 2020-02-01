@@ -103,7 +103,7 @@
         <div class="single_slider  d-flex align-items-center slider_bg_2 overlay2">
             <div class="container">
                 <div class="row">
-                    <div class="col-xl-12">
+                    <div class="col-md-7">
                         <div class="slider_text ">
                             <h3> Grow Big with <br>
                                 Musicol Business </h3>
@@ -115,6 +115,21 @@
                                     See How it Work</a>
                             </div>
                         </div>
+                    </div>
+                    <div class="col-md-4 offset-md-1">
+                        <div class="formwrapper" style="position: relative; padding: 35px; z-index: 2">
+                            <div class="form-text">
+                                <div class="form-title">Запишись на бесплатную консультацию</div>
+                                <div class="form-desc">Наши менеджеры ответят вам в ближайшее время</div>
+                            </div>
+                            <form action="#">
+                                <input class="form-control my-3" type="text" placeholder="Имя">
+                                <input class="form-control my-2" type="text" placeholder="Телефон">
+                                <button type="submit" class="btn btn-primary my-2 w-100">Submit</button>
+                            </form>
+
+                        </div>
+                    <div class="bg-form" style="background-color: #fff; opacity: 0.7; position: absolute; top: 0; right: 0; left: 0; bottom: 0"></div>
                     </div>
                 </div>
             </div>
