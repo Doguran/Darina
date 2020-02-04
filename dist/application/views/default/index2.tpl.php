@@ -105,10 +105,8 @@
                 <div class="row">
                     <div class="col-md-7">
                         <div class="slider_text ">
-                            <h3> Grow Big with <br>
-                                Musicol Business </h3>
-                            <p>Nam libero tempore, cum soluta nobis est eligendi optio <br>
-                                cumque nihil impedit quo minus.</p>
+                            <h3> КОМПАНИЯ DARINA </h3>
+                            <p> – ВАШ ПАРТНЕР В ПОСТАВКАХ МАТЕРИАЛОВ ДЛЯ УКЛАДКИ ТРАВМОБЕЗОПАСНЫХ РЕЗИНОВЫХ ПОКРЫТИЙ ДЛЯ СПОРТА И ИГРЫ</p>
                             <div class="video_service_btn">
                                 <a href="#" class="boxed-btn3">Our Services</a>
                                 <a href="#" class="boxed-btn3-white"> <i class="fa fa-play"></i>
@@ -119,7 +117,7 @@
                     <div class="col-md-4 offset-md-1">
                         <div class="formwrapper" style="position: relative; padding: 35px; z-index: 2">
                             <div class="form-text">
-                                <div class="form-title">Запишись на бесплатную консультацию</div>
+                                <div class="form-title lead">Запишись на бесплатную консультацию</div>
                                 <div class="form-desc">Наши менеджеры ответят вам в ближайшее время</div>
                             </div>
                             <form action="#">
@@ -129,7 +127,7 @@
                             </form>
 
                         </div>
-                    <div class="bg-form" style="background-color: #fff; opacity: 0.7; position: absolute; top: 0; right: 0; left: 0; bottom: 0"></div>
+                    <div class="bg-form rounded-sm" style="background-color: #fff; opacity: 0.7; position: absolute; top: 0; right: 0; left: 0; bottom: 0;"></div>
                     </div>
                 </div>
             </div>
