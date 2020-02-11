@@ -176,8 +176,8 @@
     </div>
 </div>
 
-
-<div class="container">
+<div class="container-fluid polosa">
+<div class="container" >
 
 
     <div class="row">
@@ -226,7 +226,7 @@
 
 
 </div>
-
+</div>
 
 
 <!-- Footer -->
