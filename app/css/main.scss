@@ -4,9 +4,9 @@ $dark: #475153;
 @import "node_modules/bootstrap/scss/bootstrap";
 
 $fa-font-path:  "../fonts";
-@import "node_modules/@fortawesome/fontawesome-free/scss/solid";
-@import "node_modules/@fortawesome/fontawesome-free/scss/regular";
-@import "node_modules/@fortawesome/fontawesome-free/scss/fontawesome";
+//@import "node_modules/@fortawesome/fontawesome-free/scss/solid";
+//@import "node_modules/@fortawesome/fontawesome-free/scss/regular";
+//@import "node_modules/@fortawesome/fontawesome-free/scss/fontawesome";
 @import "slicknav";
 @import "themify-icons";
 //header {
@@ -769,5 +769,7 @@ section .section-title {
   background-repeat: no-repeat;
   padding-bottom:300px
 }
+
+
 
 

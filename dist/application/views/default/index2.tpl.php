@@ -16,13 +16,13 @@
                     <div class="col-xl-6 col-md-6 ">
                         <div class="social_media_links">
                             <a href="#">
-                                <i class="fa fa-linkedin"></i>
+                                <i class="fab fa-vk"></i>
                             </a>
                             <a href="#">
-                                <i class="fa fa-facebook"></i>
+                                <i class="fab fa-facebook"></i>
                             </a>
                             <a href="#">
-                                <i class="fa fa-google-plus"></i>
+                                <i class="fab fa-instagram"></i>
                             </a>
                         </div>
                     </div>
@@ -52,23 +52,25 @@
                             <div class="main-menu  d-none d-lg-block">
                                 <nav>
                                     <ul id="navigation">
-                                        <li><a class="active" href="index.html">home</a></li>
-                                        <li><a href="about.html">About</a></li>
-                                        <li><a href="service.html">Services</a></li>
-                                        <li><a href="#">blog <i class="ti-angle-down"></i></a>
+                                        <li><a class="active" href="/">Главная</a></li>
+                                        <li><a href="/">О нас</a></li>
+                                        <li><a href="#">Ассортимент <i class="ti-angle-down"></i></a>
                                             <ul class="submenu">
-                                                <li><a href="blog.html">blog</a></li>
-                                                <li><a href="single-blog.html">single-blog</a></li>
+                                                <li><a href="/">Резиновая крошка</a></li>
+                                                <li><a href="/">Крошка ЭПДМ</a></li>
+                                                <li><a href="/">Окрашенная крошка</a></li>
                                             </ul>
                                         </li>
-                                        <li><a href="#">pages <i class="ti-angle-down"></i></a>
+                                        <li><a href="/">Контакты</a></li>
+
+                                        <li><a href="#">Блог <i class="ti-angle-down"></i></a>
                                             <ul class="submenu">
-                                                <li><a href="elements.html">elements</a></li>
-                                                <li><a href="Portfolio.html">Portfolio</a></li>
-                                                <li><a href="portfolio_details.html">Portfolio details</a></li>
+                                                <li><a href="/">ссылка1</a></li>
+                                                <li><a href="/">ссылка2</a></li>
+                                                <li><a href="/">ссылка3</a></li>
                                             </ul>
                                         </li>
-                                        <li><a href="contact.html">Contact</a></li>
+                                        <li><a href="/">Вход</a></li>
                                     </ul>
                                 </nav>
                             </div>
@@ -81,7 +83,7 @@
                                     </a>
                                 </div>
                                 <div class="book_btn d-none d-lg-block">
-                                    <a class="popup-with-form" href="#test-form">Get a Quote</a>
+                                    <a class="popup-with-form" href="#">Позвоните мне!</a>
                                 </div>
                             </div>
                         </div>
@@ -108,9 +110,9 @@
                             <h3> КОМПАНИЯ DARINA </h3>
                             <p> – ВАШ ПАРТНЕР В ПОСТАВКАХ МАТЕРИАЛОВ ДЛЯ УКЛАДКИ ТРАВМОБЕЗОПАСНЫХ РЕЗИНОВЫХ ПОКРЫТИЙ ДЛЯ СПОРТА И ИГРЫ</p>
                             <div class="video_service_btn">
-                                <a href="#" class="boxed-btn3">Our Services</a>
+                                <a href="#" class="boxed-btn3">Полный ассортимент и цены</a>
                                 <a href="#" class="boxed-btn3-white"> <i class="fa fa-play"></i>
-                                    See How it Work</a>
+                                    Узнать больше</a>
                             </div>
                         </div>
                     </div>

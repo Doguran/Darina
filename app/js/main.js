@@ -2,6 +2,7 @@
 //= ../../node_modules/popper.js/dist/umd/popper.js
 //= ../../node_modules/bootstrap/dist/js/bootstrap.js
 //= ../../node_modules/@fortawesome/fontawesome-free/js/solid.js
+//= ../../node_modules/@fortawesome/fontawesome-free/js/brands.js
 //= ../../node_modules/@fortawesome/fontawesome-free/js/fontawesome.js
 //= control-modal-b4.js
 //= auth-modal.js
@@ -38,7 +39,7 @@ $(document).ready(function(){
     };
 });
 
-// TOP Menu Sticky
+//TOP Menu Sticky
 $(window).on('scroll', function () {
     var scroll = $(window).scrollTop();
     if (scroll < 400) {
