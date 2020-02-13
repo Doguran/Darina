@@ -114,7 +114,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 offset-md-1">
+                    <div class="col-md-5 col-lg-4 offset-lg-1 d-none d-md-block">
                         <div class="formwrapper" style="position: relative; padding: 35px; z-index: 2">
                             <div class="form-text">
                                 <div class="form-title lead">Запишись на бесплатную консультацию</div>
