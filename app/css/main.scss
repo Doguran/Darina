@@ -920,5 +920,36 @@ $large_mobile:'only screen and (min-width: 480px) and (max-width: 767px)';
   font-size: 18px;
 }
 
-
-
+.slick-dots {
+  position: relative;
+}
+.next-slick, .prev-slick {
+  font-size: 32px;
+  line-height: 1.2;
+  position: absolute;
+  top: 50%;
+  display: block;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  transform: translate(0,-50%);
+  cursor: pointer;
+  color: #fff;
+  border: none;
+  outline: 0;
+  background: #FED699;
+  border-radius: 50%;
+  text-align: center;
+}
+.next-slick:hover, .prev-slick:hover {
+  background: #FD9801;
+}
+.next-slick {
+  right: -40px;
+}
+.prev-slick {
+  left: -40px;
+}
+#portfolio svg {
+  color: #FD9801;
+}

@@ -139,6 +139,43 @@
 </div>
 <!-- slider_area_end -->
 
+<section class="portfolio" id="portfolio">
+    <div class="container">
+        <h2 class="text-center text-uppercase mb-5">Почему нам доверяют</h2>
+        <div class="row">
+            <div class="col-md-6 col-lg-4 text-center">
+
+                <div class="mx-auto w-100 text-black">
+                    <i class="fas fa-award fa-5x"></i>
+                </div>
+                <h5 class="text-primary">Гарантия</h5>
+                <p>Мы гарантируем качество наших материалов</p>
+
+            </div>
+
+            <div class="col-md-6 col-lg-4 text-center">
+
+                <div class="mx-auto w-100 text-black">
+                    <i class="fas fa-calendar-check fa-5x"></i>
+                </div>
+                <h5 class="text-primary"> Соблюдение сроков</h5>
+                <p>Мы всегда соблюдаем скроки поставок</p>
+
+            </div>
+
+            <div class="col-md-6 col-lg-4 text-center">
+
+                <div class="mx-auto w-100 text-black">
+                    <i class="fas fa-road fa-5x"></i>
+                </div>
+                <h5 class="text-primary">Опыт работы</h5>
+                <p>Наши специалисты работают уже более 10 лет на этом рынке</p>
+
+            </div>
+        </div>
+    </div>
+</section>
+
 <div class="container">
     <div class="row">
         <div class="col-md-6">
@@ -156,10 +193,11 @@
             поставок высококачественных продуктов (независимо проверенных и проверенных нами) по
             конкурентоспособным ценам, мы быстро становимся ведущим поставщиком материалов для
             укладки резиновых покрытий в России и странах СНГ.</p>
+            <p>Мы объединили весь наш опыт, что бы предложить Вам широкий спектр услуг, включая
+                материально-техническую поддержку, помощь в определении стоимости проектов.</p>
         </div>
         <div class="col-md-6">
-            <p>Мы объединили весь наш опыт, что бы предложить Вам широкий спектр услуг, включая
-            материально-техническую поддержку, помощь в определении стоимости проектов.</p>
+
             <p>На нашем складе в Одинцово, Московской области всегда в наличии:</p>
             <ul>
                 <li>Резиновая крошка в мешках и биг-бэгах (фракционный состав 1-3мм, 2-4мм, 3-5мм)</li>
@@ -177,6 +215,45 @@
         </div>
     </div>
 </div>
+
+
+
+<section class="portfolio">
+    <div class="container">
+        <h2 class="text-center text-uppercase mb-5">Почему нам доверяют</h2>
+        <div class="row">
+            <div class="col-md-6 col-lg-4 text-center">
+
+                <div class="mx-auto w-100 text-black">
+                    <i class="fas fa-award fa-5x"></i>
+                </div>
+                <h5 class="text-primary">Гарантия</h5>
+                <p>Мы гарантируем качество наших материалов</p>
+
+            </div>
+
+            <div class="col-md-6 col-lg-4 text-center">
+
+                <div class="mx-auto w-100 text-black">
+                    <i class="fas fa-calendar-check fa-5x"></i>
+                </div>
+                <h5 class="text-primary"> Соблюдение сроков</h5>
+                <p>Мы всегда соблюдаем скроки поставок</p>
+
+            </div>
+
+            <div class="col-md-6 col-lg-4 text-center">
+
+                <div class="mx-auto w-100 text-black">
+                    <i class="fas fa-road fa-5x"></i>
+                </div>
+                <h5 class="text-primary">Опыт работы</h5>
+                <p>Наши специалисты работают уже более 10 лет на этом рынке</p>
+
+            </div>
+        </div>
+    </div>
+</section>
 
 <div class="container" >
 
@@ -223,64 +300,82 @@
             </div>
         </div>
     </div>
-
-
-
 </div>
+
 <div class="container-fluid polosa">
-<div class="container my-5 py-5 slick">
-    <div class="review">
-        <div class="row my-5">
-            <div class="col d-flex justify-content-center">
-                <img src="https://dummyimage.com/150x150/000/fff" alt="" class="rounded-circle img-fluid">
+    <div class="container my-5 py-5">
+    <h2 class="text-center text-uppercase mb-5">Отзывы о нашей работе</h2>
+    <div class="slick">
+        <div class="review">
+            <div class="row my-5">
+                <div class="col d-flex justify-content-center">
+                    <img src="https://dummyimage.com/150x150/000/fff" alt="" class="rounded-circle img-fluid">
+                </div>
+            </div>
+            <div class="row my-3 justify-content-center ">
+                <div class="col-md-6 text-center">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur fugiat laudantium nulla numquam officiis quod sint. Dolores doloribus dolorum minima molestias quod, unde! Autem delectus doloribus eaque in reiciendis tempora.</p>
+                </div>
+            </div>
+            <div class="row my-3">
+                <div class="col text-center">
+                    <strong>Кристина Девушкина</strong>
+                </div>
             </div>
         </div>
-        <div class="row my-3 justify-content-center ">
-            <div class="col-md-6 text-center">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur fugiat laudantium nulla numquam officiis quod sint. Dolores doloribus dolorum minima molestias quod, unde! Autem delectus doloribus eaque in reiciendis tempora.</p>
+        <div class="review">
+            <div class="row my-5">
+                <div class="col d-flex justify-content-center">
+                    <img src="https://dummyimage.com/150x150/000/fff" alt="" class="rounded-circle img-fluid">
+                </div>
+            </div>
+            <div class="row my-3 justify-content-center ">
+                <div class="col-md-6 text-center">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur fugiat laudantium nulla numquam officiis quod sint. Dolores doloribus dolorum minima molestias quod, unde! Autem delectus doloribus eaque in reiciendis tempora.</p>
+                </div>
+            </div>
+            <div class="row my-3">
+                <div class="col text-center">
+                    <strong>Анна Лапкина</strong>
+                </div>
             </div>
         </div>
-        <div class="row my-3">
-            <div class="col text-center">
-                <strong>Кристина Девушкина</strong>
+        <div class="review">
+            <div class="row my-5">
+                <div class="col d-flex justify-content-center">
+                    <img src="https://dummyimage.com/150x150/000/fff" alt="" class="rounded-circle img-fluid">
+                </div>
+            </div>
+            <div class="row my-3 justify-content-center ">
+                <div class="col-md-6 text-center">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur fugiat laudantium nulla numquam officiis quod sint. Dolores doloribus dolorum minima molestias quod, unde! Autem delectus doloribus eaque in reiciendis tempora.</p>
+                </div>
+            </div>
+            <div class="row my-3">
+                <div class="col text-center">
+                    <strong>Семен Огурцов</strong>
+                </div>
+            </div>
+        </div>
+        <div class="review">
+            <div class="row my-5">
+                <div class="col d-flex justify-content-center">
+                    <img src="https://dummyimage.com/150x150/000/fff" alt="" class="rounded-circle img-fluid">
+                </div>
+            </div>
+            <div class="row my-3 justify-content-center ">
+                <div class="col-md-6 text-center">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur fugiat laudantium nulla numquam officiis quod sint. Dolores doloribus dolorum minima molestias quod, unde! Autem delectus doloribus eaque in reiciendis tempora.</p>
+                </div>
+            </div>
+            <div class="row my-3">
+                <div class="col text-center">
+                    <strong>Василий Федоров</strong>
+                </div>
             </div>
         </div>
     </div>
-    <div class="review">
-        <div class="row my-5">
-            <div class="col d-flex justify-content-center">
-                <img src="https://dummyimage.com/150x150/000/fff" alt="" class="rounded-circle img-fluid">
-            </div>
-        </div>
-        <div class="row my-3 justify-content-center ">
-            <div class="col-md-6 text-center">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur fugiat laudantium nulla numquam officiis quod sint. Dolores doloribus dolorum minima molestias quod, unde! Autem delectus doloribus eaque in reiciendis tempora.</p>
-            </div>
-        </div>
-        <div class="row my-3">
-            <div class="col text-center">
-                <strong>Анна Лапкина</strong>
-            </div>
-        </div>
     </div>
-    <div class="review">
-        <div class="row my-5">
-            <div class="col d-flex justify-content-center">
-                <img src="https://dummyimage.com/150x150/000/fff" alt="" class="rounded-circle img-fluid">
-            </div>
-        </div>
-        <div class="row my-3 justify-content-center ">
-            <div class="col-md-6 text-center">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur fugiat laudantium nulla numquam officiis quod sint. Dolores doloribus dolorum minima molestias quod, unde! Autem delectus doloribus eaque in reiciendis tempora.</p>
-            </div>
-        </div>
-        <div class="row my-3">
-            <div class="col text-center">
-                <strong>Семен Огурцов</strong>
-            </div>
-        </div>
-    </div>
-</div>
 </div>
 
 

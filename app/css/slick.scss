@@ -1,6 +1,9 @@
 $slick-font-path: "../fonts/";
 $slick-font-family: "slick";
 $slick-loader-path: "../img/";
+$slick-dot-color: #FD9801;
+$slick-opacity-not-active: .40;
+$slick-dot-size: 12px;
 
 @import "node_modules/slick-carousel/slick/slick.scss";
 @import "node_modules/slick-carousel/slick/slick-theme.scss";

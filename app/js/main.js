@@ -29,7 +29,12 @@
 
 $(document).ready(function(){
 
-    $('.slick').slick();
+    $('.slick').slick({
+        dots: true,
+        arrows: true,
+        nextArrow: '<div class="prev-slick"><i class="fas fa-angle-left"></i></div>',
+        prevArrow: '<div class="next-slick"><i class="fas fa-angle-right"></i></div>'
+    });
 // mobile_menu
     var menu = $('ul#navigation');
     if(menu.length){
