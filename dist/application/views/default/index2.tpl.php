@@ -107,8 +107,8 @@
                 <div class="row">
                     <div class="col-md-7">
                         <div class="slider_text ">
-                            <h3> КОМПАНИЯ DARINA </h3>
-                            <p> – ВАШ ПАРТНЕР В ПОСТАВКАХ МАТЕРИАЛОВ ДЛЯ УКЛАДКИ ТРАВМОБЕЗОПАСНЫХ РЕЗИНОВЫХ ПОКРЫТИЙ ДЛЯ СПОРТА И ИГРЫ</p>
+                            <h3> Материалы для укладки травмобезопасных резиновых покрытий для спорта и игры </h3>
+<!--                            <p> – ВАШ ПАРТНЕР В ПОСТАВКАХ МАТЕРИАЛОВ ДЛЯ УКЛАДКИ ТРАВМОБЕЗОПАСНЫХ РЕЗИНОВЫХ ПОКРЫТИЙ ДЛЯ СПОРТА И ИГРЫ</p>-->
                             <div class="video_service_btn">
                                 <a href="#" class="boxed-btn3">Полный ассортимент и цены</a>
                                 <a href="#" class="boxed-btn3-white"> <i class="fa fa-play"></i>
@@ -178,7 +178,6 @@
     </div>
 </div>
 
-<div class="container-fluid polosa">
 <div class="container" >
 
 
@@ -228,7 +227,63 @@
 
 
 </div>
+<div class="container-fluid polosa">
+<div class="container my-5 py-5 slick">
+    <div class="review">
+        <div class="row my-5">
+            <div class="col d-flex justify-content-center">
+                <img src="https://dummyimage.com/150x150/000/fff" alt="" class="rounded-circle img-fluid">
+            </div>
+        </div>
+        <div class="row my-3 justify-content-center ">
+            <div class="col-md-6 text-center">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur fugiat laudantium nulla numquam officiis quod sint. Dolores doloribus dolorum minima molestias quod, unde! Autem delectus doloribus eaque in reiciendis tempora.</p>
+            </div>
+        </div>
+        <div class="row my-3">
+            <div class="col text-center">
+                <strong>Кристина Девушкина</strong>
+            </div>
+        </div>
+    </div>
+    <div class="review">
+        <div class="row my-5">
+            <div class="col d-flex justify-content-center">
+                <img src="https://dummyimage.com/150x150/000/fff" alt="" class="rounded-circle img-fluid">
+            </div>
+        </div>
+        <div class="row my-3 justify-content-center ">
+            <div class="col-md-6 text-center">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur fugiat laudantium nulla numquam officiis quod sint. Dolores doloribus dolorum minima molestias quod, unde! Autem delectus doloribus eaque in reiciendis tempora.</p>
+            </div>
+        </div>
+        <div class="row my-3">
+            <div class="col text-center">
+                <strong>Анна Лапкина</strong>
+            </div>
+        </div>
+    </div>
+    <div class="review">
+        <div class="row my-5">
+            <div class="col d-flex justify-content-center">
+                <img src="https://dummyimage.com/150x150/000/fff" alt="" class="rounded-circle img-fluid">
+            </div>
+        </div>
+        <div class="row my-3 justify-content-center ">
+            <div class="col-md-6 text-center">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur fugiat laudantium nulla numquam officiis quod sint. Dolores doloribus dolorum minima molestias quod, unde! Autem delectus doloribus eaque in reiciendis tempora.</p>
+            </div>
+        </div>
+        <div class="row my-3">
+            <div class="col text-center">
+                <strong>Семен Огурцов</strong>
+            </div>
+        </div>
+    </div>
 </div>
+</div>
+
+
 
 <!-- footer start -->
 <footer class="footer">

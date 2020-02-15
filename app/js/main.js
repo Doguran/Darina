@@ -4,6 +4,7 @@
 //= ../../node_modules/@fortawesome/fontawesome-free/js/solid.js
 //= ../../node_modules/@fortawesome/fontawesome-free/js/brands.js
 //= ../../node_modules/@fortawesome/fontawesome-free/js/fontawesome.js
+//= ../../node_modules/slick-carousel/slick/slick.js
 //= control-modal-b4.js
 //= auth-modal.js
 //= jquery.slicknav.min.js
@@ -28,6 +29,7 @@
 
 $(document).ready(function(){
 
+    $('.slick').slick();
 // mobile_menu
     var menu = $('ul#navigation');
     if(menu.length){

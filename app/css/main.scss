@@ -3,11 +3,13 @@ $dark: #475153;
 
 @import "node_modules/bootstrap/scss/bootstrap";
 
+
 $fa-font-path:  "../fonts";
 //@import "node_modules/@fortawesome/fontawesome-free/scss/solid";
 //@import "node_modules/@fortawesome/fontawesome-free/scss/regular";
 //@import "node_modules/@fortawesome/fontawesome-free/scss/fontawesome";
 @import "slicknav";
+@import "slick";
 @import "themify-icons";
 //header {
 //  position: fixed; z-index: 10; width: 100%;
@@ -540,13 +542,14 @@ header ul {
 }
 
 .slider_area .single_slider .slider_text h3 {
-  color: #FFF;
-  font-family: "Poppins", sans-serif;
-  font-size: 50px;
-  text-transform: capitalize;
-  letter-spacing: 2px;
+  color: #fff;
+  //font-family: Poppins,sans-serif;
+  font-size: 44px;
+  /* text-transform: capitalize; */
+  /* letter-spacing: 2px; */
   font-weight: 400;
-  line-height: 62px;
+  /* line-height: 62px; */
+  margin-bottom: 60px;
 }
 
 .slider_area .single_slider .slider_text h3 span {
@@ -913,7 +916,9 @@ $large_mobile:'only screen and (min-width: 480px) and (max-width: 767px)';
   background-repeat: no-repeat;
   padding-bottom:300px
 }
-
+.review  {
+  font-size: 18px;
+}
 
 
 
