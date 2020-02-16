@@ -304,21 +304,17 @@
 
 <div class="container-fluid">
     <div class="row">
-        <div class="masonry-container">
-            <div class="col-md-3 col-sm-3 col-xs-6 item"><img src="<?php echo HTTP_PATH ?>images/JPEG/IMG-20180810-WA0002.jpg" alt="alt"></div>
-            <div class="col-md-3 col-sm-3 col-xs-6 item"><img src="<?php echo HTTP_PATH ?>images/JPEG/IMG-20180819-WA0000.jpg" alt="alt"></div>
-            <div class="col-md-3 col-sm-3 col-xs-6 item"><img src="<?php echo HTTP_PATH ?>images/JPEG/IMG-20180819-WA0003.jpg" alt="alt"></div>
-            <div class="col-md-3 col-sm-3 col-xs-6 item"><img src="<?php echo HTTP_PATH ?>images/JPEG/IMG-20180819-WA0005.jpg" alt="alt"></div>
-            <div class="col-md-3 col-sm-3 col-xs-6 item"><img src="<?php echo HTTP_PATH ?>images/JPEG/IMG-20190110-WA0004.jpg" alt="alt"></div>
-            <div class="col-md-3 col-sm-3 col-xs-6 item"><img src="<?php echo HTTP_PATH ?>images/JPEG/IMG-20190110-WA0011.jpg" alt="alt"></div>
-            <div class="col-md-3 col-sm-3 col-xs-6 item"><img src="<?php echo HTTP_PATH ?>images/JPEG/IMG-20190611-WA0003.jpg" alt="alt"></div>
-            <div class="col-md-3 col-sm-3 col-xs-6 item"><img src="<?php echo HTTP_PATH ?>images/JPEG/IMG-20190708-WA0008.jpg" alt="alt"></div>
-            <div class="col-md-3 col-sm-3 col-xs-6 item"><img src="<?php echo HTTP_PATH ?>images/JPEG/IMG-20190716-WA0020.jpg" alt="alt"></div>
-            <div class="col-md-3 col-sm-3 col-xs-6 item"><img src="<?php echo HTTP_PATH ?>images/JPEG/IMG-20190723-WA0005.jpg" alt="alt"></div>
-            <div class="col-md-3 col-sm-3 col-xs-6 item"><img src="<?php echo HTTP_PATH ?>images/JPEG/IMG-20190729-WA0012.jpg" alt="alt"></div>
-            <div class="col-md-3 col-sm-3 col-xs-6 item"><img src="<?php echo HTTP_PATH ?>images/JPEG/IMG-20190902-WA0008.jpg" alt="alt"></div>
-            <div class="col-md-3 col-sm-3 col-xs-6 item"><img src="<?php echo HTTP_PATH ?>images/JPEG/IMG_20180830_173026_resized_20190226_100754364.jpg" alt="alt"></div>
-        </div>
+            <div class="masonry">
+                <div class="item"><img src="<?php echo HTTP_PATH ?>images/JPEG/IMG-20190902-WA0008.jpg" alt="alt"></div>
+                <div class="item"><img src="<?php echo HTTP_PATH ?>images/JPEG/IMG-20190723-WA0005.jpg" alt="alt"></div>
+                <div class="item"><img src="<?php echo HTTP_PATH ?>images/JPEG/IMG-20190611-WA0003.jpg" alt="alt"></div>
+                <div class="item"><img src="<?php echo HTTP_PATH ?>images/JPEG/IMG-20190110-WA0011.jpg" alt="alt"></div>
+                <div class="item"><img src="<?php echo HTTP_PATH ?>images/JPEG/IMG-20180810-WA0002.jpg" alt="alt"></div>
+                <div class="item"><img src="<?php echo HTTP_PATH ?>images/JPEG/IMG-20180819-WA0000.jpg" alt="alt"></div>
+                <div class="item"><img src="<?php echo HTTP_PATH ?>images/JPEG/IMG-20180819-WA0005.jpg" alt="alt"></div>
+                <div class="item"><img src="<?php echo HTTP_PATH ?>images/JPEG/IMG-20180819-WA0003.jpg" alt="alt"></div>
+
+            </div>
     </div>
 </div>
 
@@ -500,21 +496,6 @@
 
 
 <script src="<?php echo TEMPLATE_PATH ?>js/main.js"></script>
-<script src="<?php echo TEMPLATE_PATH ?>js/imagesloaded.pkgd.min.js"></script>
-<script src="<?php echo TEMPLATE_PATH ?>js/jquery-imagefill.js"></script>
-<script src="<?php echo TEMPLATE_PATH ?>js/masonry.pkgd.min.js"></script>
-<script>
-    $(document).ready(function() {
-        var $container = $(".masonry-container");
-        $container.imagesLoaded(function () {
-            $container.masonry({
-                columnWidth: ".item",
-                itemSelector: ".item"
-            });
-            $(".item").imagefill();
-        });
-    });
-</script>
 
 
 
