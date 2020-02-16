@@ -141,16 +141,17 @@
 
 <section class="portfolio" id="portfolio">
     <div class="container">
-        <h2 class="text-center text-uppercase mb-5">Почему нам доверяют</h2>
+        <h2 class="text-center text-uppercase my-5">Почему нам доверяют</h2>
         <div class="row">
             <div class="col-md-6 col-lg-4 text-center">
 
                 <div class="mx-auto w-100 text-black">
                     <i class="fas fa-award fa-5x"></i>
                 </div>
-                <h5 class="text-primary">Гарантия</h5>
-                <p>Мы гарантируем качество наших материалов</p>
-
+                <div class="my-5">
+                    <h5 class="text-primary">Гарантия</h5>
+                    <p>Мы гарантируем качество наших материалов</p>
+                </div>
             </div>
 
             <div class="col-md-6 col-lg-4 text-center">
@@ -158,9 +159,10 @@
                 <div class="mx-auto w-100 text-black">
                     <i class="fas fa-calendar-check fa-5x"></i>
                 </div>
-                <h5 class="text-primary"> Соблюдение сроков</h5>
-                <p>Мы всегда соблюдаем скроки поставок</p>
-
+                <div class="my-5">
+                    <h5 class="text-primary"> Соблюдение сроков</h5>
+                    <p>Мы всегда соблюдаем скроки поставок</p>
+                </div>
             </div>
 
             <div class="col-md-6 col-lg-4 text-center">
@@ -168,9 +170,10 @@
                 <div class="mx-auto w-100 text-black">
                     <i class="fas fa-road fa-5x"></i>
                 </div>
-                <h5 class="text-primary">Опыт работы</h5>
-                <p>Наши специалисты работают уже более 10 лет на этом рынке</p>
-
+                <div class="my-5">
+                    <h5 class="text-primary">Опыт работы</h5>
+                    <p>Наши специалисты работают уже более 10 лет на этом рынке</p>
+                </div>
             </div>
         </div>
     </div>
@@ -220,35 +223,32 @@
 
 <section class="portfolio">
     <div class="container">
-        <h2 class="text-center text-uppercase mb-5">Почему нам доверяют</h2>
+        <h2 class="text-center text-uppercase my-5">Рады предложить</h2>
         <div class="row">
             <div class="col-md-6 col-lg-4 text-center">
 
                 <div class="mx-auto w-100 text-black">
-                    <i class="fas fa-award fa-5x"></i>
+                    <i class="fas fa-running fa-5x"></i>
                 </div>
-                <h5 class="text-primary">Гарантия</h5>
-                <p>Мы гарантируем качество наших материалов</p>
+                <p>Резиновые гранулы для легкой атлетики</p>
 
             </div>
 
             <div class="col-md-6 col-lg-4 text-center">
 
                 <div class="mx-auto w-100 text-black">
-                    <i class="fas fa-calendar-check fa-5x"></i>
+                    <i class="fas fa-dumbbell fa-5x"></i>
                 </div>
-                <h5 class="text-primary"> Соблюдение сроков</h5>
-                <p>Мы всегда соблюдаем скроки поставок</p>
+                <p>Резиновые гранулы для ударопоглощающих защитных поверхностей</p>
 
             </div>
 
             <div class="col-md-6 col-lg-4 text-center">
 
                 <div class="mx-auto w-100 text-black">
-                    <i class="fas fa-road fa-5x"></i>
+                    <i class="fas fa-basketball-ball fa-5x"></i>
                 </div>
-                <h5 class="text-primary">Опыт работы</h5>
-                <p>Наши специалисты работают уже более 10 лет на этом рынке</p>
+                <p>Резиновые гранулы для многоцелевых игровых площадок</p>
 
             </div>
         </div>
@@ -261,43 +261,63 @@
     <div class="row">
         <div class="col-md-3">
             <div class="card mb-4 text-white bg-dark">
-                <img class="card-img-top" src="//placeimg.com/290/180/any" alt="Card image cap">
+                <img class="card-img-top" src="<?php echo TEMPLATE_PATH ?>img/IMG-20190515-WA0004.jpg" alt="Card image cap">
                 <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="http://www.jquery2dotnet.com/" class="btn btn-outline-light btn-sm">Go somewhere</a>
+                    <h5 class="card-title"><span>Darina</span>Base</h5>
+                    <p class="card-text">Переработанная резиновая крошка из шин SBR, подходящая для применения как в финишном слое так и в базовом слое.</p>
+                    <a href="#" class="btn btn-outline-light btn-sm">Перейти</a>
                 </div>
             </div>
         </div>
         <div class="col-md-3">
             <div class="card mb-4 text-white bg-dark">
-                <img class="card-img-top" src="//placeimg.com/290/180/any" alt="Card image cap">
+                <img class="card-img-top" src="<?php echo TEMPLATE_PATH ?>img/IMG-20190519-WA0029.jpg" alt="Card image cap">
                 <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="http://www.jquery2dotnet.com/" class="btn btn-outline-light btn-sm">Go somewhere</a>
+                    <h5 class="card-title"><span>Darina</span>Color</h5>
+                    <p class="card-text">Крошка EPDM, используется в качестве верхнего слоя, слоя износа 15 доступных оттенков.</p>
+                    <a href="#" class="btn btn-outline-light btn-sm">Перейти</a>
                 </div>
             </div>
         </div>
         <div class="col-md-3">
             <div class="card mb-4 text-white bg-dark">
-                <img class="card-img-top" src="//placeimg.com/290/180/any" alt="Card image cap">
+                <img class="card-img-top" src="<?php echo TEMPLATE_PATH ?>img/IMG-20190519-WA0032.jpg" alt="Card image cap">
                 <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="http://www.jquery2dotnet.com/" class="btn btn-outline-light btn-sm">Go somewhere</a>
+                    <h5 class="card-title"><span>Darina</span>Coating</h5>
+                    <p class="card-text">Цветная резиновая крошка из переработанных шин Доступна в различных цветах.</p>
+                    <a href="#" class="btn btn-outline-light btn-sm">Перейти</a>
                 </div>
             </div>
         </div>
         <div class="col-md-3">
             <div class="card mb-4 text-white bg-dark">
-                <img class="card-img-top" src="//placeimg.com/290/180/any" alt="Card image cap">
+                <img class="card-img-top" src="<?php echo TEMPLATE_PATH ?>img/IMG-20190507-WA0002.jpg" alt="Card image cap">
                 <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="http://www.jquery2dotnet.com/" class="btn btn-outline-light btn-sm">Go somewhere</a>
+                    <h5 class="card-title"><span>Darina</span>PU Binder</h5>
+                    <p class="card-text">полиуретановое связующее для резиновой крошки, крошки ЭПДМ, TPV крошки, монтажа искуственной травы.</p>
+                    <a href="#" class="btn btn-outline-light btn-sm">Перейти</a>
                 </div>
             </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="masonry-container">
+            <div class="col-md-3 col-sm-3 col-xs-6 item"><img src="<?php echo HTTP_PATH ?>images/JPEG/IMG-20180810-WA0002.jpg" alt="alt"></div>
+            <div class="col-md-3 col-sm-3 col-xs-6 item"><img src="<?php echo HTTP_PATH ?>images/JPEG/IMG-20180819-WA0000.jpg" alt="alt"></div>
+            <div class="col-md-3 col-sm-3 col-xs-6 item"><img src="<?php echo HTTP_PATH ?>images/JPEG/IMG-20180819-WA0003.jpg" alt="alt"></div>
+            <div class="col-md-3 col-sm-3 col-xs-6 item"><img src="<?php echo HTTP_PATH ?>images/JPEG/IMG-20180819-WA0005.jpg" alt="alt"></div>
+            <div class="col-md-3 col-sm-3 col-xs-6 item"><img src="<?php echo HTTP_PATH ?>images/JPEG/IMG-20190110-WA0004.jpg" alt="alt"></div>
+            <div class="col-md-3 col-sm-3 col-xs-6 item"><img src="<?php echo HTTP_PATH ?>images/JPEG/IMG-20190110-WA0011.jpg" alt="alt"></div>
+            <div class="col-md-3 col-sm-3 col-xs-6 item"><img src="<?php echo HTTP_PATH ?>images/JPEG/IMG-20190611-WA0003.jpg" alt="alt"></div>
+            <div class="col-md-3 col-sm-3 col-xs-6 item"><img src="<?php echo HTTP_PATH ?>images/JPEG/IMG-20190708-WA0008.jpg" alt="alt"></div>
+            <div class="col-md-3 col-sm-3 col-xs-6 item"><img src="<?php echo HTTP_PATH ?>images/JPEG/IMG-20190716-WA0020.jpg" alt="alt"></div>
+            <div class="col-md-3 col-sm-3 col-xs-6 item"><img src="<?php echo HTTP_PATH ?>images/JPEG/IMG-20190723-WA0005.jpg" alt="alt"></div>
+            <div class="col-md-3 col-sm-3 col-xs-6 item"><img src="<?php echo HTTP_PATH ?>images/JPEG/IMG-20190729-WA0012.jpg" alt="alt"></div>
+            <div class="col-md-3 col-sm-3 col-xs-6 item"><img src="<?php echo HTTP_PATH ?>images/JPEG/IMG-20190902-WA0008.jpg" alt="alt"></div>
+            <div class="col-md-3 col-sm-3 col-xs-6 item"><img src="<?php echo HTTP_PATH ?>images/JPEG/IMG_20180830_173026_resized_20190226_100754364.jpg" alt="alt"></div>
         </div>
     </div>
 </div>
@@ -480,6 +500,23 @@
 
 
 <script src="<?php echo TEMPLATE_PATH ?>js/main.js"></script>
+<script src="<?php echo TEMPLATE_PATH ?>js/imagesloaded.pkgd.min.js"></script>
+<script src="<?php echo TEMPLATE_PATH ?>js/jquery-imagefill.js"></script>
+<script src="<?php echo TEMPLATE_PATH ?>js/masonry.pkgd.min.js"></script>
+<script>
+    $(document).ready(function() {
+        var $container = $(".masonry-container");
+        $container.imagesLoaded(function () {
+            $container.masonry({
+                columnWidth: ".item",
+                itemSelector: ".item"
+            });
+            $(".item").imagefill();
+        });
+    });
+</script>
+
+
 
 
 </body>

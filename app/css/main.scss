@@ -950,6 +950,37 @@ $large_mobile:'only screen and (min-width: 480px) and (max-width: 767px)';
 .prev-slick {
   left: -40px;
 }
-#portfolio svg {
+.portfolio svg {
   color: #FD9801;
+}
+.portfolio div+p, .portfolio {
+  margin: 3em 0;
+}
+.card h5 span {
+  color: #FD9801;
+}
+.polosa2{
+  background-image: url(../img/polosa2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-bottom:300px
+}
+
+
+
+
+
+.masonry-container {
+  padding: 0;
+}
+.grid-sizer {
+  width: 25%;
+  float: left;
+  min-height: 1px;
+}
+.item {
+  height: 33.34vh;
+}
+.item img {
+  width: 100%;
 }
