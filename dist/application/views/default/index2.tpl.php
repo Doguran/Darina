@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="<?php echo TEMPLATE_PATH ?>css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" />
     <title>Hello, world!</title>
 </head>
 <body>
@@ -29,8 +30,8 @@
                     <div class="col-xl-6 col-md-6">
                         <div class="short_contact_list">
                             <ul>
-                                <li><a href="#"> <i class="fa fa-envelope"></i> info@docmed.com</a></li>
-                                <li><a href="#"> <i class="fa fa-phone"></i> 1601-609 6780</a></li>
+                                <li><a href="#"> <i class="fa fa-envelope"></i> info@darina.com.ru</a></li>
+                                <li><a href="#"> <i class="fa fa-phone"></i> 8-965-377-44-84</a></li>
                             </ul>
                         </div>
                     </div>
@@ -221,7 +222,7 @@
 
 
 
-<section class="portfolio">
+<section class="portfolio background-gray">
     <div class="container">
         <h2 class="text-center text-uppercase my-5">Рады предложить</h2>
         <div class="row">
@@ -254,17 +255,15 @@
         </div>
     </div>
 </section>
-
+<section>
 <div class="container" >
-
-
     <div class="row">
         <div class="col-md-3">
             <div class="card mb-4 text-white bg-dark">
                 <img class="card-img-top" src="<?php echo TEMPLATE_PATH ?>img/IMG-20190515-WA0004.jpg" alt="Card image cap">
                 <div class="card-body">
                     <h5 class="card-title"><span>Darina</span>Base</h5>
-                    <p class="card-text">Переработанная резиновая крошка из шин SBR, подходящая для применения как в финишном слое так и в базовом слое.</p>
+                    <p class="card-text">Переработанная резиновая крошка из шин SBR для применения в финишном и в базовом слое.</p>
                     <a href="#" class="btn btn-outline-light btn-sm">Перейти</a>
                 </div>
             </div>
@@ -294,30 +293,31 @@
                 <img class="card-img-top" src="<?php echo TEMPLATE_PATH ?>img/IMG-20190507-WA0002.jpg" alt="Card image cap">
                 <div class="card-body">
                     <h5 class="card-title"><span>Darina</span>PU Binder</h5>
-                    <p class="card-text">полиуретановое связующее для резиновой крошки, крошки ЭПДМ, TPV крошки, монтажа искуственной травы.</p>
+                    <p class="card-text">Полиуретановое связующее для резиновой крошки, крошки ЭПДМ, TPV, монтажа искуственной травы.</p>
                     <a href="#" class="btn btn-outline-light btn-sm">Перейти</a>
                 </div>
             </div>
         </div>
     </div>
 </div>
-
+</section>
+<section class="my-5">
 <div class="container-fluid">
     <div class="row">
             <div class="masonry">
-                <div class="item"><img src="<?php echo HTTP_PATH ?>images/JPEG/IMG-20190902-WA0008.jpg" alt="alt"></div>
-                <div class="item"><img src="<?php echo HTTP_PATH ?>images/JPEG/IMG-20190723-WA0005.jpg" alt="alt"></div>
-                <div class="item"><img src="<?php echo HTTP_PATH ?>images/JPEG/IMG-20190611-WA0003.jpg" alt="alt"></div>
-                <div class="item"><img src="<?php echo HTTP_PATH ?>images/JPEG/IMG-20190110-WA0011.jpg" alt="alt"></div>
-                <div class="item"><img src="<?php echo HTTP_PATH ?>images/JPEG/IMG-20180810-WA0002.jpg" alt="alt"></div>
-                <div class="item"><img src="<?php echo HTTP_PATH ?>images/JPEG/IMG-20180819-WA0000.jpg" alt="alt"></div>
-                <div class="item"><img src="<?php echo HTTP_PATH ?>images/JPEG/IMG-20180819-WA0005.jpg" alt="alt"></div>
-                <div class="item"><img src="<?php echo HTTP_PATH ?>images/JPEG/IMG-20180819-WA0003.jpg" alt="alt"></div>
+                <div class="item"><a data-fancybox="gallery" href="<?php echo HTTP_PATH ?>images/IMG-20190902-WA0008.jpg"><img src="<?php echo HTTP_PATH ?>images/JPEG/IMG-20190902-WA0008.jpg" alt="alt"></a></div>
+                <div class="item"><a data-fancybox="gallery" href="<?php echo HTTP_PATH ?>images/IMG-20190723-WA0005.jpg"><img src="<?php echo HTTP_PATH ?>images/JPEG/IMG-20190723-WA0005.jpg" alt="alt"></a></div>
+                <div class="item"><a data-fancybox="gallery" href="<?php echo HTTP_PATH ?>images/IMG-20190611-WA0003.jpg"><img src="<?php echo HTTP_PATH ?>images/JPEG/IMG-20190611-WA0003.jpg" alt="alt"></a></div>
+                <div class="item"><a data-fancybox="gallery" href="<?php echo HTTP_PATH ?>images/IMG-20190110-WA0011.jpg"><img src="<?php echo HTTP_PATH ?>images/JPEG/IMG-20190110-WA0011.jpg" alt="alt"></a></div>
+                <div class="item"><a data-fancybox="gallery" href="<?php echo HTTP_PATH ?>images/IMG-20180810-WA0002.jpg"><img src="<?php echo HTTP_PATH ?>images/JPEG/IMG-20180810-WA0002.jpg" alt="alt"></a></div>
+                <div class="item"><a data-fancybox="gallery" href="<?php echo HTTP_PATH ?>images/IMG-20180819-WA0000.jpg"><img src="<?php echo HTTP_PATH ?>images/JPEG/IMG-20180819-WA0000.jpg" alt="alt"></a></div>
+                <div class="item"><a data-fancybox="gallery" href="<?php echo HTTP_PATH ?>images/IMG-20180819-WA0005.jpg"><img src="<?php echo HTTP_PATH ?>images/JPEG/IMG-20180819-WA0005.jpg" alt="alt"></a></div>
+                <div class="item"><a data-fancybox="gallery" href="<?php echo HTTP_PATH ?>images/IMG-20180819-WA0003.jpg"><img src="<?php echo HTTP_PATH ?>images/JPEG/IMG-20180819-WA0003.jpg" alt="alt"></a></div>
 
             </div>
     </div>
 </div>
-
+</section>
 <div class="container-fluid polosa">
     <div class="container my-5 py-5">
     <h2 class="text-center text-uppercase mb-5">Отзывы о нашей работе</h2>
@@ -325,7 +325,7 @@
         <div class="review">
             <div class="row my-5">
                 <div class="col d-flex justify-content-center">
-                    <img src="https://dummyimage.com/150x150/000/fff" alt="" class="rounded-circle img-fluid">
+                    <img src="<?php echo TEMPLATE_PATH ?>img/kellysikkema310210.jpg" alt="" class="rounded-circle img-fluid">
                 </div>
             </div>
             <div class="row my-3 justify-content-center ">
@@ -342,7 +342,7 @@
         <div class="review">
             <div class="row my-5">
                 <div class="col d-flex justify-content-center">
-                    <img src="https://dummyimage.com/150x150/000/fff" alt="" class="rounded-circle img-fluid">
+                    <img src="<?php echo TEMPLATE_PATH ?>img/Depositphotos_742209.jpg" alt="" class="rounded-circle img-fluid">
                 </div>
             </div>
             <div class="row my-3 justify-content-center ">
@@ -359,7 +359,7 @@
         <div class="review">
             <div class="row my-5">
                 <div class="col d-flex justify-content-center">
-                    <img src="https://dummyimage.com/150x150/000/fff" alt="" class="rounded-circle img-fluid">
+                    <img src="<?php echo TEMPLATE_PATH ?>img/Depositphotos_626472.jpg" alt="" class="rounded-circle img-fluid">
                 </div>
             </div>
             <div class="row my-3 justify-content-center ">
@@ -376,7 +376,7 @@
         <div class="review">
             <div class="row my-5">
                 <div class="col d-flex justify-content-center">
-                    <img src="https://dummyimage.com/150x150/000/fff" alt="" class="rounded-circle img-fluid">
+                    <img src="<?php echo TEMPLATE_PATH ?>img/Depositphotos_626472.jpg" alt="" class="rounded-circle img-fluid">
                 </div>
             </div>
             <div class="row my-3 justify-content-center ">
@@ -405,12 +405,11 @@
                     <div class="footer_widget">
                         <div class="footer_logo">
                             <a href="#">
-                                <img src="<?php echo TEMPLATE_PATH ?>img/logo-white.png" alt="">
+                                <img src="<?php echo TEMPLATE_PATH ?>img/logo-footer.png" alt="">
                             </a>
                         </div>
                         <p>
-                            Firmament morning sixth subdue darkness
-                            creeping gathered divide.
+                            Материалы для укладки травмобезопасных резиновых покрытий для спорта и игры.
                         </p>
                         <div class="socail_links">
                             <ul>
@@ -437,14 +436,14 @@
                 <div class="col-xl-2 offset-xl-1 col-md-6 col-lg-3">
                     <div class="footer_widget">
                         <h3 class="footer_title">
-                            Services
+                            Меню
                         </h3>
                         <ul>
-                            <li><a href="#">Design</a></li>
-                            <li><a href="#">Development</a></li>
-                            <li><a href="#">Marketing</a></li>
-                            <li><a href="#">Consulting</a></li>
-                            <li><a href="#">Finance</a></li>
+                            <li><a href="#">Главная</a></li>
+                            <li><a href="#">О нас</a></li>
+                            <li><a href="#">Ассортимент</a></li>
+                            <li><a href="#">Контакты</a></li>
+                            <li><a href="#">Блог</a></li>
                         </ul>
 
                     </div>
@@ -452,25 +451,26 @@
                 <div class="col-xl-2 col-md-6 col-lg-2">
                     <div class="footer_widget">
                         <h3 class="footer_title">
-                            Useful Links
+                            Продукция
                         </h3>
                         <ul>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Blog</a></li>
-                            <li><a href="#"> Contact</a></li>
-                            <li><a href="#"> Free quote</a></li>
+                            <li><a href="#">Резиновая крошка</a></li>
+                            <li><a href="#">EPDM крошка</a></li>
+                            <li><a href="#">Клей для крошки</a></li>
+                            <li><a href="#">Сопутствующие товары</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-xl-3 col-md-6 col-lg-3">
                     <div class="footer_widget">
                         <h3 class="footer_title">
-                            Address
+                            Адрес
                         </h3>
                         <ul>
-                            <li>200, D-block, Green lane USA</li>
-                            <li>+10 367 467 8934</li>
-                            <li><a href="#"> docmed@contact.com</a></li>
+
+                            <li>107065, МОСКВА, УЛ. КАМЧАТСКАЯ, Д. 7</li>
+                            <li>8-965-377-44-84</li>
+                            <li><a href="#"> info@darina.com.ru</a></li>
                         </ul>
                     </div>
                 </div>
@@ -483,9 +483,7 @@
             <div class="row">
                 <div class="col-xl-12">
                     <p class="copy_right text-center">
-                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                        Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Made with <i class="fas fa-heart" aria-hidden="true"></i>
                     </p>
                 </div>
             </div>
@@ -496,6 +494,7 @@
 
 
 <script src="<?php echo TEMPLATE_PATH ?>js/main.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js"></script>
 
 
 

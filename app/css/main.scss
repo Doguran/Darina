@@ -680,6 +680,7 @@ header ul {
 .overlay2 {
   position: relative;
   z-index: 0;
+  overflow:  hidden;
 }
 .overlay2::before {
   position: absolute;
@@ -700,6 +701,7 @@ header ul {
   background-repeat: no-repeat;
   background-position: center center;
   transition: transform 5s;
+  overflow:  hidden;
 }
 
 .overlay2:hover::before  {
@@ -1048,4 +1050,11 @@ $large_mobile:'only screen and (min-width: 480px) and (max-width: 767px)';
     -webkit-column-count: 4;
     column-count: 4;
   }
+}
+.background-gray {
+  background: #F0F0F0;
+}
+.review img {
+  width: 150px;
+  height: 150px;
 }
