@@ -1,7 +1,9 @@
 $primary: #FD9801;
 $dark: #475153;
+$headings-font-weight: 300;
 
 @import "node_modules/bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap&subset=cyrillic');
 
 
 $fa-font-path:  "../fonts";
@@ -89,11 +91,11 @@ header img{
 }
 
 
-//@import url("https://fonts.googleapis.com/css?family=Roboto:200,200i,300,300i,400,400i,500,500i,600,600i,700&display=swap");
 body {
-  // font-family: "Roboto", sans-serif;
-  font-weight: normal;
+  font-family: 'Roboto', sans-serif;
+  //font-weight: normal;
   font-style: normal;
+  font-weight: 300;
 }
 header ul {
   margin: 0px;
@@ -218,7 +220,6 @@ header ul {
   font-weight: 400;
   display: inline-block;
   padding: 0;
-  font-family: "Poppins", sans-serif;
   position: relative;
   text-transform: capitalize;
 }
@@ -548,7 +549,6 @@ header ul {
   font-size: 44px;
   /* text-transform: capitalize; */
   /* letter-spacing: 2px; */
-  font-weight: 400;
   /* line-height: 62px; */
   margin-bottom: 60px;
 }
@@ -616,8 +616,6 @@ header ul {
   background: #FD9801;
   display: inline-block;
   padding: 14px 27px;
-  font-family: "Poppins", sans-serif;
-  font-size: 14px;
   font-weight: 400;
   border: 0;
   -webkit-border-radius: 5px;
@@ -631,10 +629,9 @@ header ul {
   -o-transition: 0.5s;
   transition: 0.5s;
   cursor: pointer;
-  letter-spacing: 2px;
 }
 .boxed-btn3:hover {
-  background: #28AE61;
+  background: #E98C01;
   color: #fff !important;
 }
 .boxed-btn3:focus {
@@ -646,8 +643,6 @@ header ul {
 .boxed-btn3-white {
   display: inline-block;
   padding: 13px 27px;
-  font-family: "Poppins", sans-serif;
-  font-size: 14px;
   font-weight: 400;
   border: 1px solid #fff;
   -webkit-border-radius: 5px;
@@ -661,10 +656,10 @@ header ul {
   -o-transition: 0.5s;
   transition: 0.5s;
   cursor: pointer;
-  letter-spacing: 2px;
+
 }
 .boxed-btn3-white:hover {
-  background: #28AE61;
+  background: #E98C01;
   color: #fff !important;
   border: 1px solid transparent;
 }
@@ -974,6 +969,7 @@ $large_mobile:'only screen and (min-width: 480px) and (max-width: 767px)';
 }
 .portfolio div+p, .portfolio {
   margin: 3em 0;
+  font-weight: 400;
 }
 .card h5 span {
   color: #FD9801;
@@ -1057,4 +1053,7 @@ $large_mobile:'only screen and (min-width: 480px) and (max-width: 767px)';
 .review img {
   width: 150px;
   height: 150px;
+}
+footer {
+  font-weight: 400;
 }
