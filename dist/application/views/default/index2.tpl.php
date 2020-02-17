@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="<?php echo TEMPLATE_PATH ?>css/main.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" />
-    <title>Hello, world!</title>
+    <title>Darina</title>
 </head>
 <body>
 <!-- header-start -->
@@ -107,7 +107,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-7">
-                        <div class="slider_text ">
+                        <div class="slider_text">
                             <h3> Материалы для укладки травмобезопасных резиновых покрытий для спорта и игры </h3>
 <!--                            <p> – ВАШ ПАРТНЕР В ПОСТАВКАХ МАТЕРИАЛОВ ДЛЯ УКЛАДКИ ТРАВМОБЕЗОПАСНЫХ РЕЗИНОВЫХ ПОКРЫТИЙ ДЛЯ СПОРТА И ИГРЫ</p>-->
                             <div class="video_service_btn">
@@ -118,19 +118,21 @@
                         </div>
                     </div>
                     <div class="col-md-5 col-lg-4 offset-lg-1 d-none d-md-block">
-                        <div class="formwrapper" style="position: relative; padding: 35px; z-index: 2">
-                            <div class="form-text">
-                                <div class="form-title lead">Запишись на бесплатную консультацию</div>
-                                <div class="form-desc">Наши менеджеры ответят вам в ближайшее время</div>
-                            </div>
-                            <form action="#">
-                                <input class="form-control my-3" type="text" placeholder="Имя">
-                                <input class="form-control my-2" type="text" placeholder="Телефон">
-                                <button type="submit" class="btn btn-primary my-2 w-100">Submit</button>
-                            </form>
+                        <div class="form-slide">
+                            <div class="formwrapper">
+                                <div class="form-text">
+                                    <div class="form-title lead mb-2">Бесплатная консультация и составление сметы</div>
+                                    <div class="form-desc">Наши менеджеры ответят вам в ближайшее время</div>
+                                </div>
+                                <form action="#">
+                                    <input class="form-control my-3" type="text" placeholder="Имя">
+                                    <input class="form-control my-2" type="text" placeholder="Телефон">
+                                    <button type="submit" class="btn btn-primary my-2 w-100">Отправить заявку</button>
+                                </form>
 
+                            </div>
+                            <div class="bg-form rounded-sm"></div>
                         </div>
-                    <div class="bg-form rounded-sm" style="background-color: #fff; opacity: 0.7; position: absolute; top: 0; right: 0; left: 0; bottom: 0;"></div>
                     </div>
                 </div>
             </div>
@@ -180,10 +182,10 @@
     </div>
 </section>
 
-<div class="container">
+<div class="container promotext">
     <div class="row">
         <div class="col-md-6">
-            <p>Добро пожаловать в компанию «Darina», основанную в 2016 году.</p>
+            <p class="lead">Добро пожаловать в компанию «Darina», основанную в 2016 году.</p>
             <p>Комплексные поставки высококачественной продукции для создания травмобезопасных
             покрытий Российской игровой и спортивной индустрии, являются основным направлением нашей
             работы. Сотрудники компании всегда готовы помочь Вам:</p>
@@ -222,7 +224,7 @@
 
 
 
-<section class="portfolio background-gray">
+<section class="portfolio background-track">
     <div class="container">
         <h2 class="text-center text-uppercase my-5">Рады предложить</h2>
         <div class="row">
@@ -259,8 +261,8 @@
 <div class="container" >
     <div class="row">
         <div class="col-md-3">
-            <div class="card mb-4 text-white bg-dark">
-                <img class="card-img-top" src="<?php echo TEMPLATE_PATH ?>img/IMG-20190515-WA0004.jpg" alt="Card image cap">
+            <div class="card mb-4 text-white bg-dark card-slide1">
+                <img class="card-img-top" src="<?php echo TEMPLATE_PATH ?>img/DarinaBase.jpg" alt="Card image cap">
                 <div class="card-body">
                     <h5 class="card-title"><span>Darina</span>Base</h5>
                     <p class="card-text">Переработанная резиновая крошка из шин SBR для применения в финишном и в базовом слое.</p>
@@ -269,8 +271,8 @@
             </div>
         </div>
         <div class="col-md-3">
-            <div class="card mb-4 text-white bg-dark">
-                <img class="card-img-top" src="<?php echo TEMPLATE_PATH ?>img/IMG-20190519-WA0029.jpg" alt="Card image cap">
+            <div class="card mb-4 text-white bg-dark card-slide1">
+                <img class="card-img-top" src="<?php echo TEMPLATE_PATH ?>img/DarinaColor.jpg" alt="Card image cap">
                 <div class="card-body">
                     <h5 class="card-title"><span>Darina</span>Color</h5>
                     <p class="card-text">Крошка EPDM, используется в качестве верхнего слоя, слоя износа 15 доступных оттенков.</p>
@@ -279,8 +281,8 @@
             </div>
         </div>
         <div class="col-md-3">
-            <div class="card mb-4 text-white bg-dark">
-                <img class="card-img-top" src="<?php echo TEMPLATE_PATH ?>img/IMG-20190519-WA0032.jpg" alt="Card image cap">
+            <div class="card mb-4 text-white bg-dark card-slide2">
+                <img class="card-img-top" src="<?php echo TEMPLATE_PATH ?>img/DarinaCoating.jpg" alt="Card image cap">
                 <div class="card-body">
                     <h5 class="card-title"><span>Darina</span>Coating</h5>
                     <p class="card-text">Цветная резиновая крошка из переработанных шин Доступна в различных цветах.</p>
@@ -289,11 +291,11 @@
             </div>
         </div>
         <div class="col-md-3">
-            <div class="card mb-4 text-white bg-dark">
-                <img class="card-img-top" src="<?php echo TEMPLATE_PATH ?>img/IMG-20190507-WA0002.jpg" alt="Card image cap">
+            <div class="card mb-4 text-white bg-dark card-slide2">
+                <img class="card-img-top" src="<?php echo TEMPLATE_PATH ?>img/DarinaPU.jpg" alt="Card image cap">
                 <div class="card-body">
                     <h5 class="card-title"><span>Darina</span>PU Binder</h5>
-                    <p class="card-text">Полиуретановое связующее для резиновой крошки, крошки ЭПДМ, TPV, монтажа искуственной травы.</p>
+                    <p class="card-text">Полиуретановое связующее для резиновой крошки? ЭПДМ, TPV и монтажа искуственной травы.</p>
                     <a href="#" class="btn btn-outline-light btn-sm">Перейти</a>
                 </div>
             </div>
@@ -319,7 +321,7 @@
 </div>
 </section>
 <div class="container-fluid polosa">
-    <div class="container my-5 py-5">
+    <div class="container my-5 py-5 comment">
     <h2 class="text-center text-uppercase mb-5">Отзывы о нашей работе</h2>
     <div class="slick">
         <div class="review">
@@ -495,6 +497,55 @@
 
 <script src="<?php echo TEMPLATE_PATH ?>js/main.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js"></script>
+<script>
+
+    $(document).ready(function(){
+
+        (function($) {
+            $.fn.visible = function() {
+                return this.each(function() {
+                    $(this).css("visibility", "visible");
+                });
+            };
+        }(jQuery));
+
+        $( ".slider_text" ).show().addClass( "effect3" );
+        $( ".form-slide" ).show().addClass( "effect4" );
+        $(window).scroll(function() {
+
+            if ($(this).scrollTop() > 400) {
+                $( "#portfolio" ).visible().addClass( "effect2" );
+
+            }
+            if ($(this).scrollTop() > 800) {
+                $( ".promotext" ).visible().addClass( "effect2" );
+
+            }
+
+            if ($(this).scrollTop() > 1500) {
+                $( ".background-track" ).visible().addClass( "effect2" );
+
+            }
+
+            if ($(this).scrollTop() > 1800) {
+                $( ".card-slide1" ).visible().addClass( "effect3" );
+                $( ".card-slide2" ).visible().addClass( "effect4" );
+
+            }
+            if ($(this).scrollTop() > 2800) {
+                $( ".masonry" ).visible().addClass( "effect2" );
+            }
+            if ($(this).scrollTop() > 3600) {
+                $( ".comment" ).visible().addClass( "effect2" );
+            }
+
+            if ($(this).scrollTop() > 4500) {
+                $( ".footer_top .container" ).visible().addClass( "effect1" );
+            }
+
+        });
+    });
+</script>
 
 
 
