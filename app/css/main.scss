@@ -967,8 +967,10 @@ $large_mobile:'only screen and (min-width: 480px) and (max-width: 767px)';
   color: #FD9801;
 }
 .portfolio div+p, .portfolio {
-  margin: 3em 0;
   font-weight: 400;
+}
+.promotext {
+  margin-bottom: 3em;
 }
 .card h5 span {
   color: #FD9801;

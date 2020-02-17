@@ -143,7 +143,7 @@
 <!-- slider_area_end -->
 
 <section class="portfolio" id="portfolio">
-    <div class="container">
+    <div class="container mb-5">
         <h2 class="text-center text-uppercase my-5">Почему нам доверяют</h2>
         <div class="row">
             <div class="col-md-6 col-lg-4 text-center">
@@ -180,7 +180,6 @@
             </div>
         </div>
     </div>
-</section>
 
 <div class="container promotext">
     <div class="row">
@@ -221,7 +220,7 @@
         </div>
     </div>
 </div>
-
+</section>
 
 
 <section class="portfolio background-track">
@@ -257,7 +256,7 @@
         </div>
     </div>
 </section>
-<section>
+<section class="mt-5">
 <div class="container" >
     <div class="row">
         <div class="col-md-3">
@@ -303,7 +302,7 @@
     </div>
 </div>
 </section>
-<section class="my-5">
+<section class="mb-5">
 <div class="container-fluid">
     <div class="row">
             <div class="masonry">
@@ -532,14 +531,14 @@
                 $( ".card-slide2" ).visible().addClass( "effect4" );
 
             }
-            if ($(this).scrollTop() > 2800) {
+            if ($(this).scrollTop() > 2700) {
                 $( ".masonry" ).visible().addClass( "effect2" );
             }
-            if ($(this).scrollTop() > 3600) {
+            if ($(this).scrollTop() > 3400) {
                 $( ".comment" ).visible().addClass( "effect2" );
             }
 
-            if ($(this).scrollTop() > 4500) {
+            if ($(this).scrollTop() > 4300) {
                 $( ".footer_top .container" ).visible().addClass( "effect1" );
             }
 
