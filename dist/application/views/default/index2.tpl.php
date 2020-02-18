@@ -259,7 +259,7 @@
 <section class="mt-5">
 <div class="container" >
     <div class="row">
-        <div class="col-md-3">
+        <div class="col-md-6 col-lg-3">
             <div class="card mb-4 text-white bg-dark card-slide1">
                 <img class="card-img-top" src="<?php echo TEMPLATE_PATH ?>img/DarinaBase.jpg" alt="Card image cap">
                 <div class="card-body">
@@ -269,7 +269,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-6 col-lg-3">
             <div class="card mb-4 text-white bg-dark card-slide1">
                 <img class="card-img-top" src="<?php echo TEMPLATE_PATH ?>img/DarinaColor.jpg" alt="Card image cap">
                 <div class="card-body">
@@ -279,7 +279,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-6 col-lg-3">
             <div class="card mb-4 text-white bg-dark card-slide2">
                 <img class="card-img-top" src="<?php echo TEMPLATE_PATH ?>img/DarinaCoating.jpg" alt="Card image cap">
                 <div class="card-body">
@@ -289,7 +289,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-6 col-lg-3">
             <div class="card mb-4 text-white bg-dark card-slide2">
                 <img class="card-img-top" src="<?php echo TEMPLATE_PATH ?>img/DarinaPU.jpg" alt="Card image cap">
                 <div class="card-body">
