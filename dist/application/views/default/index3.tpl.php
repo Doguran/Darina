@@ -110,54 +110,167 @@
     </div>
 </div>
 <!-- slider_area_end -->
-<nav aria-label="breadcrumb">
+<div class="container-fluid" style="background-color: #e9ecef;">
+<nav aria-label="breadcrumb" class="container">
     <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="#">Home</a></li>
         <li class="breadcrumb-item"><a href="#">Library</a></li>
         <li class="breadcrumb-item active" aria-current="page">Data</li>
     </ol>
 </nav>
-
-
-<section class="background-track">
-    <div class="container">
-        <h2 class="text-center text-uppercase my-5">Рады предложить</h2>
-        <div class="row">
-            <div class="col-md-6 col-lg-4 text-center">
-
-                <div class="mx-auto w-100 text-black">
-                    <i class="fas fa-running fa-5x"></i>
-                </div>
-                <p>Резиновые гранулы для легкой атлетики</p>
-
-            </div>
-
-            <div class="col-md-6 col-lg-4 text-center">
-
-                <div class="mx-auto w-100 text-black">
-                    <i class="fas fa-dumbbell fa-5x"></i>
-                </div>
-                <p>Резиновые гранулы для ударопоглощающих защитных поверхностей</p>
-
-            </div>
-
-            <div class="col-md-6 col-lg-4 text-center">
-
-                <div class="mx-auto w-100 text-black">
-                    <i class="fas fa-basketball-ball fa-5x"></i>
-                </div>
-                <p>Резиновые гранулы для многоцелевых игровых площадок</p>
-
-            </div>
-        </div>
-    </div>
-</section>
+</div>
 
 
 
 
 <div class="polosa">
-    <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-md-4">
+
+                <div class="card mb-3 left-menu bg-light">
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                            <div class="blockimg-menu" style="background-image: url(<?php echo TEMPLATE_PATH ?>img/DarinaBase.jpg)">
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title"><span>Darina</span>Base</h5>
+                                <p class="small">Переработанная резиновая крошка из шин SBR для применения в финишном и в базовом слое.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3 left-menu bg-primary text-white">
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                            <div class="blockimg-menu" style="background-image: url(<?php echo TEMPLATE_PATH ?>img/DarinaColor.jpg)">
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title"><span>Darina</span>Color</h5>
+                                <p class="small">Крошка EPDM, используется в качестве верхнего слоя, слоя износа 15 доступных оттенков.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3 left-menu bg-light">
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                            <div class="blockimg-menu" style="background-image: url(<?php echo TEMPLATE_PATH ?>img/DarinaCoating.jpg)">
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title"><span>Darina</span>Coating</h5>
+                                <p class="small">Цветная резиновая крошка из переработанных шин Доступна в различных цветах.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3 left-menu bg-light">
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                            <div class="blockimg-menu" style="background-image: url(<?php echo TEMPLATE_PATH ?>img/DarinaPU.jpg)">
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title"><span>Darina</span>PU Binder</h5>
+                                <p class="small">Полиуретановое связующее для резиновой крошки? ЭПДМ, TPV и монтажа искуственной травы.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3 left-menu bg-light">
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                            <div class="blockimg-menu" style="background-image: url(<?php echo TEMPLATE_PATH ?>img/DarinaGrass.jpg)">
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title"><span>Darina</span>Grass</h5>
+                                <p class="small">Искусственная трава для спорта и ландшафта, материалы для укладки.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3 left-menu bg-light">
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                            <div class="blockimg-menu" style="background-image: url(<?php echo TEMPLATE_PATH ?>img/DarinaEpdm.jpg)">
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title"><span>Darina</span>Pigment</h5>
+                                <p class="small">Железоокисные, органические производства Чехия, Испания, Китай.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3 left-menu bg-light">
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                            <div class="blockimg-menu" style="background-image: url(<?php echo TEMPLATE_PATH ?>img/DarinaCoating.jpg)">
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title"><span>Darina</span>Needs</h5>
+                                <p class="small">Сопутствующие материалы, скипидар, ручной инструмент.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+            <div class="col-md-8">
+                <p class="text-center"><span>Darina</span>Color</p>
+                <h1 class="my-3 text-center">Крошка EPDM</h1>
+                <h4 class="mt-3 mb-5 text-center">Используется в качестве верхнего слоя, слоя износа 15 доступных оттенков</h4>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut
+                    laboriosam nostrum perferendis quam qui. Deleniti eius illum
+                    numquam quia voluptas? Ab consequatur debitis exercitationem
+                    inventore itaque iusto, pariatur repellendus sapiente?</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut
+                    laboriosam nostrum perferendis quam qui. Deleniti eius illum
+                    numquam quia voluptas? Ab consequatur debitis exercitationem
+                    inventore itaque iusto, pariatur repellendus sapiente?</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut
+                    laboriosam nostrum perferendis quam qui. Deleniti eius illum
+                    numquam quia voluptas? Ab consequatur debitis exercitationem
+                    inventore itaque iusto, pariatur repellendus sapiente?
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut
+                    laboriosam nostrum perferendis quam qui. Deleniti eius illum
+                    numquam quia voluptas? Ab consequatur debitis exercitationem
+                    inventore itaque iusto, pariatur repellendus sapiente?
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut
+                    laboriosam nostrum perferendis quam qui. Deleniti eius illum
+                    numquam quia voluptas? Ab consequatur debitis exercitationem
+                    inventore itaque iusto, pariatur repellendus sapiente?
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut
+                    laboriosam nostrum perferendis quam qui. Deleniti eius illum
+                    numquam quia voluptas? Ab consequatur debitis exercitationem
+                    inventore itaque iusto, pariatur repellendus sapiente?</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut
+                    laboriosam nostrum perferendis quam qui. Deleniti eius illum
+                    numquam quia voluptas? Ab consequatur debitis exercitationem
+                    inventore itaque iusto, pariatur repellendus sapiente?</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut
+                    laboriosam nostrum perferendis quam qui. Deleniti eius illum
+                    numquam quia voluptas? Ab consequatur debitis exercitationem
+                    inventore itaque iusto, pariatur repellendus sapiente?</p>
+
+            </div>
+        </div>
+    </div>
 </div>
 
 <!-- footer start -->

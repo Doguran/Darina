@@ -991,6 +991,9 @@ $large_mobile:'only screen and (min-width: 480px) and (max-width: 767px)';
 .card h5 span {
   color: #FD9801;
 }
+.card.bg-primary h5 span {
+  color: #000;
+}
 .polosa2{
   background-image: url(../img/polosa2.jpg);
   background-position: center;
@@ -1068,8 +1071,7 @@ $large_mobile:'only screen and (min-width: 480px) and (max-width: 767px)';
   background: #F0F0F0;
 }
 .review img {
-  width: 150px;
-  height: 150px;
+  height: 400px;
 }
 footer {
   font-weight: 400;
@@ -1104,7 +1106,7 @@ footer {
   left: 0;
   bottom: 0;
 }
-#portfolio, .promotext, .background-track, .card-slide1, .card-slide2, .masonry, .comment, .footer_top .container{
+#portfolio, .promotext, .background-track, .card-slide1, .card-slide2, .card-slide3, .masonry, .comment, .footer_top .container{
   visibility: hidden;
 }
 
@@ -1350,7 +1352,7 @@ footer {
   color: #FD9801;
 
 }
-.blockimg1, .blockimg2 {
+.blockimg1, .blockimg2, .blockimg-menu {
   width: auto;
   height: 100%;
   background: #ccc;
@@ -1364,4 +1366,10 @@ footer {
   right: 0;
   margin: 0 15px;
 }
+.blockimg-menu {
+  margin: 0;
+  background-position: center center;
+}
+
+
 

@@ -31,7 +31,7 @@
                         <div class="short_contact_list">
                             <ul>
                                 <li><a href="#"> <i class="fa fa-envelope"></i> info@darina.com.ru</a></li>
-                                <li><a href="#"> <i class="fa fa-phone"></i> 8-965-377-44-84</a></li>
+                                <li><a href="#"> <i class="fa fa-phone"></i> 8-499-394-48-55</a></li>
                             </ul>
                         </div>
                     </div>
@@ -54,7 +54,6 @@
                                 <nav>
                                     <ul id="navigation">
                                         <li><a class="active" href="/">Главная</a></li>
-                                        <li><a href="/">О нас</a></li>
                                         <li><a href="#">Ассортимент <i class="ti-angle-down"></i></a>
                                             <ul class="submenu">
                                                 <li><a href="/">Резиновая крошка</a></li>
@@ -109,7 +108,6 @@
                     <div class="col-md-7">
                         <div class="slider_text">
                             <h3> Материалы для укладки травмобезопасных резиновых покрытий для спорта и игры </h3>
-<!--                            <p> – ВАШ ПАРТНЕР В ПОСТАВКАХ МАТЕРИАЛОВ ДЛЯ УКЛАДКИ ТРАВМОБЕЗОПАСНЫХ РЕЗИНОВЫХ ПОКРЫТИЙ ДЛЯ СПОРТА И ИГРЫ</p>-->
                             <div class="video_service_btn">
                                 <a href="#" class="boxed-btn3">Полный ассортимент и цены</a>
                                 <a href="#" class="boxed-btn3-white"> <i class="fa fa-play"></i>
@@ -188,7 +186,7 @@
 
 
 <div class="container promotext">
-    <h2 class="text-center">Добро пожаловать в компанию «Darina», основанную в 2016 году.</h2>
+    <h2 class="text-center">Добро пожаловать в компанию «Darina», основанную в 2016 году</h2>
     <div class="row my-5">
 
         <div class="col-md-6">
@@ -218,7 +216,6 @@
     <div class="row">
         <div class="col-md-6">
             <div class="blockimg2" style="background-image: url(<?php echo HTTP_PATH ?>images/5.jpg)">
-
             </div>
         </div>
         <div class="col-md-6">
@@ -322,8 +319,8 @@
     </div>
     <div class="row justify-content-center">
         <div class="col-md-6 col-lg-3">
-            <div class="card mb-4 text-white bg-dark card-slide1">
-                <img class="card-img-top" src="<?php echo TEMPLATE_PATH ?>img/DarinaBase.jpg" alt="Card image cap">
+            <div class="card mb-4 text-white bg-dark card-slide3">
+                <img class="card-img-top" src="<?php echo TEMPLATE_PATH ?>img/DarinaGrass.jpg" alt="Card image cap">
                 <div class="card-body">
                     <h5 class="card-title"><span>Darina</span>Grass</h5>
                     <p class="card-text">Искусственная трава для спорта и ландшафта, материалы для укладки.</p>
@@ -332,8 +329,8 @@
             </div>
         </div>
         <div class="col-md-6 col-lg-3">
-            <div class="card mb-4 text-white bg-dark card-slide1">
-                <img class="card-img-top" src="<?php echo TEMPLATE_PATH ?>img/DarinaColor.jpg" alt="Card image cap">
+            <div class="card mb-4 text-white bg-dark card-slide3">
+                <img class="card-img-top" src="<?php echo TEMPLATE_PATH ?>img/DarinaEpdm.jpg" alt="Card image cap">
                 <div class="card-body">
                     <h5 class="card-title"><span>Darina</span>Pigment</h5>
                     <p class="card-text">Железоокисные, органические производства Чехия, Испания, Китай.</p>
@@ -342,7 +339,7 @@
             </div>
         </div>
         <div class="col-md-6 col-lg-3">
-            <div class="card mb-4 text-white bg-dark card-slide2">
+            <div class="card mb-4 text-white bg-dark card-slide3">
                 <img class="card-img-top" src="<?php echo TEMPLATE_PATH ?>img/DarinaCoating.jpg" alt="Card image cap">
                 <div class="card-body">
                     <h5 class="card-title"><span>Darina</span>Needs</h5>
@@ -374,76 +371,35 @@
 </section>
 <div class="container-fluid polosa">
     <div class="container my-5 py-5 comment">
-    <h2 class="text-center text-uppercase mb-5">Отзывы о нашей работе</h2>
+    <h2 class="text-center text-uppercase mb-5">Нас рекомендуют</h2>
     <div class="slick">
         <div class="review">
-            <div class="row my-5">
-                <div class="col d-flex justify-content-center">
-                    <img src="<?php echo TEMPLATE_PATH ?>img/kellysikkema310210.jpg" alt="" class="rounded-circle img-fluid">
-                </div>
-            </div>
-            <div class="row my-3 justify-content-center ">
-                <div class="col-md-6 text-center">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur fugiat laudantium nulla numquam officiis quod sint. Dolores doloribus dolorum minima molestias quod, unde! Autem delectus doloribus eaque in reiciendis tempora.</p>
-                </div>
-            </div>
-            <div class="row my-3">
-                <div class="col text-center">
-                    <strong>Кристина Девушкина</strong>
-                </div>
+            <div class="col d-flex justify-content-center">
+                <a data-fancybox="comment" href="<?php echo HTTP_PATH ?>images/1-1.jpg"><img src="<?php echo HTTP_PATH ?>images/sm-1-1.jpg" alt="alt"></a>
             </div>
         </div>
         <div class="review">
-            <div class="row my-5">
-                <div class="col d-flex justify-content-center">
-                    <img src="<?php echo TEMPLATE_PATH ?>img/Depositphotos_742209.jpg" alt="" class="rounded-circle img-fluid">
-                </div>
-            </div>
-            <div class="row my-3 justify-content-center ">
-                <div class="col-md-6 text-center">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur fugiat laudantium nulla numquam officiis quod sint. Dolores doloribus dolorum minima molestias quod, unde! Autem delectus doloribus eaque in reiciendis tempora.</p>
-                </div>
-            </div>
-            <div class="row my-3">
-                <div class="col text-center">
-                    <strong>Анна Лапкина</strong>
-                </div>
+            <div class="col d-flex justify-content-center">
+                <a data-fancybox="comment" href="<?php echo HTTP_PATH ?>images/2-2.jpg"><img src="<?php echo HTTP_PATH ?>images/sm-2-2.jpg" alt="alt"></a>
             </div>
         </div>
-        <div class="review">
-            <div class="row my-5">
-                <div class="col d-flex justify-content-center">
-                    <img src="<?php echo TEMPLATE_PATH ?>img/Depositphotos_626472.jpg" alt="" class="rounded-circle img-fluid">
-                </div>
-            </div>
-            <div class="row my-3 justify-content-center ">
-                <div class="col-md-6 text-center">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur fugiat laudantium nulla numquam officiis quod sint. Dolores doloribus dolorum minima molestias quod, unde! Autem delectus doloribus eaque in reiciendis tempora.</p>
-                </div>
-            </div>
-            <div class="row my-3">
-                <div class="col text-center">
-                    <strong>Семен Огурцов</strong>
-                </div>
-            </div>
-        </div>
-        <div class="review">
-            <div class="row my-5">
-                <div class="col d-flex justify-content-center">
-                    <img src="<?php echo TEMPLATE_PATH ?>img/Depositphotos_626472.jpg" alt="" class="rounded-circle img-fluid">
-                </div>
-            </div>
-            <div class="row my-3 justify-content-center ">
-                <div class="col-md-6 text-center">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur fugiat laudantium nulla numquam officiis quod sint. Dolores doloribus dolorum minima molestias quod, unde! Autem delectus doloribus eaque in reiciendis tempora.</p>
-                </div>
-            </div>
-            <div class="row my-3">
-                <div class="col text-center">
-                    <strong>Василий Федоров</strong>
-                </div>
-            </div>
-        </div>
+<!--        <div class="review">-->
+<!--            <div class="row my-5">-->
+<!--                <div class="col d-flex justify-content-center">-->
+<!--                    <img src="--><?php //echo TEMPLATE_PATH ?><!--img/Depositphotos_626472.jpg" alt="" class="rounded-circle img-fluid">-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="row my-3 justify-content-center ">-->
+<!--                <div class="col-md-6 text-center">-->
+<!--                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur fugiat laudantium nulla numquam officiis quod sint. Dolores doloribus dolorum minima molestias quod, unde! Autem delectus doloribus eaque in reiciendis tempora.</p>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="row my-3">-->
+<!--                <div class="col text-center">-->
+<!--                    <strong>Василий Федоров</strong>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
     </div>
     </div>
 </div>
@@ -494,7 +450,6 @@
                         </h3>
                         <ul>
                             <li><a href="#">Главная</a></li>
-                            <li><a href="#">О нас</a></li>
                             <li><a href="#">Ассортимент</a></li>
                             <li><a href="#">Контакты</a></li>
                             <li><a href="#">Блог</a></li>
@@ -522,8 +477,8 @@
                         </h3>
                         <ul>
 
-                            <li>107065, МОСКВА, УЛ. КАМЧАТСКАЯ, Д. 7</li>
-                            <li>8-965-377-44-84</li>
+                            <li>Московская обл., г. Одинцово,<br>ул. Железнодорожная, 19</li>
+                            <li>8-499-394-48-55</li>
                             <li><a href="#"> info@darina.com.ru</a></li>
                         </ul>
                     </div>
@@ -574,24 +529,28 @@
 
             }
 
-            if ($(this).scrollTop() > 1500) {
+            if ($(this).scrollTop() > 2000) {
                 $( ".background-track" ).visible().addClass( "effect2" );
 
             }
 
-            if ($(this).scrollTop() > 1800) {
+            if ($(this).scrollTop() > 2500) {
                 $( ".card-slide1" ).visible().addClass( "effect3" );
                 $( ".card-slide2" ).visible().addClass( "effect4" );
 
             }
-            if ($(this).scrollTop() > 2700) {
+            if ($(this).scrollTop() > 3100) {
+                $( ".card-slide3" ).visible().addClass( "effect2" );
+
+            }
+            if ($(this).scrollTop() > 3700) {
                 $( ".masonry" ).visible().addClass( "effect2" );
             }
-            if ($(this).scrollTop() > 3400) {
+            if ($(this).scrollTop() > 4300) {
                 $( ".comment" ).visible().addClass( "effect2" );
             }
 
-            if ($(this).scrollTop() > 4300) {
+            if ($(this).scrollTop() > 5100) {
                 $( ".footer_top .container" ).visible().addClass( "effect1" );
             }
 
