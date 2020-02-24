@@ -8,9 +8,9 @@ $lead-font-weight: 400;
 
 
 $fa-font-path:  "../fonts";
-//@import "node_modules/@fortawesome/fontawesome-free/scss/solid";
+@import "node_modules/@fortawesome/fontawesome-free/scss/solid";
 //@import "node_modules/@fortawesome/fontawesome-free/scss/regular";
-//@import "node_modules/@fortawesome/fontawesome-free/scss/fontawesome";
+@import "node_modules/@fortawesome/fontawesome-free/scss/fontawesome";
 @import "slicknav";
 @import "slick";
 @import "themify-icons";
@@ -496,6 +496,9 @@ header ul {
   border-bottom: 1px solid #7F8284;
   padding-bottom: 22px;
 }
+.header_bottom_border-page {
+  padding-bottom: 22px;
+}
 
 .header_bottom_border.white_border {
   border-bottom: 1px solid rgba(255, 255, 255, 0.2) !important;
@@ -536,6 +539,9 @@ header ul {
   //background-size: cover;
   //background-repeat: no-repeat;
   //background-position: center center;
+}
+.slider_area .single_slider.overlay{
+  height: 160px;
 }
 
 @media (max-width: 767px) {
@@ -671,12 +677,15 @@ header ul {
 .boxed-btn3-white.large-width {
   width: 220px;
 }
-.overlay2 {
+.overlay {
+
+}
+.overlay2, .overlay {
   position: relative;
   z-index: 0;
   overflow:  hidden;
 }
-.overlay2::before {
+.overlay2::before, .overlay::before {
   position: absolute;
   content: "";
   //background-color: #2C2C2C;
@@ -686,6 +695,13 @@ header ul {
   height: 100%;
   z-index: -1;
   //opacity: 0.6;
+}
+.overlay::before {
+  background-image: url(../img/polosa2.jpg);
+  height: 160px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 34%;
 }
 
 .overlay2::before {
@@ -739,7 +755,7 @@ $large_mobile:'only screen and (min-width: 480px) and (max-width: 767px)';
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  .footer_top{
+  .footer_top, .footer_top_page{
     padding-top: 40px;
     padding-bottom: 129px;
     background: #475153;
@@ -1322,3 +1338,30 @@ footer {
 .slider_text {
   display: none;
 }
+.promotext ul li {
+  list-style: none;
+
+}
+.promotext ul li::before {
+  font-family: "Font Awesome 5 Free";
+  position: absolute;
+  left: 20px;
+  content: '\f058';
+  color: #FD9801;
+
+}
+.blockimg1, .blockimg2 {
+  width: auto;
+  height: 100%;
+  background: #ccc;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 15px;
+}
+

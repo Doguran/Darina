@@ -144,8 +144,20 @@
 
 <section class="portfolio" id="portfolio">
     <div class="container mb-5">
-        <h2 class="text-center text-uppercase my-5">Почему нам доверяют</h2>
+        <h2 class="text-center text-uppercase my-5">Почему именно мы</h2>
         <div class="row">
+
+            <div class="col-md-6 col-lg-4 text-center">
+
+                <div class="mx-auto w-100 text-black">
+                    <i class="fas fa-ruble-sign fa-5x"></i>
+                </div>
+                <div class="my-5">
+                    <h5 class="text-primary">Бесспорно низкие цены </h5>
+                    <p>Мы готовы предложить вам лучшие условия</p>
+                </div>
+            </div>
+
             <div class="col-md-6 col-lg-4 text-center">
 
                 <div class="mx-auto w-100 text-black">
@@ -155,6 +167,7 @@
                     <h5 class="text-primary">Гарантия</h5>
                     <p>Мы гарантируем качество наших материалов</p>
                 </div>
+
             </div>
 
             <div class="col-md-6 col-lg-4 text-center">
@@ -166,25 +179,20 @@
                     <h5 class="text-primary"> Соблюдение сроков</h5>
                     <p>Мы всегда соблюдаем скроки поставок</p>
                 </div>
+
             </div>
 
-            <div class="col-md-6 col-lg-4 text-center">
 
-                <div class="mx-auto w-100 text-black">
-                    <i class="fas fa-road fa-5x"></i>
-                </div>
-                <div class="my-5">
-                    <h5 class="text-primary">Опыт работы</h5>
-                    <p>Наши специалисты работают уже более 10 лет на этом рынке</p>
-                </div>
-            </div>
         </div>
     </div>
 
+
 <div class="container promotext">
-    <div class="row">
+    <h2 class="text-center">Добро пожаловать в компанию «Darina», основанную в 2016 году.</h2>
+    <div class="row my-5">
+
         <div class="col-md-6">
-            <p class="lead">Добро пожаловать в компанию «Darina», основанную в 2016 году.</p>
+
             <p>Комплексные поставки высококачественной продукции для создания травмобезопасных
             покрытий Российской игровой и спортивной индустрии, являются основным направлением нашей
             работы. Сотрудники компании всегда готовы помочь Вам:</p>
@@ -200,6 +208,18 @@
             укладки резиновых покрытий в России и странах СНГ.</p>
             <p>Мы объединили весь наш опыт, что бы предложить Вам широкий спектр услуг, включая
                 материально-техническую поддержку, помощь в определении стоимости проектов.</p>
+        </div>
+        <div class="col-md-6">
+            <div class="blockimg1" style="background-image: url(<?php echo HTTP_PATH ?>images/IMG_20180830_173026_resized_20190226_100754364.jpg)">
+
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="blockimg2" style="background-image: url(<?php echo HTTP_PATH ?>images/5.jpg)">
+
+            </div>
         </div>
         <div class="col-md-6">
 
@@ -299,6 +319,39 @@
                 </div>
             </div>
         </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-md-6 col-lg-3">
+            <div class="card mb-4 text-white bg-dark card-slide1">
+                <img class="card-img-top" src="<?php echo TEMPLATE_PATH ?>img/DarinaBase.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title"><span>Darina</span>Grass</h5>
+                    <p class="card-text">Искусственная трава для спорта и ландшафта, материалы для укладки.</p>
+                    <a href="#" class="btn btn-outline-light btn-sm">Перейти</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+            <div class="card mb-4 text-white bg-dark card-slide1">
+                <img class="card-img-top" src="<?php echo TEMPLATE_PATH ?>img/DarinaColor.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title"><span>Darina</span>Pigment</h5>
+                    <p class="card-text">Железоокисные, органические производства Чехия, Испания, Китай.</p>
+                    <a href="#" class="btn btn-outline-light btn-sm">Перейти</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+            <div class="card mb-4 text-white bg-dark card-slide2">
+                <img class="card-img-top" src="<?php echo TEMPLATE_PATH ?>img/DarinaCoating.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title"><span>Darina</span>Needs</h5>
+                    <p class="card-text">Сопутствующие материалы, скипидар, ручной инструмент.</p>
+                    <a href="#" class="btn btn-outline-light btn-sm">Перейти</a>
+                </div>
+            </div>
+        </div>
+
     </div>
 </div>
 </section>
@@ -494,7 +547,7 @@
 
 
 
-<script src="<?php echo TEMPLATE_PATH ?>js/main.js"></script>
+<script src="<?php echo TEMPLATE_PATH ?>js/main.js" ></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js"></script>
 <script>
 

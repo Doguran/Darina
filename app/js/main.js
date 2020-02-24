@@ -33,7 +33,23 @@ $(document).ready(function(){
         dots: true,
         arrows: true,
         nextArrow: '<div class="prev-slick"><i class="fas fa-angle-left"></i></div>',
-        prevArrow: '<div class="next-slick"><i class="fas fa-angle-right"></i></div>'
+        prevArrow: '<div class="next-slick"><i class="fas fa-angle-right"></i></div>',
+        responsive: [
+            {
+                breakpoint: 992,
+                settings: {
+                    arrows: false
+
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    arrows: false
+
+                }
+            }
+        ]
     });
 // mobile_menu
     var menu = $('ul#navigation');
