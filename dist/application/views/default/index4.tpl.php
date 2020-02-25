@@ -114,8 +114,7 @@
 <nav aria-label="breadcrumb" class="container">
     <ol class="breadcrumb bg-light">
         <li class="breadcrumb-item"><a href="#">Главнвя</a></li>
-        <li class="breadcrumb-item"><a href="#">Ассортимент</a></li>
-        <li class="breadcrumb-item active" aria-current="page">DarinaColor</li>
+        <li class="breadcrumb-item active" aria-current="page">Блог</li>
     </ol>
 </nav>
 </div>
@@ -125,150 +124,77 @@
 
 <div class="polosa">
     <div class="container predfooter">
-        <div class="row">
-            <div class="col-md-4 ">
-
-                <div class="card mb-3 left-menu bg-light">
-                    <div class="row no-gutters">
-                        <div class="col-lg-4">
-                            <div class="blockimg-menu" style="background-image: url(<?php echo TEMPLATE_PATH ?>img/DarinaBase.jpg)">
-                            </div>
-                        </div>
-                        <div class="col-lg-8">
-                            <div class="card-body">
-                                <h5 class="card-title"><span>Darina</span>Base</h5>
-                                <p class="small">Переработанная резиновая крошка из шин SBR для применения в финишном и в базовом слое.</p>
-                            </div>
+        <div class="row row-blog">
+            <div class="col-md-8">
+                <div class="card mb-3">
+                    <div style="position: relative">
+                        <img src="<?php echo TEMPLATE_PATH ?>img/epdm.jpg" class="card-img-top" alt="...">
+                        <div class="blog_item_date">
+                            <p>15</p>
+                            <p>ФЕВ</p>
                         </div>
                     </div>
-                </div>
-                <div class="card mb-3 left-menu bg-primary text-white">
-                    <div class="row no-gutters">
-                        <div class="col-lg-4">
-                            <div class="blockimg-menu" style="background-image: url(<?php echo TEMPLATE_PATH ?>img/DarinaColor.jpg)">
-                            </div>
-                        </div>
-                        <div class="col-lg-8">
-                            <div class="card-body">
-                                <h5 class="card-title"><span>Darina</span>Color</h5>
-                                <p class="small">Крошка EPDM, используется в качестве верхнего слоя, слоя износа 15 доступных оттенков.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card mb-3 left-menu bg-light">
-                    <div class="row no-gutters">
-                        <div class="col-lg-4">
-                            <div class="blockimg-menu" style="background-image: url(<?php echo TEMPLATE_PATH ?>img/DarinaCoating.jpg)">
-                            </div>
-                        </div>
-                        <div class="col-lg-8">
-                            <div class="card-body">
-                                <h5 class="card-title"><span>Darina</span>Coating</h5>
-                                <p class="small">Цветная резиновая крошка из переработанных шин Доступна в различных цветах.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card mb-3 left-menu bg-light">
-                    <div class="row no-gutters">
-                        <div class="col-lg-4">
-                            <div class="blockimg-menu" style="background-image: url(<?php echo TEMPLATE_PATH ?>img/DarinaPU.jpg)">
-                            </div>
-                        </div>
-                        <div class="col-lg-8">
-                            <div class="card-body">
-                                <h5 class="card-title"><span>Darina</span>PU Binder</h5>
-                                <p class="small">Полиуретановое связующее для резиновой крошки? ЭПДМ, TPV и монтажа искуственной травы.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card mb-3 left-menu bg-light">
-                    <div class="row no-gutters">
-                        <div class="col-lg-4">
-                            <div class="blockimg-menu" style="background-image: url(<?php echo TEMPLATE_PATH ?>img/DarinaGrass.jpg)">
-                            </div>
-                        </div>
-                        <div class="col-lg-8">
-                            <div class="card-body">
-                                <h5 class="card-title"><span>Darina</span>Grass</h5>
-                                <p class="small">Искусственная трава для спорта и ландшафта, материалы для укладки.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card mb-3 left-menu bg-light">
-                    <div class="row no-gutters">
-                        <div class="col-lg-4">
-                            <div class="blockimg-menu" style="background-image: url(<?php echo TEMPLATE_PATH ?>img/DarinaEpdm.jpg)">
-                            </div>
-                        </div>
-                        <div class="col-lg-8">
-                            <div class="card-body">
-                                <h5 class="card-title"><span>Darina</span>Pigment</h5>
-                                <p class="small">Железоокисные, органические производства Чехия, Испания, Китай.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card mb-3 left-menu bg-light">
-                    <div class="row no-gutters">
-                        <div class="col-lg-4">
-                            <div class="blockimg-menu" style="background-image: url(<?php echo TEMPLATE_PATH ?>img/DarinaCoating.jpg)">
-                            </div>
-                        </div>
-                        <div class="col-lg-8">
-                            <div class="card-body">
-                                <h5 class="card-title"><span>Darina</span>Needs</h5>
-                                <p class="small">Сопутствующие материалы, скипидар, ручной инструмент.</p>
-                            </div>
-                        </div>
+                    <div class="card-body mt-4">
+                        <h5 class="card-title">Название статьи</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <p class="card-text"><a href="#">Далее...</a></p>
                     </div>
                 </div>
 
+                <div class="card mb-3">
+                    <div style="position: relative">
+                        <img src="<?php echo TEMPLATE_PATH ?>img/track3.jpg" class="card-img-top" alt="...">
+                        <div class="blog_item_date">
+                            <p>15</p>
+                            <p>ФЕВ</p>
+                        </div>
+                    </div>
+                    <div class="card-body mt-4">
+                        <h5 class="card-title">Название статьи</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <p class="card-text"><a href="#">Далее...</a></p>
+                    </div>
+                </div>
 
+                <div class="card mb-3">
+                    <div style="position: relative">
+                        <img src="<?php echo TEMPLATE_PATH ?>img/IMG-20190628-WA0011a.jpg" class="card-img-top" alt="...">
+                        <div class="blog_item_date">
+                            <p>15</p>
+                            <p>ФЕВ</p>
+                        </div>
+                    </div>
+                    <div class="card-body mt-4">
+                        <h5 class="card-title">Название статьи</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <p class="card-text"><a href="#">Далее...</a></p>
+                    </div>
+                </div>
 
             </div>
-            <div class="col-md-8">
-                <p class="text-center"><span>Darina</span>Color</p>
-                <h1 class="my-3 text-center">Крошка EPDM</h1>
-                <h4 class="mt-3 mb-5 text-center">Используется в качестве верхнего слоя, слоя износа 15 доступных оттенков</h4>
+            <div class="col-md-4 ">
 
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut
-                    laboriosam nostrum perferendis quam qui. Deleniti eius illum
-                    numquam quia voluptas? Ab consequatur debitis exercitationem
-                    inventore itaque iusto, pariatur repellendus sapiente?</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut
-                    laboriosam nostrum perferendis quam qui. Deleniti eius illum
-                    numquam quia voluptas? Ab consequatur debitis exercitationem
-                    inventore itaque iusto, pariatur repellendus sapiente?</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut
-                    laboriosam nostrum perferendis quam qui. Deleniti eius illum
-                    numquam quia voluptas? Ab consequatur debitis exercitationem
-                    inventore itaque iusto, pariatur repellendus sapiente?
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut
-                    laboriosam nostrum perferendis quam qui. Deleniti eius illum
-                    numquam quia voluptas? Ab consequatur debitis exercitationem
-                    inventore itaque iusto, pariatur repellendus sapiente?
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut
-                    laboriosam nostrum perferendis quam qui. Deleniti eius illum
-                    numquam quia voluptas? Ab consequatur debitis exercitationem
-                    inventore itaque iusto, pariatur repellendus sapiente?
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut
-                    laboriosam nostrum perferendis quam qui. Deleniti eius illum
-                    numquam quia voluptas? Ab consequatur debitis exercitationem
-                    inventore itaque iusto, pariatur repellendus sapiente?</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut
-                    laboriosam nostrum perferendis quam qui. Deleniti eius illum
-                    numquam quia voluptas? Ab consequatur debitis exercitationem
-                    inventore itaque iusto, pariatur repellendus sapiente?</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut
-                    laboriosam nostrum perferendis quam qui. Deleniti eius illum
-                    numquam quia voluptas? Ab consequatur debitis exercitationem
-                    inventore itaque iusto, pariatur repellendus sapiente?</p>
+                <div class="card">
 
+                    <div class="card-body">
+                        <h5 class="card-title">Последние новости</h5>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Cras justo odio</li>
+                        <li class="list-group-item">Dapibus ac facilisis in</li>
+                        <li class="list-group-item">Vestibulum at eros</li>
+                        <li class="list-group-item">Cras justo odio</li>
+                        <li class="list-group-item">Dapibus ac facilisis in</li>
+                        <li class="list-group-item">Vestibulum at eros</li>
+                        <li class="list-group-item">Cras justo odio</li>
+                        <li class="list-group-item">Dapibus ac facilisis in</li>
+                        <li class="list-group-item">Vestibulum at eros</li>
+                        <li class="list-group-item">Cras justo odio</li>
+                        <li class="list-group-item">Dapibus ac facilisis in</li>
+                        <li class="list-group-item">Vestibulum at eros</li>
+                    </ul>
 
+                </div>
 
 
             </div>

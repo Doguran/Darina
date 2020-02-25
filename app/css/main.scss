@@ -1,5 +1,6 @@
 $primary: #FD9801;
 $dark: #475153;
+$light: #F0F3F5;
 $headings-font-weight: 300;
 $lead-font-weight: 400;
 
@@ -519,7 +520,7 @@ header ul {
 }
 
 @media (max-width: 767px) {
-  .header_bottom_border {
+  .header_bottom_border, .header_bottom_border-page {
     padding: 0;
     border-bottom: none;
   }
@@ -572,8 +573,8 @@ header ul {
 
 @media (max-width: 767px) {
   .slider_area .single_slider .slider_text h3 {
-    font-size: 30px;
-    line-height: 35px;
+    font-size: 25px;
+    line-height: 30px;
   }
 }
 
@@ -1371,5 +1372,32 @@ footer {
   background-position: center center;
 }
 
-
-
+.predfooter {
+  margin-bottom: 15em;
+  margin-top: 5em;
+}
+.card.left-menu {
+  border: 0;
+}
+.blog_item_date {
+  bottom: -20px;
+  left: 40px;
+  padding: 13px 30px;
+}
+.blog_item_date {
+  position: absolute;
+  display: block;
+  color: #fff;
+  background-color: #FD9801;
+  border-radius: 5px;
+}
+.blog_item_date p {
+  margin: 0;
+  text-align: center;
+}
+.row-blog .card {
+    box-shadow: 0px 10px 20px 0px rgba(221, 221, 221, 0.3);
+}
+.row-blog h5.card-title {
+  font-weight: bold;
+}
