@@ -344,11 +344,8 @@ header ul {
   padding: 0;
 }
 
-.header-area .main-header-area.sticky .header_bottom_border {
+.main-page .header-area .main-header-area.sticky .header_bottom_border-page {
   border-bottom: none;
-}
-.header-area .main-header-area.sticky .header_bottom_border.white_border {
-  border-bottom: none !important;
 }
 
 .header-area .header-top_area {
@@ -493,34 +490,16 @@ header ul {
   margin-top: -5px;
   top: -33px;
 }
-.header_bottom_border {
+.main-page .header_bottom_border-page {
   border-bottom: 1px solid #7F8284;
-  padding-bottom: 22px;
 }
 .header_bottom_border-page {
   padding-bottom: 22px;
 }
 
-.header_bottom_border.white_border {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2) !important;
-}
 
 @media (max-width: 767px) {
-  .header_bottom_border.white_border {
-    padding: 0;
-    border-bottom: none;
-  }
-}
-
-@media (max-width: 767px) {
-  .header_bottom_border.white_border {
-    padding: 0;
-    border-bottom: none !important;
-  }
-}
-
-@media (max-width: 767px) {
-  .header_bottom_border, .header_bottom_border-page {
+  .header_bottom_border-page {
     padding: 0;
     border-bottom: none;
   }
@@ -752,14 +731,15 @@ $mobile_device:'(max-width: 767px)';
 $large_mobile:'only screen and (min-width: 480px) and (max-width: 767px)';
 
 .footer{
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  .footer_top, .footer_top_page{
-    padding-top: 40px;
-    padding-bottom: 129px;
+margin-top: 12em;
+  .footer_top_page{
     background: #475153;
+    background-image: url(../img/polosa5.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    padding-top: 380px;
+    padding-bottom: 129px;
+
     @media #{$mobile_device} {
       //padding-top: 60px;
       padding-bottom: 30px;
@@ -940,12 +920,6 @@ $large_mobile:'only screen and (min-width: 480px) and (max-width: 767px)';
 
 
 
-.polosa{
-  background-image: url(../img/polosa5.png);
-  background-position: bottom;
-  background-repeat: no-repeat;
-  padding-bottom:300px
-}
 .review  {
   font-size: 18px;
 }
@@ -1107,7 +1081,7 @@ footer {
   left: 0;
   bottom: 0;
 }
-#portfolio, .promotext, .background-track, .card-slide1, .card-slide2, .card-slide3, .masonry, .comment, .footer_top .container{
+#portfolio, .promotext, .background-track, .card-slide1, .card-slide2, .card-slide3, .masonry, .comment, .main-page .footer_top_page .container{
   visibility: hidden;
 }
 
@@ -1372,10 +1346,6 @@ footer {
   background-position: center center;
 }
 
-.predfooter {
-  margin-bottom: 15em;
-  margin-top: 5em;
-}
 .card.left-menu {
   border: 0;
 }

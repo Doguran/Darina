@@ -1,46 +1,96 @@
-<header class="large bg-white">
-    <div class="container">
-
-            <div class="float-left logo">
-                <a href="/">
-                    <img src="<?php echo TEMPLATE_PATH ?>img/logo.png"
-                        alt="" class="img-fluid">
-                </a>
-            </div>
-
-                <div class="pr-lg-3 mb-lg-0 text-right phone">
-                   <i class="fas fa-phone"></i> <span> +7(499)394-48-55</span><br class="d-sm-none"><span class="ml-sm-3">+7(965)377-44-84</span>
-                </div>
-
-
-<!--            <div class="clearfix d-lg-none mt-3"></div>-->
-
-                <nav class="navbar navbar-expand-lg navbar-primary bg-white px-0 px-lg-2">
-                    <div></div>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav ml-auto">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Features</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Pricing</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link disabled" href="#">Disabled</a>
-                            </li>
-                        </ul>
+<header>
+    <div class="header-area ">
+        <div class="header-top_area d-none d-lg-block">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-md-6 ">
+                        <div class="social_media_links">
+                            <a href="#">
+                                <i class="fab fa-vk"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
                     </div>
-                </nav>
-
-
+                    <div class="col-xl-6 col-md-6">
+                        <div class="short_contact_list">
+                            <ul>
+                                <li><a href="#"> <i class="fa fa-envelope"></i>
+                                        info@darina.com.ru</a></li>
+                                <li><a href="#"> <i class="fa fa-phone"></i>
+                                        8-499-394-48-55</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="sticky-header" class="main-header-area">
+            <div class="container">
+                <div class="header_bottom_border-page">
+                    <div class="row align-items-center">
+                        <div class="col-xl-3 col-lg-2">
+                            <div class="logo">
+                                <a href="index.html">
+                                    <img src="<?php echo TEMPLATE_PATH ?>img/logo-white2.png"
+                                         alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-7">
+                            <div class="main-menu  d-none d-lg-block">
+                                <nav>
+                                    <ul id="navigation">
+                                        <li><a class="active"
+                                               href="/">Главная</a></li>
+                                        <li><a href="#">Ассортимент <i
+                                                        class="ti-angle-down"></i></a>
+                                            <ul class="submenu">
+                                                <li><a href="/">Резиновая
+                                                        крошка</a></li>
+                                                <li><a href="/">Крошка ЭПДМ</a>
+                                                </li>
+                                                <li><a href="/">Окрашенная
+                                                        крошка</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="/">Контакты</a></li>
+                                        <li><a href="#">Блог <i
+                                                        class="ti-angle-down"></i></a>
+                                            <ul class="submenu">
+                                                <li><a href="/">ссылка1</a></li>
+                                                <li><a href="/">ссылка2</a></li>
+                                                <li><a href="/">ссылка3</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="/">Вход</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 d-none d-lg-block">
+                            <div class="Appointment">
+                                <div class="search_button">
+                                    <a href="#">
+                                        <i class="ti-search"></i>
+                                    </a>
+                                </div>
+                                <div class="book_btn d-none d-lg-block">
+                                    <a class="popup-with-form" href="#">Позвоните
+                                        мне!</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="mobile_menu d-block d-lg-none"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </header>
-
-
-
