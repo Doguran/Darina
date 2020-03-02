@@ -18,20 +18,26 @@ class FrontController {
         //Какой сontroller использовать?
         $this->_controller = !empty($splits[0]) ? ucfirst($splits[0]).'Controller' : 'IndexController';
         //Какой action использовать?
-        $this->_action = !empty($splits[1]) ? $splits[1].'Action' : 'indexAction';
-        //Есть ли параметры и их значения?
-        if(!empty($splits[2])){
-            $keys = $values = array();
-            for($i=2, $cnt = count($splits); $i<$cnt; $i++){
-                if($i % 2 == 0){
-                    //Чётное = ключ (параметр)
-                    $keys[] = $splits[$i];
-                }else{
-                    //Значение параметра;
-                    $values[] = $splits[$i];
+        if(!empty($splits[1]) and substr($splits[1], -4) == 'html'){
+            $this->_action = "showAction";
+            $this->_params = array("url"=>substr($splits[1], 0, -5));
+        }else {
+            $this->_action = !empty($splits[1]) ? $splits[1] . 'Action' : 'indexAction';
+            //Есть ли параметры и их значения?
+            if (!empty($splits[2])) {
+                $keys = $values = [];
+                for ($i = 2, $cnt = count($splits); $i < $cnt; $i++) {
+                    if ($i % 2 == 0) {
+                        //Чётное = ключ (параметр)
+                        $keys[] = $splits[$i];
+                    }
+                    else {
+                        //Значение параметра;
+                        $values[] = $splits[$i];
+                    }
                 }
+                $this->_params = @array_combine($keys, $values);
             }
-            $this->_params = @array_combine($keys, $values);
         }
     }
 

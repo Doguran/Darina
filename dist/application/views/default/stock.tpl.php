@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="<?php echo TEMPLATE_PATH ?>css/main.css" rel="stylesheet">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css"/>
+    <meta name="description" content="<?php echo $this->seo_desc; ?>">
+    <meta name="keywords" content="<?php echo $this->keywords; ?>">
+    <title><?php echo $this->title; ?></title>
+</head>
+<body>
+<?php include("blocks/header.tpl.php"); ?>
+<div class="slider_area">
+    <div class="slider_active owl-carousel">
+        <div class="single_slider  d-flex align-items-center slider_bg_2 overlay">
+        </div>
+    </div>
+</div>
+<div class="container-fluid bg-light">
+    <nav aria-label="breadcrumb" class="container">
+        <ol class="breadcrumb bg-light">
+            <li class="breadcrumb-item"><a href="/">Главнвя</a></li>
+            <li class="breadcrumb-item"><a href="#">Ассортимент</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Darina<?php echo $this->name; ?></li>
+        </ol>
+    </nav>
+</div>
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 ">
+                <?php if(isset($this->stocks)): ?>
+                <?php foreach ($this->stocks as $val) : ?>
+                    <?php $class = $val["id"] == $this->id ? 'bg-primary text-white' : 'bg-light' ?>
+
+                        <div class="card mb-3 left-menu <?php echo $class; ?>">
+                            <div class="row no-gutters">
+                                <div class="col-lg-4">
+                                    <div class="blockimg-menu"
+                                         style="background-image: url(<?php echo TEMPLATE_PATH ?>img/<?php echo $val["img"]; ?>)">
+                                    </div>
+                                </div>
+                                <div class="col-lg-8">
+                                    <div class="card-body">
+                                        <a href="<?php echo HTTP_PATH ?>stock/<?php echo $val["url"]; ?>.html">
+                                            <h5 class="card-title"><span>Darina</span><?php echo $val["name"]; ?>
+                                            </h5>
+                                            <p class="small"><?php echo $val["anons"]; ?></p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                <?php endforeach; ?>
+                <?php endif ?>
+
+            </div>
+            <div class="col-md-8">
+                <p class="text-center"><span>Darina</span><?php echo $this->name; ?></p>
+                <h1 class="my-3 text-center"><?php echo $this->h1; ?></h1>
+                <h4 class="mt-3 mb-5 text-center"><?php echo $this->h2; ?></h4>
+                <?php echo $this->text; ?>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- footer start -->
+<?php include("blocks/footer.tpl.php"); ?>
+<script src="<?php echo TEMPLATE_PATH ?>js/main.js"></script>
+</body>
+</html>

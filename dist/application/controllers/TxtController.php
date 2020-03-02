@@ -13,7 +13,7 @@ class TxtController implements IController {
 
         $model = new FileModel();
 
-        $output = $model->render("index3.tpl.php");
+        $output = $model->render("stock.tpl.php");
         $fc->setBody($output);
     }
 
@@ -43,6 +43,9 @@ class TxtController implements IController {
         $output = $model->render("contact.tpl.php");
         $fc->setBody($output);
     }
+
+
+
 
 
     
