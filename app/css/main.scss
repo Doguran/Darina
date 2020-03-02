@@ -1371,3 +1371,24 @@ footer {
 .row-blog h5.card-title {
   font-weight: bold;
 }
+.contact-form-content {
+  position: relative;
+}
+.bg-form.form-contact {
+  background-color: #FD9801;
+  background-image: url(../img/bg2.jpg);
+  //background-size: cover;
+  background-position: center bottom ;
+  opacity: 1;
+}
+.concealed {
+  display: none;
+}
+.contact-form-content .form-control {
+  border: none;
+}
+.contact-details-content address {
+  border-left: 2px solid #FD9801;
+  padding-left: .625rem;
+  margin-bottom: 1.25rem;
+}

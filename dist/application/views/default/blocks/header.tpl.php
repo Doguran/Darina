@@ -19,10 +19,8 @@
                     <div class="col-xl-6 col-md-6">
                         <div class="short_contact_list">
                             <ul>
-                                <li><a href="#"> <i class="fa fa-envelope"></i>
-                                        info@darina.com.ru</a></li>
-                                <li><a href="#"> <i class="fa fa-phone"></i>
-                                        8-499-394-48-55</a></li>
+                                <li><a href="#"> <i class="fa fa-envelope"></i>info@darina.com.ru</a></li>
+                                <li><a href="tel:<?php echo Helper::telLink($_SESSION["contact"]["phone1"]) ?>"><i class="fa fa-phone"></i><?php echo $_SESSION["contact"]["phone1"]; ?></a></li>
                             </ul>
                         </div>
                     </div>

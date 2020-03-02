@@ -17,72 +17,108 @@ AIzaSyAhuMsVxskqJhgjXF7FZdX_QtIhAaOhLbY"></script>
         </div>
     </div>
 </div>
+
+<div class="container-fluid">
+    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A418055c6b347b77030b5c4ab0abbc127f63c5ff87d7ad5843efc211cd952c267&amp;width=100%25&amp;height=500&amp;lang=ru_RU&amp;"></script>
+</div>
 <div class="container-fluid bg-light">
     <nav aria-label="breadcrumb" class="container">
         <ol class="breadcrumb bg-light">
             <li class="breadcrumb-item"><a href="#">Главнвя</a></li>
-            <li class="breadcrumb-item"><a href="#">Блог</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Статья
-                блога
+            <li class="breadcrumb-item"><a href="#">Ассортимент</a></li>
+            <li class="breadcrumb-item active" aria-current="page">DarinaColor
             </li>
         </ol>
     </nav>
 </div>
-<div id="map"></div>
-<script>
-    // initMap() - функция инициализации карты
-    function initMap() {
-        // Координаты центра на карте. Широта: 56.2928515, Долгота: 43.7866641
-        var centerLatLng = new google.maps.LatLng(<?php echo $_SESSION["contact"]["maps"]; ?>);
-        // Обязательные опции с которыми будет проинициализированна карта
-        var mapOptions = {
-            center: centerLatLng, // Координаты центра мы берем из переменной centerLatLng
-            scaleControl: false,
-            scrollwheel: false,
-            disableDoubleClickZoom: false,
-            zoom: 17               // Зум по умолчанию. Возможные значения от 0 до 21
-        };
-        // Создаем карту внутри элемента #map
-        var map = new google.maps.Map(document.getElementById("map"), mapOptions);
-        // contentString - это переменная в которой хранится содержимое информационного окна.
-        // Может содержать, как HTML-код, так и обычный текст.
-        // Если используем HTML, то в этом случае у нас есть возможность стилизовать окно с помощью CSS.
-        var contentString = '<div class="infowindow">' +
-            '<h3>Lorem ipsum dolor</h3>' +
-            '<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, sed.</p>' +
-            '</div>';
-        // Создаем объект информационного окна и помещаем его в переменную infoWindow
-        var infoWindow = new google.maps.InfoWindow({
-            content: contentString
-        });
-        // Добавляем маркер
-        var marker = new google.maps.Marker({
-            position: centerLatLng,              // Координаты расположения маркера. В данном случае координаты нашего маркера совпадают с центром карты, но разумеется нам никто не мешает создать отдельную переменную и туда поместить другие координаты.
-            map: map,                            // Карта на которую нужно добавить маркер
-            title: "Текст всплывающей подсказки" // (Необязательно) Текст выводимый в момент наведения на маркер
-        });
-        // Отслеживаем клик по нашему маркеру
-        google.maps.event.addListener(marker, "click", function () {
-            // infoWindow.open - показывает информационное окно.
-            // Параметр map - это переменная содержащие объект карты (объявлена на 8 строке)
-            // Параметр marker - это переменная содержащие объект маркера (объявлена на 23 строке)
-            infoWindow.open(map, marker);
-        });
-        // Отслеживаем клик в любом месте карты
-        google.maps.event.addListener(map, "click", function () {
-            // infoWindow.close - закрываем информационное окно.
-            infoWindow.close();
-        });
-    }
-
-    // Ждем полной загрузки страницы, после этого запускаем initMap()
-    google.maps.event.addDomListener(window, "load", initMap);
-</script>
-<section>
+<section  class="pt-2 pb-6 mt-5">
     <div class="container">
+        <div class="row">
+            <div class="col-md-6 contact-details">
+                <div class="contact-details-content px-3">
 
+                    <?php if(isset($_GET["ok"])): ?>
+                        <div class="col">
+                            <div class="alert alert-success" role="alert"><?php echo $_GET["ok"] ?></div>
+                        </div>
+                    <?php endif ?>
+                    <?php if(isset($_GET["er"])): ?>
+                        <div class="col">
+                            <div class="alert alert-danger" role="alert"><?php echo $_GET["er"] ?></div>
+                        </div>
+                    <?php endif ?>
+
+                    <h1 class="mb-4">Свяжитесь с нами</h1>
+                    <h4 class="text-primary mb-4">Узнайте больше о компании DARINA</h4>
+                    <div class="tablet-column-75">
+                        <p>
+                            Пожалуйста, заполните нашу контактную форму, и один
+                            из наших менеджеров по обслуживанию клиентов
+                            свяжется с Вами.
+                        </p>
+                        <p>
+                            Мы ждем письма от Вас!
+                        </p>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 col-6">
+                            <address>
+                                <p class="pr-4"><?php echo $_SESSION["contact"]["address"]; ?></p><br>
+                                <span class="tel"><a href="tel:<?php echo Helper::telLink($_SESSION["contact"]["phone1"]) ?>"><?php echo $_SESSION["contact"]["phone1"]; ?></a></span><br>
+                                <span class="tel"><a href="tel:<?php echo Helper::telLink($_SESSION["contact"]["phone2"]) ?>"><?php echo $_SESSION["contact"]["phone2"]; ?></a></span><br>
+                                <a href="mailto:<?php echo $_SESSION["contact"]["email"]; ?>"><?php echo $_SESSION["contact"]["email"]; ?></a>
+                            </address>
+                        </div>
+                        <div class="col-md-12 col-6">
+                            <h5>Время работы:</h5>
+                            <p><?php echo $_SESSION["contact"]["mode"]; ?></p>
+                            <?php If (ADMIN) : ?>
+                                <div class="btn-toolbar mb-3 ml-auto">
+                                    <a href="/adminedittext/contacttext/" class="btn btn-sm btn-edit mr-4"><i class="fas fa-pencil-alt"></i></a>
+                                </div>
+                            <?php endif ?>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 contact-form">
+                <div class="contact-form-content">
+                    <div class="formwrapper">
+                    <form action="" id="contactform">
+                        <div class="form-group">
+                            <!--                            <label for="inputName">Имя</label>-->
+                            <input type="text" class="form-control form-control-lg" name="name" id="inputName" placeholder="Имя*">
+                            <input type="text" class="form-control d-none" name="url" id="InputUrl" placeholder="url">
+                        </div>
+                        <div class="form-group">
+                            <!--                            <label for="inputEmail">Электронная почта</label>-->
+                            <input type="text" class="form-control form-control-lg" name="email" id="inputEmail" placeholder="Email*">
+                        </div>
+                        <div class="form-group">
+                            <!--                            <label for="inputTel">Телефон</label>-->
+                            <input type="text" class="form-control form-control-lg" name="phone" id="inputPhone" placeholder="Телефон">
+                        </div>
+                        <div class="form-group">
+                            <!--                            <label for="inputText">Сообщение</label>-->
+                            <textarea class="form-control form-control-lg" id="inputText" name="text" rows="3" placeholder="Сообщение*"></textarea>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-sm-12 mt-3">
+                                <div class="alert alert-danger concealed" role="alert" id="contact-error"></div>
+                                <div class="alert alert-success concealed" role="alert" id="contact-success"></div>
+                            </div>
+                        </div>
+                        <button type="submit" id="send" class="btn boxed-btn3-white my-2">Отправить</button>
+                    </form>
+                    </div>
+                    <div class="bg-form form-contact rounded-sm"></div>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
+
+
 <!-- footer start -->
 <?php include("blocks/footer.tpl.php"); ?>
 <script src="<?php echo TEMPLATE_PATH ?>js/main.js"></script>

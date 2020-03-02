@@ -11,8 +11,7 @@
                             </a>
                         </div>
                         <p>
-                            Материалы для укладки травмобезопасных резиновых
-                            покрытий для спорта и игры.
+                            <?php echo $_SESSION["contact"]["footer"]; ?>
                         </p>
                         <div class="socail_links">
                             <ul>
@@ -67,11 +66,9 @@
                             Адрес
                         </h3>
                         <ul>
-                            <li>Московская обл., г. Одинцово,<br>ул.
-                                Железнодорожная, 19
-                            </li>
-                            <li>8-499-394-48-55</li>
-                            <li><a href="#"> info@darina.com.ru</a></li>
+                            <li><?php echo $_SESSION["contact"]["address"]; ?></li>
+                            <li><a href="tel:<?php echo Helper::telLink($_SESSION["contact"]["phone1"]) ?>"><?php echo $_SESSION["contact"]["phone1"]; ?></a></li>
+                            <li><a href="mailto:<?php echo $_SESSION["contact"]["email"]; ?>"><?php echo $_SESSION["contact"]["email"]; ?></a></li>
                         </ul>
                     </div>
                 </div>

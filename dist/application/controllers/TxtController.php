@@ -35,6 +35,14 @@ class TxtController implements IController {
         $fc->setBody($output);
     }
 
+    public function contactAction() {
+        $fc = FrontController::getInstance();
+
+        $model = new FileModel();
+
+        $output = $model->render("contact.tpl.php");
+        $fc->setBody($output);
+    }
 
 
     

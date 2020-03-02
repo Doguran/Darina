@@ -61,13 +61,13 @@ try{
 
     //стартуем сессию
     session_start();
-    if(!isset($_SESSION["cart"])){
-        $_SESSION["cart"] = array();
-    }
-
-//    if(!isset($_SESSION["contact"])){
-//        $_SESSION["contact"] = TextModel::getStaticContact();
+//    if(!isset($_SESSION["cart"])){
+//        $_SESSION["cart"] = array();
 //    }
+
+    if(!isset($_SESSION["contact"])){
+        $_SESSION["contact"] = TextModel::getStaticContact();
+    }
 
 
     if(Helper::checkAdmin())
