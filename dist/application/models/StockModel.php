@@ -18,11 +18,11 @@ class StockModel{
         return  $stmt->fetch(PDO::FETCH_ASSOC);
    }
 
-    public function getStocks(){
+    public static function getStaticStocks(){
 
-        $sql="SELECT id,img,name,anons,url
+        $sql="SELECT id,img,h1,name,anons,url
               FROM stock";
-        $stmt = $this->_db->query($sql);
+        $stmt = DBConnect::run()->query($sql);
         return  $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
 

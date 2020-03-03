@@ -32,29 +32,53 @@
     <div class="container">
         <div class="row">
             <div class="col-md-4 ">
-                <?php if(isset($this->stocks)): ?>
-                <?php foreach ($this->stocks as $val) : ?>
-                    <?php $class = $val["id"] == $this->id ? 'bg-primary text-white' : 'bg-light' ?>
+                <?php if(isset($_SESSION["stocks"])): ?>
+                <?php foreach ($_SESSION["stocks"] as $val) : ?>
+                    <?php if($val["id"] == $this->id) : ?>
 
-                        <div class="card mb-3 left-menu <?php echo $class; ?>">
-                            <div class="row no-gutters">
-                                <div class="col-lg-4">
-                                    <div class="blockimg-menu"
-                                         style="background-image: url(<?php echo TEMPLATE_PATH ?>img/<?php echo $val["img"]; ?>)">
+                            <div class="card mb-3 left-menu bg-primary text-white">
+                                <div class="row no-gutters">
+                                    <div class="col-lg-4">
+                                        <div class="blockimg-menu"
+                                             style="background-image: url(<?php echo TEMPLATE_PATH ?>img/<?php echo $val["img"]; ?>)">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <div class="card-body">
+
+                                                <h5 class="card-title"><span>Darina</span><?php echo $val["name"]; ?>
+                                                </h5>
+                                                <p class="small"><?php echo $val["anons"]; ?></p>
+
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-8">
-                                    <div class="card-body">
+                            </div>
+
+                        <?php else: ?>
+
+                            <div class="card mb-3 left-menu bg-light">
+                                <div class="row no-gutters">
+                                    <div class="col-lg-4">
+                                        <div class="blockimg-menu"
+                                             style="background-image: url(<?php echo TEMPLATE_PATH ?>img/<?php echo $val["img"]; ?>)">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-8">
                                         <a href="<?php echo HTTP_PATH ?>stock/<?php echo $val["url"]; ?>.html">
-                                            <h5 class="card-title"><span>Darina</span><?php echo $val["name"]; ?>
-                                            </h5>
-                                            <p class="small"><?php echo $val["anons"]; ?></p>
+                                            <div class="card-body">
+
+                                                <h5 class="card-title"><span>Darina</span><?php echo $val["name"]; ?>
+                                                </h5>
+                                                <p class="small"><?php echo $val["anons"]; ?></p>
+
+                                        </div>
                                         </a>
                                     </div>
                                 </div>
                             </div>
-                        </div>
 
+                    <?php endif ?>
                 <?php endforeach; ?>
                 <?php endif ?>
 

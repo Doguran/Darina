@@ -68,6 +68,9 @@ try{
     if(!isset($_SESSION["contact"])){
         $_SESSION["contact"] = TextModel::getStaticContact();
     }
+    if(!isset($_SESSION["stocks"])){
+        $_SESSION["stocks"] = StockModel::getStaticStocks();
+    }
 
 
     if(Helper::checkAdmin())

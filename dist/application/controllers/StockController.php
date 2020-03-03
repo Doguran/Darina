@@ -29,8 +29,6 @@ class StockController implements IController {
             $model->img         = $stock["img"];
             $model->text        = $stock["text"];
 
-            $model->stocks = $stockModel->getStocks();
-
             $output = $model->render("stock.tpl.php");
             $fc->setBody($output);
 

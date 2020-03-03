@@ -48,12 +48,11 @@
                                         <li><a href="#">Ассортимент <i
                                                         class="ti-angle-down"></i></a>
                                             <ul class="submenu">
-                                                <li><a href="/">Резиновая
-                                                        крошка</a></li>
-                                                <li><a href="/">Крошка ЭПДМ</a>
-                                                </li>
-                                                <li><a href="/">Окрашенная
-                                                        крошка</a></li>
+                                                <?php if(isset($_SESSION["stocks"])): ?>
+                                                <?php foreach ($_SESSION["stocks"] as $val) : ?>
+                                                        <li><a href="/stock/<?php echo $val["url"]; ?>.html"><?php echo $val["h1"]; ?></a></li>
+                                                <?php endforeach; ?>
+                                                <?php endif ?>
                                             </ul>
                                         </li>
                                         <li><a href="/">Контакты</a></li>

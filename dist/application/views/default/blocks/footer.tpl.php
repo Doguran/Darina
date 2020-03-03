@@ -53,10 +53,11 @@
                             Продукция
                         </h3>
                         <ul>
-                            <li><a href="#">Резиновая крошка</a></li>
-                            <li><a href="#">EPDM крошка</a></li>
-                            <li><a href="#">Клей для крошки</a></li>
-                            <li><a href="#">Сопутствующие товары</a></li>
+                            <?php if(isset($_SESSION["stocks"])): ?>
+                                <?php foreach ($_SESSION["stocks"] as $val) : ?>
+                                    <li><a href="/stock/<?php echo $val["url"]; ?>.html"><?php echo $val["h1"]; ?></a></li>
+                                <?php endforeach; ?>
+                            <?php endif ?>
                         </ul>
                     </div>
                 </div>

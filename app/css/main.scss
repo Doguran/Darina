@@ -1392,3 +1392,17 @@ footer {
   padding-left: .625rem;
   margin-bottom: 1.25rem;
 }
+.left-menu a {
+  color: inherit;
+  text-decoration: none;
+}
+.left-menu.bg-light:hover {
+  background-color: $primary !important;
+  @include transition($btn-transition);
+}
+.left-menu.bg-light:hover .card-body{
+  color: #fff;
+}
+.left-menu.bg-light:hover h5 span {
+  color: #000;
+}
