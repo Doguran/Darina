@@ -146,110 +146,26 @@
 </section>
 <section class="mt-5">
     <div class="container">
-        <div class="row">
-            <div class="col-md-6 col-lg-3">
-                <div class="card mb-4 text-white bg-dark card-slide1">
-                    <img class="card-img-top"
-                         src="<?php echo TEMPLATE_PATH ?>img/DarinaBase.jpg"
-                         alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title"><span>Darina</span>Base</h5>
-                        <p class="card-text">Переработанная резиновая крошка из
-                            шин SBR для применения в финишном и в базовом
-                            слое.</p>
-                        <a href="#"
-                           class="btn btn-outline-light btn-sm">Перейти</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-3">
-                <div class="card mb-4 text-white bg-dark card-slide1">
-                    <img class="card-img-top"
-                         src="<?php echo TEMPLATE_PATH ?>img/DarinaColor.jpg"
-                         alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title"><span>Darina</span>Color</h5>
-                        <p class="card-text">Крошка EPDM, используется в
-                            качестве верхнего слоя, слоя износа 15 доступных
-                            оттенков.</p>
-                        <a href="#"
-                           class="btn btn-outline-light btn-sm">Перейти</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-3">
-                <div class="card mb-4 text-white bg-dark card-slide2">
-                    <img class="card-img-top"
-                         src="<?php echo TEMPLATE_PATH ?>img/DarinaCoating.jpg"
-                         alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title"><span>Darina</span>Coating</h5>
-                        <p class="card-text">Цветная резиновая крошка из
-                            переработанных шин Доступна в различных цветах.</p>
-                        <a href="#"
-                           class="btn btn-outline-light btn-sm">Перейти</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-3">
-                <div class="card mb-4 text-white bg-dark card-slide2">
-                    <img class="card-img-top"
-                         src="<?php echo TEMPLATE_PATH ?>img/DarinaPU.jpg"
-                         alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title"><span>Darina</span>PU Binder</h5>
-                        <p class="card-text">Полиуретановое связующее для
-                            резиновой крошки? ЭПДМ, TPV и монтажа искуственной
-                            травы.</p>
-                        <a href="#"
-                           class="btn btn-outline-light btn-sm">Перейти</a>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <?php //Helper::print_arr($_SESSION["stocks"][0]);?>
         <div class="row justify-content-center">
-            <div class="col-md-6 col-lg-3">
-                <div class="card mb-4 text-white bg-dark card-slide3">
-                    <img class="card-img-top"
-                         src="<?php echo TEMPLATE_PATH ?>img/DarinaGrass.jpg"
-                         alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title"><span>Darina</span>Grass</h5>
-                        <p class="card-text">Искусственная трава для спорта и
-                            ландшафта, материалы для укладки.</p>
-                        <a href="#"
-                           class="btn btn-outline-light btn-sm">Перейти</a>
+            <?php if(isset($_SESSION["stocks"])): ?>
+                <?php foreach ($_SESSION["stocks"] as $val) : ?>
+                    <div class="col-md-6 col-lg-3 card-div">
+                        <div class="card mb-4 text-white bg-dark">
+                            <img class="card-img-top"
+                                 src="<?php echo TEMPLATE_PATH ?>img/<?php echo $val["img"]; ?>"
+                                 alt="<?php echo $val["h1"]; ?>">
+                            <div class="card-body">
+                                <h5 class="card-title"><span>Darina</span><?php echo $val["name"]; ?></h5>
+                                <p class="card-text"><?php echo $val["anons"]; ?></p>
+                                <a href="/stock/<?php echo $val["url"]; ?>.html"
+                                   class="btn btn-outline-light btn-sm">Перейти</a>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-3">
-                <div class="card mb-4 text-white bg-dark card-slide3">
-                    <img class="card-img-top"
-                         src="<?php echo TEMPLATE_PATH ?>img/DarinaEpdm.jpg"
-                         alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title"><span>Darina</span>Pigment</h5>
-                        <p class="card-text">Железоокисные, органические
-                            производства Чехия, Испания, Китай.</p>
-                        <a href="#"
-                           class="btn btn-outline-light btn-sm">Перейти</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-3">
-                <div class="card mb-4 text-white bg-dark card-slide3">
-                    <img class="card-img-top"
-                         src="<?php echo TEMPLATE_PATH ?>img/DarinaCoating.jpg"
-                         alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title"><span>Darina</span>Needs</h5>
-                        <p class="card-text">Сопутствующие материалы, скипидар,
-                            ручной инструмент.</p>
-                        <a href="#"
-                           class="btn btn-outline-light btn-sm">Перейти</a>
-                    </div>
-                </div>
-            </div>
+                <?php endforeach; ?>
+            <?php endif ?>
+
         </div>
     </div>
 </section>
@@ -360,11 +276,13 @@
                 $(".background-track").visible().addClass("effect2");
             }
             if ($(this).scrollTop() > 2500) {
-                $(".card-slide1").visible().addClass("effect3");
-                $(".card-slide2").visible().addClass("effect4");
+                $(".card-div:nth-child(1), .card-div:nth-child(2)").visible().addClass("effect3");
+                $(".card-div:nth-child(3), .card-div:nth-child(4)").visible().addClass("effect4");
             }
             if ($(this).scrollTop() > 3100) {
-                $(".card-slide3").visible().addClass("effect2");
+                $(".card-div:nth-child(5)").visible().addClass("effect3");
+                $(".card-div:nth-child(6)").visible().addClass("effect2");
+                $(".card-div:nth-child(7)").visible().addClass("effect4");
             }
             if ($(this).scrollTop() > 3700) {
                 $(".masonry").visible().addClass("effect2");
