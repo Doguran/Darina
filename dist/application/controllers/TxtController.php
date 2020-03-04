@@ -22,7 +22,7 @@ class TxtController implements IController {
 
         $model = new FileModel();
 
-        $output = $model->render("index4.tpl.php");
+        $output = $model->render("blog.tpl.php");
         $fc->setBody($output);
     }
 

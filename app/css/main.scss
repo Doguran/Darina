@@ -1406,3 +1406,11 @@ footer {
 .left-menu.bg-light:hover h5 span {
   color: #000;
 }
+p.anons::after {
+  background: #fff none repeat scroll 0 0;
+  box-shadow: -15px 5px 15px 15px #fff;
+  content: "";
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+}

@@ -9,7 +9,7 @@ class DBConnect {
              
             if (!isset(self::$_instance)) {
                 try {
-                    self::$_instance = new PDO(DB_CONN, DB_USER, DB_PASS,array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
+                    self::$_instance = new PDO(DB_CONN, DB_USER, DB_PASS,array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8, lc_time_names = 'ru_RU'"));
                     self::$_instance->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
                     
                 } catch (PDOException $e) {

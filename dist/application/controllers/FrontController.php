@@ -21,7 +21,10 @@ class FrontController {
         if(!empty($splits[1]) and substr($splits[1], -4) == 'html'){
             $this->_action = "showAction";
             $this->_params = array("url"=>substr($splits[1], 0, -5));
-        }else {
+        } elseif (!empty($splits[1]) and is_numeric($splits[1])) {
+            $this->_action = "showAction";
+            $this->_params = array("page"=>$splits[1]);
+        } else {
             $this->_action = !empty($splits[1]) ? $splits[1] . 'Action' : 'indexAction';
             //Есть ли параметры и их значения?
             if (!empty($splits[2])) {
