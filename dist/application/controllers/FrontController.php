@@ -13,8 +13,10 @@ class FrontController {
 
 
     private function __construct(){
-        $request = $_SERVER['REQUEST_URI'];
-        $splits = explode('/', trim($request,'/'));
+        $request = explode('?', trim($_SERVER['REQUEST_URI'],'?'));
+        //$request = $_SERVER['REQUEST_URI'];
+        $splits = explode('/', trim($request[0],'/'));
+        //$splits = explode('/', trim($request,'/'));
         //Какой сontroller использовать?
         $this->_controller = !empty($splits[0]) ? ucfirst($splits[0]).'Controller' : 'IndexController';
         //Какой action использовать?

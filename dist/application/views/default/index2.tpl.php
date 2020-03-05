@@ -114,7 +114,11 @@
             </div>
             <div class="col-md-6">
                 <?php echo $this->text2; ?>
+                <?php if(ADMIN):?>
+                    <a href="/adminedittext/main/" class="btn btn-primary">Редактировать страницу</a>
+                <?php endif;?>
             </div>
+
         </div>
     </div>
 </section>

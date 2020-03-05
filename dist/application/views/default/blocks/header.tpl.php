@@ -57,7 +57,11 @@
                                         </li>
                                         <li><a href="/">Контакты</a></li>
                                         <li><a href="/blog/1/">Блог</a></li>
-                                        <li><a href="/">Вход</a></li>
+                                        <?php if (isset($_SESSION["user"])) : ?>
+                                            <li><a href="/auth/logout/?url=<?php echo urlencode($_SERVER['REQUEST_URI']) ?>">Выход</a></li>
+                                        <?php else : ?>
+                                            <li><a href="#" id="auth_modal">Вход</a></li>
+                                        <?php endif ?>
                                     </ul>
                                 </nav>
                             </div>

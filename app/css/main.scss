@@ -4,6 +4,10 @@ $light: #F0F3F5;
 $headings-font-weight: 300;
 $lead-font-weight: 400;
 
+.btn-primary {
+  color: #FFFFFF !important;
+}
+
 @import "node_modules/bootstrap/scss/bootstrap";
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap&subset=cyrillic');
 
@@ -1069,7 +1073,7 @@ footer {
   padding: 35px;
   z-index: 2;
 }
-.form-slide{
+.form-slide, #ajax-loader, .error-message-modal, .success-message-modal{
   display: none;
 }
 .bg-form {
@@ -1441,5 +1445,7 @@ p.anons::after {
 .blog-list .list-group{
   background: rgba(255, 255, 255, .4);
 }
-
+.tab-content {
+  padding: 2rem 0 0;
+}
 

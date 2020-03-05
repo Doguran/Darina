@@ -31,7 +31,7 @@ class TxtController implements IController {
 
         $model = new FileModel();
 
-        $output = $model->render("index5.tpl.php");
+        $output = $model->render("adminindex.tpl.php");
         $fc->setBody($output);
     }
 
@@ -42,6 +42,11 @@ class TxtController implements IController {
 
         $output = $model->render("contact.tpl.php");
         $fc->setBody($output);
+    }
+
+
+    public function passAction() {
+        echo Helper::cryptoPass('***');
     }
 
 
