@@ -23,20 +23,20 @@ class BlogController implements IController {
 
     if(isset($params["url"])){
             
-        $art_id = Helper::clearData($params["id"],"i"); 
-                   
-        $ArtObj = new ArtModel();
-        $model->article_list = $ArtObj->getArtList();
-        $article = $ArtObj->getArt($art_id);
+        $url = Helper::clearData($params["url"]);
+
+        $post = $blogModel->getPost($url);
         
-        if(!$article) throw new Exception("Нет такой статьи");
+        if(!$post) throw new Exception("Нет такой статьи");
         
-        $model->h1 = $article["h1"];
-        $model->text = $article["text"];
-        $model->title = $article["title"];
-        $model->keywords = $article["keywords"];
-        $model->seo_desc = $article["description"];
-        $model->id = $art_id;
+        $model->h1 = $post["h1"];
+        $model->text = $post["text"];
+        $model->img = $post["img"];
+        $model->title = $post["title"];
+        $model->keywords = $post["keywords"];
+        $model->seo_desc = $post["seo_desc"];
+        $model->date_add = $post["date_add"];
+        $model->id = $post["id"];
 
             
      }elseif(isset($params["page"])){
@@ -46,7 +46,7 @@ class BlogController implements IController {
             throw new Exception("Нет параметра запроса");
         }
         
-        $pagination = new PaginationModel("blog", 1, $page);
+        $pagination = new PaginationModel("blog", 10, $page);
         
         $model->h1 = $model->title = $model->seo_desc = $model->keywords = $model->article_title.' страница '.$page;
         

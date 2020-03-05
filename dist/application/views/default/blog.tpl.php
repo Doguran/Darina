@@ -22,8 +22,13 @@
 <div class="container-fluid bg-light">
     <nav aria-label="breadcrumb" class="container">
         <ol class="breadcrumb bg-light">
-            <li class="breadcrumb-item"><a href="#">Главнвя</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Блог</li>
+            <li class="breadcrumb-item"><a href="/">Главнвя</a></li>
+            <?php if(isset($this->text)): ?>
+                <li class="breadcrumb-item"><a href="/blog/1/">Блог</a></li>
+                <li class="breadcrumb-item active" aria-current="page"><?php echo $this->h1; ?></li>
+            <?php else: ?>
+                <li class="breadcrumb-item active" aria-current="page">Блог</li>
+            <?php endif ?>
         </ol>
     </nav>
 </div>
@@ -68,15 +73,30 @@
 
                 <?php endif ?>
 
+                <?php if(isset($this->text)): ?>
+
+                <img src="<?php echo TEMPLATE_PATH ?>img/<?php echo $this->img; ?>" class="img-fluid"
+                     alt="<?php echo $this->h1; ?>">
+                    <div class="my-3 bg-light p-2"><i class="fas fa-calendar-alt text-primary"></i><span class="ml-2"><?php echo $this->date_add; ?></span></div>
+                <h1 class="my-5"><?php echo $this->h1; ?></h1>
+                <?php echo $this->text; ?>
+
+                <?php endif ?>
+
+
+
+
+
 
             </div>
-            <div class="col-md-4 ">
-                <div class="card">
+            <div class="col-md-4">
+                <div class="card blog-list">
                     <div class="card-body">
                         <h5 class="card-title">Последние новости</h5>
                     </div>
                     <ul class="list-group list-group-flush">
                         <?php foreach ($this->last_posts as $val) : ?>
+                        <?php if(isset($this->id) and $this->id == $val["id"]) continue; ?>
                             <li class="list-group-item"><a href="/blog/<?php echo $val["url"] ?>.html"><?php echo $val["h1"] ?></a></li>
                         <?php endforeach; ?>
                     </ul>

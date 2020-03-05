@@ -350,7 +350,7 @@ header ul {
 
 .header-area .header-top_area {
   padding: 12px 0;
-  background: rgba(44, 44, 44, 0.5);
+  background: rgba(71, 81, 83, 0.5);
 }
 
 @media (max-width: 767px) {
@@ -1414,3 +1414,32 @@ p.anons::after {
   height: 10px;
   width: 10px;
 }
+.blog-list li a {
+  color: #000;
+  font-size: 18px;
+}
+.blog-list h5 {
+  color: #fff;
+}
+.blog-list .card-body{
+  background: rgba(71, 81, 83, .3);
+  //background-image: url(../img/polosa2.jpg);
+  //background-size: cover;
+}
+.blog-list .list-group-flush .list-group-item {
+  border: none;
+  background: transparent;
+}
+.card.blog-list  {
+  //background: #fd9801;
+  //background-image: url(../img/bg2.jpg);
+  background-image: url(../img/team-bg3.jpg);
+  background-size: cover;
+  border: none;
+}
+
+.blog-list .list-group{
+  background: rgba(255, 255, 255, .4);
+}
+
+

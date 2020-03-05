@@ -56,14 +56,7 @@
                                             </ul>
                                         </li>
                                         <li><a href="/">Контакты</a></li>
-                                        <li><a href="#">Блог <i
-                                                        class="ti-angle-down"></i></a>
-                                            <ul class="submenu">
-                                                <li><a href="/">ссылка1</a></li>
-                                                <li><a href="/">ссылка2</a></li>
-                                                <li><a href="/">ссылка3</a></li>
-                                            </ul>
-                                        </li>
+                                        <li><a href="/blog/1/">Блог</a></li>
                                         <li><a href="/">Вход</a></li>
                                     </ul>
                                 </nav>
