@@ -22,9 +22,9 @@
                         <div class="slider_text">
                             <h3> <?php echo $this->h1; ?> </h3>
                             <div class="video_service_btn">
-                                <a href="#" class="boxed-btn3">Полный
+                                <a href="/stock/<?php echo $_SESSION["stocks"][0]['url']; ?>.html" class="boxed-btn3">Полный
                                     ассортимент и цены</a>
-                                <a href="#" class="boxed-btn3-white"> <i
+                                <a href="/stock/<?php echo $_SESSION["stocks"][0]['url']; ?>.html" class="boxed-btn3-white"> <i
                                             class="fa fa-play"></i>
                                     Узнать больше</a>
                             </div>
@@ -157,7 +157,7 @@
                     <div class="col-md-6 col-lg-3 card-div">
                         <div class="card mb-4 text-white bg-dark">
                             <img class="card-img-top"
-                                 src="<?php echo TEMPLATE_PATH ?>img/<?php echo $val["img"]; ?>"
+                                 src="/images/<?php echo $val["img"]; ?>"
                                  alt="<?php echo $val["h1"]; ?>">
                             <div class="card-body">
                                 <h5 class="card-title"><span>Darina</span><?php echo $val["name"]; ?></h5>
@@ -233,24 +233,7 @@
                                 alt="alt"></a>
                 </div>
             </div>
-            <!--        <div class="review">-->
-            <!--            <div class="row my-5">-->
-            <!--                <div class="col d-flex justify-content-center">-->
-            <!--                    <img src="-->
-            <?php //echo TEMPLATE_PATH ?><!--img/Depositphotos_626472.jpg" alt="" class="rounded-circle img-fluid">-->
-            <!--                </div>-->
-            <!--            </div>-->
-            <!--            <div class="row my-3 justify-content-center ">-->
-            <!--                <div class="col-md-6 text-center">-->
-            <!--                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur fugiat laudantium nulla numquam officiis quod sint. Dolores doloribus dolorum minima molestias quod, unde! Autem delectus doloribus eaque in reiciendis tempora.</p>-->
-            <!--                </div>-->
-            <!--            </div>-->
-            <!--            <div class="row my-3">-->
-            <!--                <div class="col text-center">-->
-            <!--                    <strong>Василий Федоров</strong>-->
-            <!--                </div>-->
-            <!--            </div>-->
-            <!--        </div>-->
+
         </div>
     </div>
 </div>

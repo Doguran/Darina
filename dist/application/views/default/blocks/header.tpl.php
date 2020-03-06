@@ -55,7 +55,7 @@
                                                 <?php endif ?>
                                             </ul>
                                         </li>
-                                        <li><a href="/">Контакты</a></li>
+                                        <li><a href="/contact/">Контакты</a></li>
                                         <li><a href="/blog/1/">Блог</a></li>
                                         <?php if (isset($_SESSION["user"])) : ?>
                                             <li><a href="/auth/logout/?url=<?php echo urlencode($_SERVER['REQUEST_URI']) ?>">Выход</a></li>

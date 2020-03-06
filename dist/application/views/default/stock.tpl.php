@@ -61,7 +61,7 @@
                                 <div class="row no-gutters">
                                     <div class="col-lg-4">
                                         <div class="blockimg-menu"
-                                             style="background-image: url(<?php echo TEMPLATE_PATH ?>img/<?php echo $val["img"]; ?>)">
+                                             style="background-image: url(/images/<?php echo $val["img"]; ?>)">
                                         </div>
                                     </div>
                                     <div class="col-lg-8">
@@ -84,6 +84,12 @@
 
             </div>
             <div class="col-md-8">
+                <?php if(ADMIN):?>
+                <div class="bg-light p-3 mb-5">
+                    <a href="/adminstock/show/url/<?php echo $this->url; ?>/"><i class="fas fa-edit"></i> Редактировать</a>
+                    <a href="/adminstock/delete/id/<?php echo $this->id; ?>/" onclick="return confirm('Действительно удалить?');" class="float-right"><i class="fas fa-times"></i> Удалить</a>
+                </div>
+                <?php endif;?>
                 <p class="text-center"><span>Darina</span><?php echo $this->name; ?></p>
                 <h1 class="my-3 text-center"><?php echo $this->h1; ?></h1>
                 <h4 class="mt-3 mb-5 text-center"><?php echo $this->h2; ?></h4>

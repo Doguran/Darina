@@ -12,7 +12,7 @@ class AdminedittextModel{
         
     }
     
-    public function editContact($phone1,$phone2,$address,$email,$mode,$footer,$maps){
+    public function editContact($phone1,$phone2,$address,$email,$mode,$footer){
         
         $phone1 = $this->_db->quote($phone1);
         $phone2 = $this->_db->quote($phone2);
@@ -20,7 +20,7 @@ class AdminedittextModel{
         $mode = $this->_db->quote($mode);
         $address = $this->_db->quote($address);
         $footer = $this->_db->quote($footer);
-        $maps = $this->_db->quote($maps);
+
         
         $sql="UPDATE contact
                 SET mode=$mode,
@@ -28,8 +28,7 @@ class AdminedittextModel{
                     email=$email,
                     phone1=$phone1,
                     phone2=$phone2,
-                    footer=$footer,
-                    maps=$maps";
+                    footer=$footer";
         return $this->_db->exec($sql); 
                 
     }

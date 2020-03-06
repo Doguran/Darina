@@ -40,10 +40,10 @@
                             Меню
                         </h3>
                         <ul>
-                            <li><a href="#">Главная</a></li>
-                            <li><a href="#">Ассортимент</a></li>
-                            <li><a href="#">Контакты</a></li>
-                            <li><a href="#">Блог</a></li>
+                            <li><a href="/">Главная</a></li>
+                            <li><a href="/stock/<?php echo $_SESSION["stocks"][0]['url']; ?>.html">Ассортимент</a></li>
+                            <li><a href="/contact/">Контакты</a></li>
+                            <li><a href="/blog/1/">Блог</a></li>
                         </ul>
                     </div>
                 </div>

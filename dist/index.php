@@ -14,17 +14,20 @@ define('DOCROOT', realpath(dirname(__FILE__)) . DIRECTORY_SEPARATOR);
 $controllers = 'application/controllers';
 $models = 'application/models';
 $views = 'application/views/'.TEMPLATE;
+$toolkit = 'application/image-toolkit';
 
 define('CONTROLLERSPATH', realpath(DOCROOT . $controllers) . DIRECTORY_SEPARATOR);
 define('MODELSPATH', realpath(DOCROOT . $models) . DIRECTORY_SEPARATOR);
 define('VIEWSPATH', realpath(DOCROOT . $views) . DIRECTORY_SEPARATOR);
+define('IMAGETOOLKIT', realpath(DOCROOT . $toolkit) . DIRECTORY_SEPARATOR);
 
 
 /* Пути по-умолчанию для поиска файлов */
 set_include_path(get_include_path()
                  .PATH_SEPARATOR.$controllers
                  .PATH_SEPARATOR.$models
-                 .PATH_SEPARATOR.$views);
+                 .PATH_SEPARATOR.$views
+                 .PATH_SEPARATOR.$toolkit);
 
 unset($controllers, $models, $views);
 
@@ -40,7 +43,8 @@ function __autoload($class){
 
     $path = array(CONTROLLERSPATH.$class.'.php',
       MODELSPATH.$class.'.php',
-      VIEWSPATH.$class.'.php');
+      VIEWSPATH.$class.'.php',
+      IMAGETOOLKIT.$class.'.php');
 
     $found = false;
     foreach ($path as $file) {
@@ -71,6 +75,8 @@ try{
     if(!isset($_SESSION["stocks"])){
         $_SESSION["stocks"] = StockModel::getStaticStocks();
     }
+
+
 
 
     if(Helper::checkAdmin())
