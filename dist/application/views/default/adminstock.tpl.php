@@ -8,7 +8,7 @@
     <link rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css"/>
     <script type="text/javascript" src="<?php echo HTTP_PATH ?>ckeditor/ckeditor.js"></script>
-    <title>Редпктирование главной страницы</title>
+    <title><?php echo $this->adminH1; ?></title>
 </head>
 <body>
 <?php include("blocks/header.tpl.php"); ?>
@@ -22,8 +22,8 @@
 <div class="container-fluid bg-light">
     <nav aria-label="breadcrumb" class="container">
         <ol class="breadcrumb bg-light">
-            <li class="breadcrumb-item"><a href="#">Главнвя</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Редактирование
+            <li class="breadcrumb-item"><a href="#">Главная</a></li>
+            <li class="breadcrumb-item active" aria-current="page"><?php echo $this->adminH1; ?>
             </li>
         </ol>
     </nav>
@@ -32,9 +32,17 @@
 
     <div class="container">
 
-        <div class="container">
+        <?php if(isset($_GET["er"])) $this->er = $_GET["er"] ?>
+        <?php if(!empty($this->er)) : ?>
+            <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                <?php echo $this->er; ?>
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+        <?php endif; ?>
 
-            <form method="post" action="/adminarticle/main/" id="artForm" enctype="multipart/form-data">
+            <form method="post" action="/adminstock/<?php echo $this->action; ?>/" id="artForm" enctype="multipart/form-data">
 
 
                 <ul class="nav nav-tabs" role="tablist">
@@ -106,12 +114,23 @@
 
                     </div>
                     <div id="tabs-2" class="tab-pane fade" role="tabpanel" aria-labelledby="tabs-2-tab">
+                        Url: <br />
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><?php echo HTTP_PATH ?>stock/</span>
+                            </div>
+                            <input type="text" class="form-control" value="<?php echo $this->url ?>" name="url">
+                            <div class="input-group-append">
+                                <span class="input-group-text">.html</span>
+                            </div>
+                        </div>
                         <br />
                         Title: <br /><input class="form-control" type="text" value="<?php echo $this->title ?>" name="title"><br />
                         Keywords: <br /><textarea class="form-control" name="keywords"><?php echo $this->keywords ?></textarea><br />
                         Description: <br /><textarea class="form-control" name="seo_desc"><?php echo $this->seo_desc ?></textarea><br /><br />
                         <input type="hidden" value="<?php echo $this->id ?>" name='id'>
                         <input type="hidden" value="<?php echo $this->img ?>" name='img'>
+                        <input type="hidden" value="<?php echo $this->url ?>" name='oldurl'>
                     </div>
                 </div>
 
@@ -123,7 +142,7 @@
 
             </form>
 
-        </div>
+
 
     </div>
 
@@ -131,65 +150,5 @@
 <!-- footer start -->
 <?php include("blocks/footer.tpl.php"); ?>
 <script src="<?php echo TEMPLATE_PATH ?>js/main.js"></script>
-<script>
-
-    var articleSend = {
-        message: null,
-        init: function () {
-            $('#artForm').submit(function (e) {
-                e.preventDefault();
-                CKEDITOR.instances.editor1.updateElement();
-                CKEDITOR.instances.editor2.updateElement();
-                if (articleSend.validate()) {
-                    $('.contact-message').html("");
-                    $.ajax({
-                        url: '/adminedittext/main/',
-                        data: $('#artForm').serialize(),
-                        type: 'post',
-                        cache: false,
-                        dataType: 'json',
-                        beforeSend: function () {
-                            $('.btn-add').val('Ждите..');
-                        },
-                        complete: function () {
-                            $('.btn-add').val('Отправить');
-                        },
-                        success: function (data) {
-                            if (data["success"]) {
-                                window.location = "/";
-
-                            } else {
-                                $('.contact-message').fadeIn().html(data["msg"])
-                            }
-                        },
-                        error: articleSend.error
-                    })
-                } else {
-                    $('.contact-message').fadeIn().html(articleSend.message)
-                }
-            })
-        },
-        error: function (xhr) {
-            alert(xhr.statusText)
-        },
-        validate: function () {
-            articleSend.message = '';
-            var valid = true;
-            var txt = $('#editor1').val();
-            var txt2 = $('#editor2').val();
-            var h1 = $('input[name=h1]').val();
-            var h2 = $('input[name=h2]').val();
-            if (!txt || !txt2 || !h1 || !h2) {
-                valid = false
-            }
-            if (!valid) {
-                articleSend.message = 'Проверьте поля формы';
-            }
-            return valid
-        }
-
-    };
-    articleSend.init();
-</script>
 </body>
 </html>

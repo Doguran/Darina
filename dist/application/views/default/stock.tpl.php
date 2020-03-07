@@ -32,6 +32,9 @@
     <div class="container">
         <div class="row">
             <div class="col-md-4 ">
+                <?php if(ADMIN): ?>
+                <a href="/adminstock/add/" class="btn btn-primary w-100 mb-3">Добавить</a>
+                <?php endif ?>
                 <?php if(isset($_SESSION["stocks"])): ?>
                 <?php foreach ($_SESSION["stocks"] as $val) : ?>
                     <?php if($val["id"] == $this->id) : ?>
@@ -40,7 +43,7 @@
                                 <div class="row no-gutters">
                                     <div class="col-lg-4">
                                         <div class="blockimg-menu"
-                                             style="background-image: url(<?php echo TEMPLATE_PATH ?>img/<?php echo $val["img"]; ?>)">
+                                             style="background-image: url(<?php echo HTTP_PATH ?>images/<?php echo $val["img"]; ?>)">
                                         </div>
                                     </div>
                                     <div class="col-lg-8">
@@ -87,7 +90,7 @@
                 <?php if(ADMIN):?>
                 <div class="bg-light p-3 mb-5">
                     <a href="/adminstock/show/url/<?php echo $this->url; ?>/"><i class="fas fa-edit"></i> Редактировать</a>
-                    <a href="/adminstock/delete/id/<?php echo $this->id; ?>/" onclick="return confirm('Действительно удалить?');" class="float-right"><i class="fas fa-times"></i> Удалить</a>
+                    <a href="/adminstock/delete/url/<?php echo $this->url; ?>/" onclick="return confirm('Действительно удалить?');" class="float-right"><i class="fas fa-times"></i> Удалить</a>
                 </div>
                 <?php endif;?>
                 <p class="text-center"><span>Darina</span><?php echo $this->name; ?></p>

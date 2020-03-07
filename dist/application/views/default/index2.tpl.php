@@ -270,6 +270,7 @@
                 $(".card-div:nth-child(5)").visible().addClass("effect3");
                 $(".card-div:nth-child(6)").visible().addClass("effect2");
                 $(".card-div:nth-child(7)").visible().addClass("effect4");
+                $(".card-div:nth-child(n+8)").visible().addClass("effect4");
             }
             if ($(this).scrollTop() > 3700) {
                 $(".masonry").visible().addClass("effect2");
