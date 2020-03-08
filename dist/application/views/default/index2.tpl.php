@@ -177,40 +177,21 @@
     <div class="container-fluid">
         <div class="row">
             <div class="masonry">
-                <div class="item"><a data-fancybox="gallery"
-                                     href="<?php echo HTTP_PATH ?>images/IMG-20190902-WA0008.jpg"><img
-                                src="<?php echo HTTP_PATH ?>images/JPEG/IMG-20190902-WA0008.jpg"
-                                alt="alt"></a></div>
-                <div class="item"><a data-fancybox="gallery"
-                                     href="<?php echo HTTP_PATH ?>images/IMG-20190723-WA0005.jpg"><img
-                                src="<?php echo HTTP_PATH ?>images/JPEG/IMG-20190723-WA0005.jpg"
-                                alt="alt"></a></div>
-                <div class="item"><a data-fancybox="gallery"
-                                     href="<?php echo HTTP_PATH ?>images/IMG-20190611-WA0003.jpg"><img
-                                src="<?php echo HTTP_PATH ?>images/JPEG/IMG-20190611-WA0003.jpg"
-                                alt="alt"></a></div>
-                <div class="item"><a data-fancybox="gallery"
-                                     href="<?php echo HTTP_PATH ?>images/IMG-20190110-WA0011.jpg"><img
-                                src="<?php echo HTTP_PATH ?>images/JPEG/IMG-20190110-WA0011.jpg"
-                                alt="alt"></a></div>
-                <div class="item"><a data-fancybox="gallery"
-                                     href="<?php echo HTTP_PATH ?>images/IMG-20180810-WA0002.jpg"><img
-                                src="<?php echo HTTP_PATH ?>images/JPEG/IMG-20180810-WA0002.jpg"
-                                alt="alt"></a></div>
-                <div class="item"><a data-fancybox="gallery"
-                                     href="<?php echo HTTP_PATH ?>images/IMG-20180819-WA0000.jpg"><img
-                                src="<?php echo HTTP_PATH ?>images/JPEG/IMG-20180819-WA0000.jpg"
-                                alt="alt"></a></div>
-                <div class="item"><a data-fancybox="gallery"
-                                     href="<?php echo HTTP_PATH ?>images/IMG-20180819-WA0005.jpg"><img
-                                src="<?php echo HTTP_PATH ?>images/JPEG/IMG-20180819-WA0005.jpg"
-                                alt="alt"></a></div>
-                <div class="item"><a data-fancybox="gallery"
-                                     href="<?php echo HTTP_PATH ?>images/IMG-20180819-WA0003.jpg"><img
-                                src="<?php echo HTTP_PATH ?>images/JPEG/IMG-20180819-WA0003.jpg"
-                                alt="alt"></a></div>
+                <?php if(isset($this->gallery)): ?>
+                    <?php foreach ($this->gallery as $val) : ?>
+                        <div class="item"><a data-fancybox="gallery"
+                                             href="<?php echo HTTP_PATH ?>images/<?php echo $val["img"]; ?>"><img
+                                        src="<?php echo HTTP_PATH ?>images/sm-<?php echo $val["img"]; ?>"
+                                        alt="alt"></a></div>
+                    <?php endforeach; ?>
+                <?php endif ?>
             </div>
         </div>
+        <?php if(ADMIN):?>
+            <div class="text-center mt-5">
+                <a href="/admingallery/" class="btn btn-primary">добавить/удалить</a>
+            </div>
+        <?php endif; ?>
     </div>
 </section>
 <div class="container-fluid">

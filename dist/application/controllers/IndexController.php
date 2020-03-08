@@ -11,6 +11,9 @@ class IndexController implements IController {
         $reviewModel = new ReviewModel();
         $model->review = $reviewModel->getReview();
 
+        $galleryModel= new GalleryModel();
+        $model->gallery = $galleryModel->getGallery();
+
         $model->title = $arrText["title"];
         $model->seo_desc = $arrText["seo_desc"];
         $model->keywords = $arrText["keywords"];

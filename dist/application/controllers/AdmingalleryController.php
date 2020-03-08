@@ -1,5 +1,5 @@
 <?php
-class AdminreviewController implements IController {
+class AdmingalleryController implements IController {
     
 	public function __construct(){
         
@@ -17,10 +17,10 @@ public function indexAction() {
         
         $model = new FileModel();
 
-        $reviewModel = new ReviewModel();
-        $model->images = $reviewModel->getReview();
-        $model->h1 = 'НАС РЕКОМЕНДУЮТ';
-        $model->controller = 'review';
+        $galleryModel = new GalleryModel();
+        $model->images =  $galleryModel->getGallery();
+        $model->h1 = 'Галерея';
+        $model->controller = 'gallery';
 
         
         //выводим все
@@ -41,30 +41,26 @@ public function indexAction() {
 
             $img = AcImage::createImage('images/'.$file);
 
-            if($img->getWidth() >=  $img->getHeight()){
-                $img->resizeByWidth(500);
-            }else{
-                $img->resizeByWidth(350);
-            }
+            $img->resizeByWidth(480);
 
-            //$img->cropCenter('2pr', '1pr');
+            $img->cropCenter('480px', '270px');
             $img->save('images/sm-'.$file);
 
-            $AdminreviewModel = new AdminreviewModel();
-            $res = $AdminreviewModel->insert($file);
+            $AdmingalleryModel = new AdmingalleryModel();
+            $res = $AdmingalleryModel->insert($file);
 
             if(!$res) throw new Exception('Ошибка добавления в базу');
-            header("Location: /adminreview/");
+            header("Location: /admingallery/");
 
 
         } catch (Exception $e) {
 
             $fc = FrontController::getInstance();
             $model = new FileModel();
-            $reviewModel = new ReviewModel();
-            $model->review = $reviewModel->getReview();
-            $model->h1 = 'НАС РЕКОМЕНДУЮТ';
-            $model->controller = 'review';
+            $galleryModel = new GalleryModel();
+            $model->images =  $galleryModel->getGallery();
+            $model->h1 = 'Галерея';
+            $model->controller = 'gallery';
             $model->er = $e->getMessage();
 
             //выводим все
@@ -84,15 +80,15 @@ public function indexAction() {
 
             $id = Helper::clearData($params["id"], "i");
 
-            $AdminreviewModel = new AdminreviewModel();
-            $kartinka = $AdminreviewModel->getIllustration($id);
+            $AdmingalleryModel = new AdmingalleryModel();
+            $kartinka = $AdmingalleryModel->getIllustration($id);
             if(!empty($kartinka)){
                 @unlink("images/".$kartinka);
                 @unlink("images/sm-".$kartinka);
             }
-            $AdminreviewModel->delete($id);
+            $AdmingalleryModel->delete($id);
 
-            header("Location: /adminreview/");
+            header("Location: /admingallery/");
 
         }else{
             throw new Exception("Нет параметров");

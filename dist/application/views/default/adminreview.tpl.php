@@ -41,7 +41,7 @@
             </div>
         <?php endif; ?>
 
-            <form method="post" action="/adminreview/insert/" id="artForm" enctype="multipart/form-data">
+            <form method="post" action="/admin<?php echo $this->controller; ?>/insert/" id="artForm" enctype="multipart/form-data">
 
                 <div class="input-group">
                     <div class="custom-file">
@@ -49,7 +49,7 @@
                         <label class="custom-file-label" for="photo">Загрузка файла</label>
                     </div>
                     <div class="input-group-append">
-                        <button class="btn btn-primary" type="button" id="inputGroupFileAddon04">Оправить</button>
+                        <button class="btn btn-primary" type="submit" id="inputGroupFileAddon04">Оправить</button>
                     </div>
                 </div>
 
@@ -57,16 +57,16 @@
             </form>
 
         <div class="row mt-5">
-            <?php if(isset($this->review) and !empty($this->review)): ?>
-                <?php foreach ($this->review as $val): ?>
+            <?php if(isset($this->images) and !empty($this->images)): ?>
+                <?php foreach ($this->images as $val): ?>
 
-                        <div class="col-md-3 d-flex justify-content-center admin-img">
+                        <div class="col-md-3 mt-3 d-flex justify-content-center admin-img">
                             <a data-fancybox="comment"
                                href="/images/<?php echo $val["img"]; ?>"><img
                                         src="/images/sm-<?php echo $val["img"]; ?>"
                                         alt="" class="img-fluid"></a>
                             <div class="admin-link-table del"><a
-                                        href="/adminreview/delete/id/<?php echo $val["id"]; ?>/"
+                                        href="/admin<?php echo $this->controller; ?>/delete/id/<?php echo $val["id"]; ?>/"
                                         onclick="return confirm('Действительно удалить?');"><i
                                             class="fas fa-times fa-lg"></i></a></div>
                         </div>

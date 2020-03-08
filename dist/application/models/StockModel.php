@@ -21,7 +21,8 @@ class StockModel{
     public static function getStaticStocks(){
 
         $sql="SELECT id,h1,name,anons,url, IFNULL(img, 'DarinaDefault.jpg') AS img
-              FROM stock";
+              FROM stock
+              ORDER BY sort ASC";
         $stmt = DBConnect::run()->query($sql);
         return  $stmt->fetchAll(PDO::FETCH_ASSOC);
     }

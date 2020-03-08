@@ -1,5 +1,5 @@
 <?php
-class AdminreviewModel{
+class AdmingalleryModel{
     
     protected $_db;
     
@@ -15,7 +15,7 @@ class AdminreviewModel{
     public function getIllustration($id){
         $url = $this->_db->quote($id);
         $sql = "SELECT img
-                FROM  review
+                FROM  gallery
                 WHERE id = $id
                 LIMIT 1";
         $stmt = $this->_db->query($sql);
@@ -24,7 +24,7 @@ class AdminreviewModel{
     public function delIllustration($url){
         $url = $this->_db->quote($url);
 
-        $sql = "UPDATE review
+        $sql = "UPDATE gallery
                 SET img  = null
                 WHERE url = $url
                 LIMIT 1";
@@ -36,7 +36,7 @@ class AdminreviewModel{
 
     public function insert($file){
 
-        $sth = $this->_db->prepare("INSERT INTO review(img) VALUES(:img)");
+        $sth = $this->_db->prepare("INSERT INTO gallery(img) VALUES(:img)");
 
         return $sth->execute([
           ':img' => $file
@@ -46,7 +46,7 @@ class AdminreviewModel{
 
     public function delete($id){
         $id = $this->_db->quote($id);
-        $sql = "DELETE FROM review
+        $sql = "DELETE FROM gallery
             WHERE id = $id
             LIMIT 1";
         $this->_db->exec($sql);
