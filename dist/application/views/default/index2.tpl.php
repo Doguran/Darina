@@ -217,24 +217,26 @@
     <div class="container my-5 py-5 comment">
         <h2 class="text-center text-uppercase mb-5">Нас рекомендуют</h2>
         <div class="slick">
-            <div class="review">
-                <div class="col d-flex justify-content-center">
-                    <a data-fancybox="comment"
-                       href="<?php echo HTTP_PATH ?>images/1-1.jpg"><img
-                                src="<?php echo HTTP_PATH ?>images/sm-1-1.jpg"
-                                alt="alt"></a>
-                </div>
-            </div>
-            <div class="review">
-                <div class="col d-flex justify-content-center">
-                    <a data-fancybox="comment"
-                       href="<?php echo HTTP_PATH ?>images/2-2.jpg"><img
-                                src="<?php echo HTTP_PATH ?>images/sm-2-2.jpg"
-                                alt="alt"></a>
-                </div>
-            </div>
+            <?php if(isset($this->review) and !empty($this->review)): ?>
+                <?php foreach ($this->review as $val): ?>
+                        <div class="review">
+                            <div class="col d-flex justify-content-center">
+                                <a data-fancybox="comment"
+                                   href="/images/<?php echo $val["img"]; ?>"><img
+                                            src="/images/sm-<?php echo $val["img"]; ?>"
+                                            alt=""></a>
+                            </div>
+                        </div>
+                <?php endforeach; ?>
+            <?php endif; ?>
+
 
         </div>
+        <?php if(ADMIN):?>
+        <div class="text-center mt-5">
+            <a href="/adminreview/" class="btn btn-primary">добавить/удалить</a>
+        </div>
+        <?php endif; ?>
     </div>
 </div>
 <!-- footer start -->

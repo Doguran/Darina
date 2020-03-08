@@ -8,6 +8,9 @@ class IndexController implements IController {
         $textModel = new TextModel();
         $arrText= $textModel->getText(1);
 
+        $reviewModel = new ReviewModel();
+        $model->review = $reviewModel->getReview();
+
         $model->title = $arrText["title"];
         $model->seo_desc = $arrText["seo_desc"];
         $model->keywords = $arrText["keywords"];

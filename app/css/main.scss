@@ -1449,3 +1449,20 @@ p.anons::after {
   padding: 2rem 0 0;
 }
 
+.admin-link-table.del{
+  position: absolute;
+  top: 10px;
+  bottom: 10px!important;
+  right: 30px;
+  display: none;
+}
+.admin-link-table.del a{
+ color: red;
+}
+.admin-img:hover .admin-link-table {
+  display: block;
+}
+.custom-file-label::after {
+  content: "Обзор";
+}
+
