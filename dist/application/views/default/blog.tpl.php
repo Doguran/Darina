@@ -37,8 +37,6 @@
         <div class="row row-blog">
             <div class="col-md-8">
 
-
-
                 <?php if(isset($this->article_all_list)): ?>
 
 
@@ -47,14 +45,21 @@
 
                         <div class="card mb-3">
                             <div style="position: relative">
-                                <img src="<?php echo TEMPLATE_PATH ?>img/<?php echo $val["img"] ?>"
+                                <img src="/images/<?php echo $val["img"] ?>"
                                      class="card-img-top" alt="<?php echo $val["h1"] ?>">
                                 <div class="blog_item_date">
                                     <p><?php echo $val["date_d"] ?></p>
                                     <p><?php echo $val["date_m"] ?></p>
                                 </div>
+
                             </div>
                             <div class="card-body mt-4">
+                                <?php if(ADMIN):?>
+                                    <div class="bg-light p-3 mb-3">
+                                        <a href="/adminblog/show/url/<?php echo $val["url"] ?>/"><i class="fas fa-edit"></i> Редактировать</a>
+                                        <a href="/adminblog/delete/url/<?php echo $val["url"] ?>/" onclick="return confirm('Действительно удалить?');" class="float-right"><i class="fas fa-times"></i> Удалить</a>
+                                    </div>
+                                <?php endif;?>
                                 <a href="/blog/<?php echo $val["url"] ?>.html"><h5 class="card-title"><?php echo $val["h1"] ?></h5></a>
                                 <p class="card-text anons"><?php echo strip_tags($val["text"]); ?></p>
                                 <p class="card-text"><a href="/blog/<?php echo $val["url"] ?>.html">Далее...</a></p>
@@ -74,9 +79,15 @@
                 <?php endif ?>
 
                 <?php if(isset($this->text)): ?>
-
-                <img src="<?php echo TEMPLATE_PATH ?>img/<?php echo $this->img; ?>" class="img-fluid"
+                    <?php if(ADMIN):?>
+                        <div class="bg-light p-3">
+                            <a href="/adminblog/show/url/<?php echo $this->url; ?>/"><i class="fas fa-edit"></i> Редактировать</a>
+                            <a href="/adminblog/delete/url/<?php echo $this->url; ?>/" onclick="return confirm('Действительно удалить?');" class="float-right"><i class="fas fa-times"></i> Удалить</a>
+                        </div>
+                    <?php endif;?>
+                <img src="/images/<?php echo $this->img; ?>" class="img-fluid card-img-top"
                      alt="<?php echo $this->h1; ?>">
+
                     <div class="my-3 bg-light p-2"><i class="fas fa-calendar-alt text-primary"></i><span class="ml-2"><?php echo $this->date_add; ?></span></div>
                 <h1 class="my-5"><?php echo $this->h1; ?></h1>
                 <?php echo $this->text; ?>
@@ -90,6 +101,9 @@
 
             </div>
             <div class="col-md-4">
+                <?php if(ADMIN): ?>
+                    <a href="/adminblog/add/" class="btn btn-primary w-100 mb-3">Добавить</a>
+                <?php endif ?>
                 <div class="card blog-list">
                     <div class="card-body">
                         <h5 class="card-title">Последние новости</h5>

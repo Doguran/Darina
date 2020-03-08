@@ -20,7 +20,7 @@ class BlogModel{
 
     public function getPost($url){
         $url = $this->_db->quote($url);
-        $sql="SELECT id,title,seo_desc,keywords,img,h1,text,url,DATE_FORMAT(date_add, '%d.%m.%y') AS date_add
+        $sql="SELECT id,title,seo_desc,keywords,IFNULL(img, 'BlogDefault.jpg') AS img,h1,text,url,DATE_FORMAT(date_add, '%d.%m.%y') AS date_add
               FROM blog
               WHERE url = $url";
         $stmt = $this->_db->query($sql);

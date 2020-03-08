@@ -24,7 +24,7 @@ class PaginationModel {
         $start = $this->openPage * $resultPerPage - $resultPerPage;
         $end = $resultPerPage;
         
-        $sql="SELECT url, img, h1, LEFT(text,200) AS text, DATE_FORMAT(date_add, '%e') AS date_d, DATE_FORMAT(date_add, '%M') AS date_m FROM $table ORDER BY date_add DESC LIMIT $start,$end";
+        $sql="SELECT url, IFNULL(img, 'BlogDefault.jpg') AS img, h1, LEFT(text,200) AS text, DATE_FORMAT(date_add, '%e') AS date_d, DATE_FORMAT(date_add, '%M') AS date_m FROM $table ORDER BY date_add DESC LIMIT $start,$end";
         $stmt = $this->_db->query($sql); 
         $this->resultpage = $stmt->fetchAll(PDO::FETCH_ASSOC);
         

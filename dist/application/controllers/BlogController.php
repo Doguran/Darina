@@ -37,6 +37,7 @@ class BlogController implements IController {
         $model->seo_desc = $post["seo_desc"];
         $model->date_add = $post["date_add"];
         $model->id = $post["id"];
+        $model->url = $post["url"];
 
             
      }elseif(isset($params["page"])){
