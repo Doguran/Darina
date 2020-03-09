@@ -7,6 +7,7 @@
 //= ../../node_modules/slick-carousel/slick/slick.js
 //= control-modal-b4.js
 //= auth-modal.js
+//= phone-modal.js
 //= jquery.slicknav.min.js
 
 

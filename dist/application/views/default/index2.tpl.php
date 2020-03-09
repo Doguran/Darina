@@ -41,12 +41,21 @@
                                         ответят вам в ближайшее время
                                     </div>
                                 </div>
-                                <form action="#">
+                                <form action="#" id="zakazform">
                                     <input class="form-control my-3" type="text"
-                                           placeholder="Имя">
+                                           placeholder="Имя" name="name" id="zakazName">
                                     <input class="form-control my-2" type="text"
-                                           placeholder="Телефон">
-                                    <button type="submit"
+                                           placeholder="Телефон" name="phone" id="zakazPhone">
+                                    <input type="text" class="form-control d-none" name="url"
+                                           placeholder="url">
+                                    <input type="hidden" name="subject" value="Заявка на бесплатную консультацию и составление сметы">
+                                    <input type="hidden" name="email">
+                                    <input type="hidden" name="text">
+                                    <div class="mt-3">
+                                        <div class="alert alert-danger concealed" role="alert" id="zakaz-error"></div>
+                                        <div class="alert alert-success concealed" role="alert" id="zakaz-success"></div>
+                                    </div>
+                                    <button type="submit" id="send-zakaz"
                                             class="btn btn-primary my-2 w-100">
                                         Отправить заявку
                                     </button>
@@ -223,6 +232,7 @@
 <!-- footer start -->
 <?php include("blocks/footer.tpl.php"); ?>
 <script src="<?php echo TEMPLATE_PATH ?>js/main.js"></script>
+<script src="<?php echo TEMPLATE_PATH ?>js/zakaz.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js"></script>
 <script>
     $(document).ready(function () {

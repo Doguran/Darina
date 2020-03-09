@@ -6,6 +6,13 @@ define("DB_PASS","");
 
 define('TEMPLATE', 'default');
 
+define('SMTP_HOST', 'ssl://smtp.mail.ru');
+define('SMTP_PORT', '465');
+define('SMTP_USERNAME', 'mail@mail.ru');
+define('SMTP_PASSWORD', '***');
+
+define('SMTP_TO', 'ladabel@mail.ru'); //куда слать письма. если пусто, то письма будут приходить на email админа из контактов
+
 define('HTTP_PATH', 'http://'.$_SERVER['HTTP_HOST'].'/');
 define('TEMPLATE_PATH', 'http://'.$_SERVER['HTTP_HOST'].'/application/views/'.TEMPLATE.'/');
 

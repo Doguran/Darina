@@ -99,6 +99,7 @@ AIzaSyAhuMsVxskqJhgjXF7FZdX_QtIhAaOhLbY"></script>
                                 <div class="alert alert-success concealed" role="alert" id="contact-success"></div>
                             </div>
                         </div>
+                        <input type="hidden" class="form-control" name="subject" value="Сообщение из формы обратной связи">
                         <button type="submit" id="send" class="btn boxed-btn3-white my-2">Отправить</button>
                     </form>
                     </div>
@@ -113,5 +114,6 @@ AIzaSyAhuMsVxskqJhgjXF7FZdX_QtIhAaOhLbY"></script>
 <!-- footer start -->
 <?php include("blocks/footer.tpl.php"); ?>
 <script src="<?php echo TEMPLATE_PATH ?>js/main.js"></script>
+<script src="<?php echo TEMPLATE_PATH ?>js/contact.js"></script>
 </body>
 </html>

@@ -74,7 +74,7 @@
                                     </a>
                                 </div>
                                 <div class="book_btn d-none d-lg-block">
-                                    <a class="popup-with-form" href="#">Позвоните
+                                    <a class="popup-with-form call" href="#">Позвоните
                                         мне!</a>
                                 </div>
                             </div>
