@@ -15,7 +15,7 @@ define('SMTP_PORT', '465');
 define('SMTP_USERNAME', 'doguran@yandex.ru');
 define('SMTP_PASSWORD', '***');
 
-define('SMTP_TO', 'ladabel@mail.ru'); //куда слать письма. если пусто, то письма будут приходить на email админа из контактов
+define('SMTP_TO', ''); //куда слать письма. если пусто, то письма будут приходить на email админа из контактов
 
 define('HTTP_PATH', 'http://'.$_SERVER['HTTP_HOST'].'/');
 define('TEMPLATE_PATH', 'http://'.$_SERVER['HTTP_HOST'].'/application/views/'.TEMPLATE.'/');

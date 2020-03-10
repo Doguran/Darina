@@ -22,7 +22,7 @@
 <div class="container-fluid bg-light">
     <nav aria-label="breadcrumb" class="container">
         <ol class="breadcrumb bg-light">
-            <li class="breadcrumb-item"><a href="#">Главнвя</a></li>
+            <li class="breadcrumb-item"><a href="/">Главнвя</a></li>
             <li class="breadcrumb-item active" aria-current="page">Редактирование главной страницы
             </li>
         </ol>
