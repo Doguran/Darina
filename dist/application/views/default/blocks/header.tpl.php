@@ -69,7 +69,7 @@
                         <div class="col-xl-3 col-lg-3 d-none d-lg-block">
                             <div class="Appointment">
                                 <div class="search_button">
-                                    <a href="#">
+                                    <a href="#" data-toggle="modal" data-target="#mySearch">
                                         <i class="ti-search"></i>
                                     </a>
                                 </div>
@@ -88,3 +88,28 @@
         </div>
     </div>
 </header>
+<!-- Modal -->
+<div class="modal fade" id="mySearch" tabindex="-1" role="dialog" aria-labelledby="mySearchLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="mySearchLabel">Поиск по сайту</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form  method="get" action="/search/" enctype='text/plain' role="search">
+
+                    <div class="input-group mb-3">
+                        <input class="form-control" name="s" id="navbarInput-01" type="search" placeholder="поисковый запрос">
+                        <div class="input-group-append">
+                            <button class="btn btn-primary" type="submit">Найти</button>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

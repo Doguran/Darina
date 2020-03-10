@@ -25,7 +25,7 @@ public function showAction() {
         
         $model = new FileModel();
 
-        $blogModel = new blogModel();
+        $blogModel = new BlogModel();
         $blog = $blogModel->getPost($url);
         
         if(!$blog) throw new Exception("Нет такой статьи");

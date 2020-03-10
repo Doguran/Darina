@@ -59,6 +59,8 @@
                                             class="btn btn-primary my-2 w-100">
                                         Отправить заявку
                                     </button>
+                                    <div class="mt-3 small">Заполняя данную форму, Вы соглашаетесь
+                                        на обработку персональных данных.</div>
                                 </form>
                             </div>
                             <div class="bg-form rounded-sm"></div>

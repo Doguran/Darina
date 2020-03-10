@@ -1,14 +1,18 @@
 <?php
 
+//define("DB_CONN","mysql:host=91.224.23.208;dbname=darina;charset=utf8");
+//define("DB_USER","darina");
+//define("DB_PASS","Z0w0P6w5");
+
 define("DB_CONN","mysql:host=localhost;dbname=darina;charset=utf8");
 define("DB_USER","root");
 define("DB_PASS","");
 
 define('TEMPLATE', 'default');
 
-define('SMTP_HOST', 'ssl://smtp.mail.ru');
+define('SMTP_HOST', 'ssl://smtp.yandex.ru');
 define('SMTP_PORT', '465');
-define('SMTP_USERNAME', 'mail@mail.ru');
+define('SMTP_USERNAME', 'doguran@yandex.ru');
 define('SMTP_PASSWORD', '***');
 
 define('SMTP_TO', 'ladabel@mail.ru'); //куда слать письма. если пусто, то письма будут приходить на email админа из контактов
