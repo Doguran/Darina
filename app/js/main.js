@@ -61,6 +61,20 @@ $(document).ready(function(){
             openedSymbol:'-'
         });
     };
+
+    $( "table" ).addClass( "table table-hover table-responsive table-bordered" );
+
+    $('.reply').click(function(e){
+        e.preventDefault();
+        var commentID = $(this).parents('div').parents('div').parents('div').attr('id').replace('com', '');
+        //alert(commentID);
+        $('input[name="comment_parent_ID"]').val(commentID);
+        $(this).parents('#d'+commentID).after($('#form-comment'));
+        $('#form-comment').fadeOut(0).slideDown(1000);
+
+    });
+
+
 });
 
 //TOP Menu Sticky

@@ -92,6 +92,148 @@
                 <h1 class="my-5"><?php echo $this->h1; ?></h1>
                 <?php echo $this->text; ?>
 
+                    <div id='com' class="mt-5">
+                        <h3 class="mb-4">Комментарии</h3>
+
+                        <?php echo $this->comments; ?>
+
+<!--                        <div class="media  mt-3">-->
+<!--                            <img src="http://www.gravatar.com/avatar/f7a604d999693d0b926e620dc80f4461?s=32&d=mm&r=G" class="mr-3" alt="...">-->
+<!--                            <div class="media-body">-->
+<!--                                <div class="post w-100 float-left mb-2">-->
+<!--                                    <div class="name float-left"><strong>Юрий</strong></div>-->
+<!--                                    <div class="date3 float-right small">18.09.2015 08:56</div>-->
+<!--                                </div>-->
+<!--                                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.-->
+<!--                                <div><a href="#" class="psewdo-link">Ответить</a></div>-->
+<!--                                <div id="qq">-->
+<!--                                    <form method="post">-->
+<!--                                        <div class="row">-->
+<!--                                            <div class="col-sm-6">-->
+<!--                                                Имя:-->
+<!--                                                <input class="form-control" name="name" id="comment-name">-->
+<!--                                            </div>-->
+<!---->
+<!--                                            <div class="col-sm-6">-->
+<!--                                                E-mail (не публикуется):-->
+<!--                                                <input class="form-control" name="email" id="comment-email">-->
+<!--                                                <input type="hidden" value="0" name="comment_parent_ID">-->
+<!--                                            </div>-->
+<!--                                        </div>-->
+<!---->
+<!--                                        Ваше замечание:-->
+<!--                                        <textarea class="form-control" name="text" id="comment-text"></textarea>-->
+<!--                                        <br>-->
+<!--                                        <input type="hidden" name="article_id" value="31">-->
+<!---->
+<!---->
+<!--                                        <br>-->
+<!---->
+<!--                                        <button type="sumbit" id="sumbit-comment" class="btn btn-primary pull-left">Отправить </button>-->
+<!--                                        <img src="--><?php //echo TEMPLATE_PATH ?><!--img/ajax-loader.gif" id="ajax-loader">-->
+<!--                                        <div id="comment-message" class="pull-left"></div>-->
+<!--                                    </form>-->
+<!--                                </div>-->
+<!--                                <div class="media mt-3">-->
+<!--                                        <img src="http://www.gravatar.com/avatar/f7a604d999693d0b926e620dc80f4461?s=32&d=mm&r=G" class="mr-3" alt="...">-->
+<!--                                    <div class="media-body">-->
+<!--                                        <div class="post w-100 float-left mb-2">-->
+<!--                                            <div class="name float-left"><strong>Юрий</strong></div>-->
+<!--                                            <div class="date3 float-right small">18.09.2015 08:56</div>-->
+<!--                                        </div>-->
+<!--                                        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.-->
+<!--                                        <div><a href="#" class="psewdo-link">Ответить</a></div>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="media  mt-3">-->
+<!--                                <img src="http://www.gravatar.com/avatar/f7a604d999693d0b926e620dc80f4461?s=32&d=mm&r=G" class="mr-3" alt="...">-->
+<!--                            <div class="media-body">-->
+<!--                                <div class="post w-100 float-left mb-2">-->
+<!--                                    <div class="name float-left"><strong>Юрий</strong></div>-->
+<!--                                    <div class="date3 float-right small">18.09.2015 08:56</div>-->
+<!--                                </div>-->
+<!--                                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.-->
+<!--                                <div><a href="#" class="psewdo-link">Ответить</a></div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+
+
+<!--                        <br><br><br><br><br><br><br>-->
+<!--                        <div id="comments">-->
+<!--                            <div id="comment33">-->
+<!--                                <div class="post w-100 float-left mb-2 bg-light p-2">-->
+<!--                                    <div class="name float-left">-->
+<!--                                        <img  src="http://www.gravatar.com/avatar/f7a604d999693d0b926e620dc80f4461?s=32&d=mm&r=G" class="mr-1"> <strong>Юрий</strong>-->
+<!--                                    </div>-->
+<!--                                    <div class="date3 float-right small">18.09.2015 08:56</div>-->
+<!--                                </div>-->
+<!--                                <div class="mb-3">-->
+<!--                                    Таким образом постоянный количественный рост и сфера нашей активности требуют от нас анализа форм развития.-->
+<!--                                    <div><a href="#" class="psewdo-link">Ответить</a></div>-->
+<!--                                </div>-->
+<!--                                <div id="comment35" class="ml-3">-->
+<!--                                    <div class="post w-100 float-left mb-2 bg-light p-2">-->
+<!--                                        <div class="name float-left">-->
+<!--                                            <img  src="http://www.gravatar.com/avatar/f7a604d999693d0b926e620dc80f4461?s=32&d=mm&r=G" class="mr-1"> <strong>Юрий</strong>-->
+<!--                                        </div>-->
+<!--                                        <div class="date3 float-right small">18.09.2015 08:56</div>-->
+<!--                                    </div>-->
+<!--                                    <div class="mb-3">-->
+<!--                                        Таким образом постоянный количественный рост и сфера нашей активности требуют от нас анализа форм развития.-->
+<!--                                        <div><a href="#" class="psewdo-link">Ответить</a></div>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!---->
+<!--                            </div>-->
+<!---->
+<!--                            <div id="comment34">-->
+<!--                                <div class="post w-100 float-left mb-2 bg-light p-2">-->
+<!--                                    <div class="name float-left">-->
+<!--                                        <img  src="http://www.gravatar.com/avatar/f7a604d999693d0b926e620dc80f4461?s=32&d=mm&r=G" class="mr-1"> <strong>Юрий</strong>-->
+<!--                                    </div>-->
+<!--                                    <div class="date3 float-right small">18.09.2015 08:56</div>-->
+<!--                                </div>-->
+<!--                                <div class="mb-3">-->
+<!--                                    Таким образом постоянный количественный рост и сфера нашей активности требуют от нас анализа форм развития.-->
+<!--                                    <div><a href="#" class="psewdo-link">Ответить</a></div>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!---->
+<!--                        </div>-->
+                    </div>
+
+                    <h4 class="my-4">Оставьте комментарий</h4>
+        <div id="form-comment" class="my-4">
+                    <form method="post">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                Имя:
+                                <input class="form-control" name="name" id="comment-name">
+                            </div>
+
+                            <div class="col-sm-6">
+                                E-mail (не публикуется):
+                                <input class="form-control" name="email" id="comment-email">
+                                <input type="hidden" value="0" name="comment_parent_ID">
+                            </div>
+                        </div>
+
+                        Ваше замечание:
+                        <textarea class="form-control" name="text" id="comment-text"></textarea>
+                        <input type="hidden" name="article_id" value="31">
+
+
+
+
+                        <button type="sumbit" id="sumbit-comment" class="btn btn-primary pull-left mt-3">Отправить </button>
+                        <img src="<?php echo TEMPLATE_PATH ?>img/ajax-loader.gif" id="ajax-loader">
+                        <div id="comment-message" class="pull-left"></div>
+                    </form>
+        </div>
+
+
                 <?php endif ?>
 
 

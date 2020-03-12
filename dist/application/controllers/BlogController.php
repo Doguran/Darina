@@ -26,8 +26,12 @@ class BlogController implements IController {
         $url = Helper::clearData($params["url"]);
 
         $post = $blogModel->getPost($url);
-        
+
+
         if(!$post) throw new Exception("Нет такой статьи");
+
+        $CommentController = new CommentController();
+        $model->comments = $CommentController->getComments($post["id"]);
         
         $model->h1 = $post["h1"];
         $model->text = $post["text"];
