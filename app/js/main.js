@@ -64,13 +64,31 @@ $(document).ready(function(){
 
     $( "table" ).addClass( "table table-hover table-responsive table-bordered" );
 
-    $('.reply').click(function(e){
+
+
+    $('.reply-div').on('click','.reply',function(e){
         e.preventDefault();
-        var commentID = $(this).parents('div').parents('div').parents('div').attr('id').replace('com', '');
-        //alert(commentID);
+        var commentID = $(this).closest('.media-box').attr('id').replace('com', '');
+        var form = $('#form-comment');
+        if(!form.firstChild){
+            $.get( "/comment/getform/", function( data ) {
+                form.html(JSON.parse(data));
+            });
+        }
+
+        $(this).parent('div').after(form)
+        form.fadeOut(0).slideDown(0);
         $('input[name="comment_parent_ID"]').val(commentID);
-        $(this).parents('#d'+commentID).after($('#form-comment'));
-        $('#form-comment').fadeOut(0).slideDown(1000);
+        $('.reply-div a').removeClass('cansel-reply').addClass('reply').text('Ответить');
+        $(this).removeClass('reply').addClass('cansel-reply').text('Отмена');
+
+    }).on('click','.cansel-reply',function(e) {//при клике на ссылку закрыть форму
+        e.preventDefault();
+        var form = $('#form-comment');
+        $(this).removeClass('cansel-reply').addClass('reply').text('Ответить');
+        $('#com0').append(form);
+        $('input[name="comment_parent_ID"]').val('0');
+        form.hide();
 
     });
 

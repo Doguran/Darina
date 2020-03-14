@@ -25,7 +25,7 @@ class CommentController implements IController {
         {
 
 
-            $this->comments .= '<div class="media  mt-3" id="com'. $arr[$i]['id'] . '">
+            $this->comments .= '<div class="media media-box mt-3" id="com'. $arr[$i]['id'] . '">
             <img src="http://www.gravatar.com/avatar/' . md5($arr[$i]['email']) . '?s=32&d=mm&r=G" class="mr-3" alt="' . $arr[$i]['name'] . '">
             <div class="media-body">
                 <div class="post w-100 float-left mb-2 bg-light p-1">
@@ -33,7 +33,7 @@ class CommentController implements IController {
                     <div class="date3 float-right small">' . $arr[$i]['date_add'] . '</div>
                 </div>
         '   . $arr[$i]['comment'] . '
-            <div id="d'. $arr[$i]['id'] . '"><a href="#" class="psewdo-link reply">Ответить</a></div>';
+            <div class="reply-div"><a href="#" class="psewdo-link reply">Ответить</a></div>';
             if (isset($data[$arr[$i]['id']])) {
                 $this->my_sort($data, $arr[$i]['id']);
             }
@@ -42,6 +42,19 @@ class CommentController implements IController {
 
         }
 
+    }
+
+    public function getformAction() {
+        // Если  запрос не AJAX (XMLHttpRequest), то завершить работу
+        if (empty($_SERVER['HTTP_X_REQUESTED_WITH']) || $_SERVER['HTTP_X_REQUESTED_WITH'] != 'XMLHttpRequest') {
+            exit();
+        }
+        $fc = FrontController::getInstance();
+        $model = new FileModel();
+
+        //выводим все
+        $output = $model->render("blocks/comment-form.tpl.php");
+        $fc->setBody(json_encode($output));
     }
 
     public function getCommentsArr(){
