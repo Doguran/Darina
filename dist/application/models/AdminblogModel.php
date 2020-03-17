@@ -32,7 +32,7 @@ class AdminblogModel{
         return $this->_db->exec($sql);
     }
 
-    public function edit($id,$title,$keywords,$seo_desc,$h1,$text,$file,$url){
+    public function edit($id,$title,$keywords,$seo_desc,$h1,$text,$file,$url,$date_add){
 
 
         $sth = $this->_db->prepare("UPDATE blog
@@ -42,7 +42,8 @@ class AdminblogModel{
                     h1 = :h1,
                     text = :text,
                     img = :file,
-                    url = :url
+                    url = :url,
+                    date_add = :date_add
                 WHERE id = :id");
 
         return $sth->execute([
@@ -53,6 +54,7 @@ class AdminblogModel{
                       ':text' => $text,
                       ':file' => $file,
                       ':url' => $url,
+                      ':date_add' => $date_add,
                       ':id' => $id
                     ]);
 

@@ -66,6 +66,9 @@
                     <div id="tabs-1" class="tab-pane fade show active" role="tabpanel" aria-labelledby="tabs-1-tab">
                         <div class="row my-3">
                             <div class="col-md-9">
+                                Дата (обязательно в формате дд.мм.гг): <br />
+                                <input class="form-control" type="text" value="<?php echo $this->date_add ?>" name='date_add'>
+                                <br>
                                 Заголовок (H1): <br />
                                 <input class="form-control" type="text" value="<?php echo $this->h1 ?>" name='h1'>
                                 <br>
@@ -73,7 +76,7 @@
                                 <br>
                                 <textarea id="editor1" class="form-control" name="text"><?php echo $this->text ?></textarea>
                                 <script type='text/javascript'>
-                                    CKEDITOR.replace( 'editor1', {toolbar : 'MyToolbar'} );
+                                    CKEDITOR.replace( 'editor1');
                                 </script>
                                 <br>
                             </div>

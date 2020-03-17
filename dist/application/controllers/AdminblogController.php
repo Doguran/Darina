@@ -24,6 +24,7 @@ public function showAction() {
         $url = Helper::clearData($params["url"]);
         
         $model = new FileModel();
+        $model->stocks = StockModel::getStaticStocks();
 
         $blogModel = new BlogModel();
         $blog = $blogModel->getPost($url);
@@ -40,6 +41,7 @@ public function showAction() {
         $model->h1       = $blog["h1"];
         $model->text     = $blog["text"];
         $model->url      = $blog["url"];
+        $model->date_add = $blog["date_add"];
         
 
         
@@ -71,6 +73,8 @@ public function showAction() {
             $images      = Helper::clearData($_POST['img']);
             $url         = Helper::clearData($_POST['url']);
             $oldurl      = Helper::clearData($_POST['oldurl']);
+            $date_add      = Helper::clearData($_POST['date_add']);
+            list($day, $month, $year) = explode(".", $date_add);
 
             if($title == "") $title = $h1;
             if($url == "") $url = $h1;
@@ -80,6 +84,7 @@ public function showAction() {
 
             //проверка на ошибки
             $error = array();
+            if(!is_numeric($day) || !is_numeric($month) || !is_numeric($year)) $error[] = "Ошибка в дате";
             if(!$h1)         $error[] = "Не указано название";
             if(!$text)       $error[] = "Не указан текст";
             
@@ -114,7 +119,8 @@ public function showAction() {
                 }
 
                 $AdminblogModel = new AdminblogModel();
-                $result = $AdminblogModel->edit($id,$title,$keywords,$seo_desc,$h1,$text,$file,$url);
+                $date_add = '20'.$year.'-'.$month.'-'.$day;
+                $result = $AdminblogModel->edit($id,$title,$keywords,$seo_desc,$h1,$text,$file,$url,$date_add);
 
             if($result)
                header("Location: /blog/$url.html");
@@ -142,6 +148,7 @@ public function showAction() {
         $fc     = FrontController::getInstance();
 
         $model = new FileModel();
+        $model->stocks = StockModel::getStaticStocks();
 
         $model->adminH1  = "Добавление";
         $model->action   = "insert";
@@ -238,6 +245,7 @@ public function showAction() {
                 }
 
                 $model = new FileModel();
+                $model->stocks = StockModel::getStaticStocks();
 
                 $model->er = $er;
                 $model->adminH1  = "Добавление";

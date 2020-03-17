@@ -54,6 +54,7 @@ class AdminedittextController implements IController {
         $fc = FrontController::getInstance();
 		/* Инициализация модели */
 		$model = new FileModel();
+           $model->stocks = StockModel::getStaticStocks();
 
 
         $TextModel = new TextModel();
@@ -317,6 +318,7 @@ class AdminedittextController implements IController {
                 $model->h1 = $text["h1"];
                 $model->h2 = $text["h2"];
                 $model->title = $text["title"];
+                $model->stocks = StockModel::getStaticStocks();
 
 
         		$output = $model->render("adminindex.tpl.php");

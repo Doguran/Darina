@@ -8,7 +8,7 @@
     <link rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css"/>
     <script type="text/javascript" src="<?php echo HTTP_PATH ?>ckeditor/ckeditor.js"></script>
-    <title>Редпктирование главной страницы</title>
+    <title>Редактирование страницы</title>
 </head>
 <body>
 <?php include("blocks/header.tpl.php"); ?>

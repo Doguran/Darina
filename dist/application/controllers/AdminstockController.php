@@ -44,6 +44,7 @@ public function showAction() {
         $model->text     = $stock["text"];
         $model->url      = $stock["url"];
         $model->sort     = $stock["sort"];
+        $model->stocks = StockModel::getStaticStocks();
 
         
         //выводим все
@@ -129,7 +130,7 @@ public function showAction() {
 
                 $AdminstockModel = new AdminstockModel();
                 $result = $AdminstockModel->edit($id,$title,$keywords,$seo_desc,$name,$anons,$h1,$h2,$text,$file,$url);
-                $_SESSION["stocks"] = StockModel::getStaticStocks();
+
 
             if($result)
                header("Location: /stock/$url.html");
@@ -172,6 +173,7 @@ public function showAction() {
         $model->text     = NULL;
         $model->url      = NULL;
         $model->sort     = NULL;
+        $model->stocks = StockModel::getStaticStocks();
 
         //выводим все
         $output = $model->render("adminstock.tpl.php");
@@ -246,7 +248,7 @@ public function showAction() {
                 $AdminstockModel = new AdminstockModel();
                 $res = $AdminstockModel->insert($title,$keywords,$seo_desc,$name,$anons,$h1,$h2,$text,$file,$url);
 
-                $_SESSION["stocks"] = StockModel::getStaticStocks();
+
 
 
                if($res)
@@ -277,6 +279,7 @@ public function showAction() {
                 $model->text     = $text;
                 $model->url      = $url;
                 $model->sort     = NULL;
+                $model->stocks = StockModel::getStaticStocks();
 
                 //выводим все
                 $fc     = FrontController::getInstance();
@@ -307,7 +310,7 @@ public function showAction() {
                 @unlink("images/".$kartinka);
             }
             $AdminstockModel->delete($url);
-            $_SESSION["stocks"] = StockModel::getStaticStocks();
+
             header("Location: /stock/".$_SESSION['stocks'][0]['url'].".html");
 
         }else{
@@ -332,7 +335,7 @@ public function showAction() {
                 @unlink("images/".$kartinka);
             }
             $AdminstockObj->delIllustration($url);
-            $_SESSION["stocks"] = StockModel::getStaticStocks();
+
 
             header("Location: /adminstock/show/url/$url/");
 

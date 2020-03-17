@@ -35,8 +35,8 @@
                 <?php if(ADMIN): ?>
                 <a href="/adminstock/add/" class="btn btn-primary w-100 mb-3">Добавить</a>
                 <?php endif ?>
-                <?php if(isset($_SESSION["stocks"])): ?>
-                <?php foreach ($_SESSION["stocks"] as $val) : ?>
+                <?php if(isset($this->stocks)): ?>
+                <?php foreach ($this->stocks as $val) : ?>
                     <?php if($val["id"] == $this->id) : ?>
 
                             <div class="card mb-3 left-menu bg-primary text-white">

@@ -25,6 +25,7 @@ class SearchController implements IController {
 
 
         $model->title_content = "Поиск по запросу '$keyword'";
+        $model->stocks = StockModel::getStaticStocks();
         
 		$fc = FrontController::getInstance();
         //выводим все

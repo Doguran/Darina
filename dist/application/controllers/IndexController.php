@@ -5,6 +5,8 @@ class IndexController implements IController {
         $fc = FrontController::getInstance();
 
         $model = new FileModel();
+        $model->stocks = StockModel::getStaticStocks();
+
         $textModel = new TextModel();
         $arrText= $textModel->getText(1);
 

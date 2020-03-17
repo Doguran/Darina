@@ -6,6 +6,7 @@ class ContactController implements IController {
         $fc = FrontController::getInstance();
 
         $model = new FileModel();
+        $model->stocks = StockModel::getStaticStocks();
 
 
         $output = $model->render("contact.tpl.php");
@@ -18,6 +19,7 @@ class ContactController implements IController {
         $fc = FrontController::getInstance();
 
         $model = new FileModel();
+        $model->stocks = StockModel::getStaticStocks();
 
         $output = $model->render("stock.tpl.php");
         $fc->setBody($output);
@@ -27,6 +29,7 @@ class ContactController implements IController {
         $fc = FrontController::getInstance();
 
         $model = new FileModel();
+        $model->stocks = StockModel::getStaticStocks();
 
         $output = $model->render("blog.tpl.php");
         $fc->setBody($output);
@@ -36,6 +39,7 @@ class ContactController implements IController {
         $fc = FrontController::getInstance();
 
         $model = new FileModel();
+        $model->stocks = StockModel::getStaticStocks();
 
         $output = $model->render("adminindex.tpl.php");
         $fc->setBody($output);
@@ -45,6 +49,7 @@ class ContactController implements IController {
         $fc = FrontController::getInstance();
 
         $model = new FileModel();
+        $model->stocks = StockModel::getStaticStocks();
 
         $output = $model->render("contact.tpl.php");
         $fc->setBody($output);

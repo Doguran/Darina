@@ -21,6 +21,7 @@ public function indexAction() {
         $model->images = $reviewModel->getReview();
         $model->h1 = 'НАС РЕКОМЕНДУЮТ';
         $model->controller = 'review';
+        $model->stocks = StockModel::getStaticStocks();
 
         
         //выводим все
@@ -66,6 +67,7 @@ public function indexAction() {
             $model->h1 = 'НАС РЕКОМЕНДУЮТ';
             $model->controller = 'review';
             $model->er = $e->getMessage();
+            $model->stocks = StockModel::getStaticStocks();
 
             //выводим все
             $output = $model->render("adminreview.tpl.php");

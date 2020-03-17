@@ -53,8 +53,8 @@
                             Продукция
                         </h3>
                         <ul>
-                            <?php if(isset($_SESSION["stocks"])): ?>
-                                <?php foreach ($_SESSION["stocks"] as $val) : ?>
+                            <?php if(isset($this->stocks)): ?>
+                                <?php foreach ($this->stocks as $val) : ?>
                                     <li><a href="/stock/<?php echo $val["url"]; ?>.html">Darina<?php echo $val["name"]; ?></a></li>
                                 <?php endforeach; ?>
                             <?php endif ?>

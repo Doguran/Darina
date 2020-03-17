@@ -48,8 +48,8 @@
                                         <li><a href="#">Ассортимент <i
                                                         class="ti-angle-down"></i></a>
                                             <ul class="submenu">
-                                                <?php if(isset($_SESSION["stocks"])): ?>
-                                                <?php foreach ($_SESSION["stocks"] as $val) : ?>
+                                                <?php if(isset($this->stocks)): ?>
+                                                <?php foreach ($this->stocks as $val) : ?>
                                                         <li><a href="/stock/<?php echo $val["url"]; ?>.html"><?php echo $val["h1"]; ?></a></li>
                                                 <?php endforeach; ?>
                                                 <?php endif ?>

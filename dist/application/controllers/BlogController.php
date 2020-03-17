@@ -15,6 +15,7 @@ class BlogController implements IController {
     $model = new FileModel();
     $blogModel= new BlogModel();
     $model->last_posts =  $blogModel ->getLastPosts(5);
+    $model->stocks = StockModel::getStaticStocks();
 
     
     $model->article_title = "Блог компании DARINA";
@@ -43,6 +44,7 @@ class BlogController implements IController {
         $model->id = $post["id"];
         $model->url = $post["url"];
 
+
             
      }elseif(isset($params["page"])){
         $page = Helper::clearData($params["page"],"i"); 
@@ -60,7 +62,7 @@ class BlogController implements IController {
         
         
     }
-    
+
 	//выводим все
     	$output = $model->render("blog.tpl.php");
         $fc->setBody($output);	

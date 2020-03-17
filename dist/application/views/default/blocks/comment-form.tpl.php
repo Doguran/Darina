@@ -7,7 +7,8 @@
         <div class="col-sm-6">
             E-mail (не публикуется):
             <input class="form-control" name="email" id="comment-email">
-            <input type="hidden" value="0" name="comment_parent_ID">
+            <input type="hidden" value="" name="comment_parent_ID">
+            <input type="hidden" value="" name="post_ID">
         </div>
     </div>
     Ваше замечание:

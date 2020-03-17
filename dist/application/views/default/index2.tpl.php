@@ -22,9 +22,9 @@
                         <div class="slider_text">
                             <h3> <?php echo $this->h1; ?> </h3>
                             <div class="video_service_btn">
-                                <a href="/stock/<?php echo $_SESSION["stocks"][0]['url']; ?>.html" class="boxed-btn3">Полный
+                                <a href="/stock/<?php echo $this->stocks[0]['url']; ?>.html" class="boxed-btn3">Полный
                                     ассортимент и цены</a>
-                                <a href="/stock/<?php echo $_SESSION["stocks"][0]['url']; ?>.html" class="boxed-btn3-white"> <i
+                                <a href="/stock/<?php echo $this->stocks[0]['url']; ?>.html" class="boxed-btn3-white"> <i
                                             class="fa fa-play"></i>
                                     Узнать больше</a>
                             </div>
@@ -163,8 +163,8 @@
     <div class="container">
         <?php //Helper::print_arr($_SESSION["stocks"][0]);?>
         <div class="row justify-content-center">
-            <?php if(isset($_SESSION["stocks"])): ?>
-                <?php foreach ($_SESSION["stocks"] as $val) : ?>
+            <?php if(isset($this->stocks)): ?>
+                <?php foreach ($this->stocks as $val) : ?>
                     <div class="col-md-6 col-lg-3 card-div">
                         <div class="card mb-4 text-white bg-dark">
                             <img class="card-img-top"

@@ -16,6 +16,7 @@ public function indexAction() {
 
         
         $model = new FileModel();
+        $model->stocks = StockModel::getStaticStocks();
 
         $galleryModel = new GalleryModel();
         $model->images =  $galleryModel->getGallery();
@@ -62,6 +63,7 @@ public function indexAction() {
             $model->h1 = 'Галерея';
             $model->controller = 'gallery';
             $model->er = $e->getMessage();
+            $model->stocks = StockModel::getStaticStocks();
 
             //выводим все
             $output = $model->render("adminreview.tpl.php");
