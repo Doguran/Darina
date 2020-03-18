@@ -66,44 +66,6 @@ $(document).ready(function(){
 
 
 
-    $('.reply-div').on('click','.reply',function(e){
-        e.preventDefault();
-        var commentID = $(this).closest('.media-box').attr('id').replace('com', '');
-        var form = $('#form-comment');
-        $(this).parent('div').after(form)
-        form.fadeOut(0).slideDown(1000);
-        $('input[name="comment_parent_ID"]').val(commentID);
-        $('.reply-div a').removeClass('cansel-reply').addClass('reply').text('Ответить');
-        $('.reply-div.h4 a').text('Оставьте комментарий');
-        $(this).removeClass('reply').addClass('cansel-reply').text('Отмена');
-
-    }).on('click','.cansel-reply',function(e) {//при клике на ссылку закрыть форму
-        e.preventDefault();
-        var form = $('#form-comment');
-        $(this).removeClass('cansel-reply').addClass('reply').text('Ответить');
-        $('.reply-div.h4 a').text('Оставьте комментарий');
-        $('#com0').append(form);
-        $('input[name="comment_parent_ID"]').val('0');
-        form.hide();
-
-    });
-    $('#comment_form').submit(function(eventObject){
-
-        eventObject.preventDefault();
-        $("#form_loader").addClass("form_loading");
-        $.post("add_comment.php", $("#comment_form").serialize() + '&action=send',function(data) {
-            if ($(data).find('div').css('background-color')=='rgb(53, 53, 53)'){
-                $('#respond').parents('div[id*="comment"]:first').append(data);
-            }else{
-                $('#respond').before(data);
-            }
-        }).complete(function(){
-            $("#form_loader").removeClass("form_loading");
-        });
-
-    });
-
-
 });
 
 //TOP Menu Sticky

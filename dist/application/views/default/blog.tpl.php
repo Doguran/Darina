@@ -93,12 +93,11 @@
                 <?php echo $this->text; ?>
 
                     <div id='com0' class="mt-5 media-box">
-                        <h3 class="mb-4">Комментарии</h3>
 
                         <?php echo $this->comments; ?>
 
 
-
+                        <div class="media-body"></div>
                         <div class="reply-div h4 my-5"><a href="#"  class="psewdo-link reply">Оставьте комментарий</a></div>
 
                         <div id="form-comment" class="my-4">
@@ -106,21 +105,22 @@
                                 <div class="row">
                                     <div class="col-sm-6">
                                         Имя:
-                                        <input class="form-control" name="name" id="comment-name">
+                                        <input class="form-control" name="name" value="<?php //if (isset($_COOKIE['user_name'])){ echo $_COOKIE['user_name'];} ?>" id="comment-name">
                                         <input class="form-control concealed" name="url" id="comment-url">
                                     </div>
                                     <div class="col-sm-6">
                                         E-mail (не публикуется):
-                                        <input class="form-control" name="email" id="comment-email">
+                                        <input class="form-control" name="email" value="<?php //if (isset($_COOKIE['user_email'])){ echo $_COOKIE['user_email'];} ?>" id="comment-email">
                                         <input type="hidden" value="" name="comment_parent_ID">
                                         <input type="hidden" value="<?php echo $this->id; ?>" name="post_ID">
                                     </div>
                                 </div>
                                 Ваше замечание:
                                 <textarea class="form-control" name="text" id="comment-text"></textarea>
+                                <div id="comment-message" class="text-danger small my-3"></div>
                                 <button type="sumbit" id="sumbit-comment" class="btn btn-primary pull-left mt-3">Отправить </button>
-                                <img src="<?php echo TEMPLATE_PATH ?>img/ajax-loader.gif" id="ajax-loader">
-                                <div id="comment-message" class="pull-left"></div>
+                                <img src="<?php echo TEMPLATE_PATH ?>img/ajax-loader.gif" id="ajax-loader" class="mt-3">
+
                             </form>
                         </div>
 
@@ -162,5 +162,6 @@
 <!-- footer start -->
 <?php include("blocks/footer.tpl.php"); ?>
 <script src="<?php echo TEMPLATE_PATH ?>js/main.js"></script>
+<script src="<?php echo TEMPLATE_PATH ?>js/comment.js"></script>
 </body>
 </html>

@@ -28,6 +28,23 @@ class CommentModel{
 
    }
 
+    public function insert($id_post,$parent_id,$name,$email,$text){
+
+        $sth = $this->_db->prepare("INSERT INTO comments(id_post, parent_id, name, email, comment, date_add ) 
+                                    VALUES(:id_post, :parent_id, :name, :email, :comment, NOW())");
+
+        $sth->execute([
+          ':id_post' => $id_post,
+          ':parent_id' => $parent_id,
+          ':name' => $name,
+          ':email' => $email,
+          ':comment' => $text
+        ]);
+
+        return $this->_db->lastInsertId();
+
+    }
+
 
 
 
