@@ -18,6 +18,7 @@ class CommentController implements IController {
 
     public function my_sort($data, $parent = 0){
 
+        if(!$data) return;
 
         $arr = $data[$parent];
 
@@ -99,6 +100,7 @@ class CommentController implements IController {
                     //setcookie("user_name",$name,time()+60*60*24*30*3);// 3 месяца
                     //setcookie("user_email",$email,time()+60*60*24*30*3);
 
+                    $this->sendmail($id_post,$name,$email,$text);
 
                     $CommentModel = new CommentModel();
                     $id = $CommentModel->insert($id_post,$parent_id,$name,$email,$text);
@@ -160,6 +162,40 @@ class CommentController implements IController {
 
     }
 
-    
-    
+
+    public function sendmail($id_post,$name,$email,$text) {
+
+        $BlogModel = new BlogModel();
+        $post = $BlogModel->getPostFromId($id_post);
+
+
+
+        $mailSMTP = new SendMailSmtpClass(SMTP_USERNAME, SMTP_PASSWORD,
+          SMTP_HOST, SMTP_PORT, "UTF-8");
+
+        // от кого
+        $from = [
+          "Darina", // Имя отправителя
+          SMTP_USERNAME // почта отправителя
+        ];
+        // кому
+        $to = constant('SMTP_TO') == '' ? Helper::getAdminMail()
+          : constant('SMTP_TO');
+
+        $subject = "Новый комментарий на сайте $_SERVER[HTTP_HOST]";
+        $htmlVersion
+          = "Оставлен комментарий к статье <a href='".HTTP_PATH."blog/$post[url].html'>$post[h1]</a>.<br>
+                Имя: $name<br>
+                Почта: $email<br>
+                $text
+            ";
+
+        // отправляем письмо
+        $mailSMTP->send($to, $subject, $htmlVersion, $from);
+        //$mailSMTP->send('Кому письмо', 'Тема письма', 'Текст письма', 'Отправитель письма');
+
+
+    }
+
+
 }

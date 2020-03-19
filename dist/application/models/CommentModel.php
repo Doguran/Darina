@@ -18,7 +18,7 @@ class CommentModel{
         $stmt = $this->_db->query($sql);
         $arr =  $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-
+        $new_arr = array();
         for ($i = 0, $c = count($arr); $i < $c; $i++)
         {
             $new_arr[$arr[$i]['parent_id']][] = $arr[$i];

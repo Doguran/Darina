@@ -27,6 +27,16 @@ class BlogModel{
         return  $stmt->fetch(PDO::FETCH_ASSOC);
     }
 
+    public function getPostFromId($id){
+        $id = $this->_db->quote($id);
+        $sql="SELECT h1,url
+              FROM blog
+              WHERE id = $id";
+        $stmt = $this->_db->query($sql);
+        return  $stmt->fetch(PDO::FETCH_ASSOC);
+    }
+
+
 
       
         
