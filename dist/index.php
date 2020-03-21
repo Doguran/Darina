@@ -4,6 +4,10 @@
 //define("DB_USER","darina");
 //define("DB_PASS","Z0w0P6w5");
 
+//define("DB_CONN","mysql:host=91.224.23.208;dbname=darina-denis;charset=utf8");
+//define("DB_USER","darina-denis");
+//define("DB_PASS","P3h3M1b4");
+
 define("DB_CONN","mysql:host=localhost;dbname=darina;charset=utf8");
 define("DB_USER","root");
 define("DB_PASS","");
@@ -12,7 +16,7 @@ define('TEMPLATE', 'default');
 
 define('SMTP_HOST', 'ssl://smtp.yandex.ru');
 define('SMTP_PORT', '465');
-define('SMTP_USERNAME', 'doguran@yandex.ru');
+define('SMTP_USERNAME', 'darina.com.ru@yandex.ru');
 define('SMTP_PASSWORD', '***');
 
 define('SMTP_TO', ''); //куда слать письма. если пусто, то письма будут приходить на email админа из контактов
@@ -104,14 +108,14 @@ try{
 }catch (Exception $e) {
 
     //в продакшен этот абзац закоментить, а следующий раскоментить
-        header("HTTP/1.0 404 Not Found");
-        header("Content-Type: text/html; charset=utf-8");
-        echo 'Выброшено исключение: ',  $e->getMessage(),"\n";
+//        header("HTTP/1.0 404 Not Found");
+//        header("Content-Type: text/html; charset=utf-8");
+//        echo 'Выброшено исключение: ',  $e->getMessage(),"\n";
 
-//    $rc = new ReflectionClass("Error404Controller");
-//    $controller = $rc->newInstance();
-//    $method = $rc->getMethod("indexAction");
-//    $method->invoke($controller);
+    $rc = new ReflectionClass("Error404Controller");
+    $controller = $rc->newInstance();
+    $method = $rc->getMethod("indexAction");
+    $method->invoke($controller);
 
 }
 

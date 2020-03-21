@@ -113,7 +113,7 @@
             </div>
             <div class="col-md-6">
                 <div class="blockimg1"
-                     style="background-image: url(<?php echo HTTP_PATH ?>images/IMG_20180830_173026_resized_20190226_100754364.jpg)">
+                     style="background-image: url(<?php echo HTTP_PATH ?>images/epdm-main.jpg)">
                 </div>
             </div>
         </div>
@@ -263,7 +263,7 @@
             }
             if ($(this).scrollTop() > 3100) {
                 $(".card-div:nth-child(5)").visible().addClass("effect3");
-                $(".card-div:nth-child(6)").visible().addClass("effect2");
+                $(".card-div:nth-child(6)").visible().addClass("effect3");
                 $(".card-div:nth-child(7)").visible().addClass("effect4");
                 $(".card-div:nth-child(n+8)").visible().addClass("effect4");
             }
