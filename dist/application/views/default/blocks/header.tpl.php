@@ -1,3 +1,19 @@
+<!-- Yandex.Metrika counter -->
+<script>
+    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(52212253, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true,
+        trackHash:true
+    });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/52212253" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
 <header>
     <div class="header-area ">
         <div class="header-top_area d-none d-lg-block">
@@ -5,15 +21,17 @@
                 <div class="row">
                     <div class="col-xl-6 col-md-6 ">
                         <div class="social_media_links">
-                            <a href="#">
-                                <i class="fab fa-vk"></i>
+						<!--noindex-->
+                            <a rel="nofollow" href="https://www.youtube.com/channel/UCYiFiUpcM6xg0q_AlwBqP9w">
+                                <i class="fab fa-youtube"></i>
                             </a>
-                            <a href="#">
+                            <a rel="nofollow" href="#">
                                 <i class="fab fa-facebook"></i>
                             </a>
-                            <a href="#">
+                            <a rel="nofollow" href="#">
                                 <i class="fab fa-instagram"></i>
                             </a>
+						<!--/noindex-->
                         </div>
                     </div>
                     <div class="col-xl-6 col-md-6">
@@ -31,15 +49,16 @@
             <div class="container">
                 <div class="header_bottom_border-page">
                     <div class="row align-items-center">
-                        <div class="col-xl-3 col-lg-2">
+                        <div class="col-xl-2 col-lg-1">
                             <div class="logo">
                                 <a href="/">
                                     <img src="<?php echo TEMPLATE_PATH ?>img/logo-white2.png"
-                                         alt="">
+                                         alt="Дарина - материалы для покрытия детских и спортивных площадок" title="Дарина - материалы для покрытия детских и спортивных площадок" />
                                 </a>
                             </div>
+							<div class="header-fixed-phone mobile"><a href="tel:<?php echo Helper::telLink($_SESSION["contact"]["phone1"]) ?>"><i class="fa fa-phone"></i><?php echo $_SESSION["contact"]["phone1"]; ?></a></div>
                         </div>
-                        <div class="col-xl-6 col-lg-7">
+                        <div class="col-xl-7 col-lg-8">
                             <div class="main-menu  d-none d-lg-block">
                                 <nav>
                                     <ul id="navigation">
@@ -65,6 +84,7 @@
                                     </ul>
                                 </nav>
                             </div>
+							<div class="header-fixed-phone desktop"><a href="tel:<?php echo Helper::telLink($_SESSION["contact"]["phone1"]) ?>"><i class="fa fa-phone"></i><?php echo $_SESSION["contact"]["phone1"]; ?></a></div>
                         </div>
                         <div class="col-xl-3 col-lg-3 d-none d-lg-block">
                             <div class="Appointment">

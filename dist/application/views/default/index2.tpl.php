@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="ru">
+<html>
 <head>
     <meta charset="utf-8">
     <meta name="viewport"
@@ -100,7 +100,7 @@
                 </div>
                 <div class="my-5">
                     <h5 class="text-primary"> Соблюдение сроков</h5>
-                    <p>Мы всегда соблюдаем скроки поставок</p>
+                    <p>Мы всегда соблюдаем сроки поставок</p>
                 </div>
             </div>
         </div>

@@ -9,24 +9,27 @@
 //= auth-modal.js
 //= phone-modal.js
 //= jquery.slicknav.min.js
+//= https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js
+
+window.cookieconsent.initialise({
+    "palette": {
+        "popup": {
+            "background": "#fd9700"
+        },
+        "button": {
+            "background": "#ffffff"
+        }
+    },
+    "theme": "classic",
+    "content": {
+        "message": "Мы используем куки-файлы, чтобы обеспечить Вам максимальное удобство.",
+        "dismiss": "Понятно",
+        "link": " ",
+        "href": "#"
+    }
+});
 
 
-// $(document).on("scroll",function(){
-//     var screen = 992;
-//     var windowWidth;
-//     windowWidth = $(window).width();
-//     if($(document).scrollTop()>100){
-//         $("header").removeClass("large").addClass("small");
-//         if ((windowWidth < screen)) {
-//             $(".phone").slideUp("slow");
-//         }
-//     } else{
-//         $("header").removeClass("small").addClass("large");
-//         if ((windowWidth < screen)) {
-//             $(".phone").slideDown();
-//         }
-//     }
-// });
 
 $(document).ready(function(){
 

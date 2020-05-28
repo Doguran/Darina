@@ -7,30 +7,32 @@
                         <div class="footer_logo">
                             <a href="#">
                                 <img src="<?php echo TEMPLATE_PATH ?>img/logo-footer.png"
-                                     alt="">
+                                     alt="Дарина - материалы для покрытия детских и спортивных площадок" title="Дарина - материалы для покрытия детских и спортивных площадок" />
                             </a>
                         </div>
                         <p>
                             <?php echo $_SESSION["contact"]["footer"]; ?>
                         </p>
                         <div class="socail_links">
+						<!--noindex-->
                             <ul>
                                 <li>
-                                    <a href="#">
-                                        <i class="ti-facebook"></i>
+                                    <a rel="nofollow" href="https://www.youtube.com/channel/UCYiFiUpcM6xg0q_AlwBqP9w">
+                                        <i class="fab fa-youtube"></i>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
+                                    <a rel="nofollow" href="#">
                                         <i class="ti-twitter-alt"></i>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
+                                    <a rel="nofollow" href="#">
                                         <i class="fab fa-instagram"></i>
                                     </a>
                                 </li>
                             </ul>
+						<!--/noindex-->
                         </div>
                     </div>
                 </div>
@@ -41,9 +43,10 @@
                         </h3>
                         <ul>
                             <li><a href="/">Главная</a></li>
-                            <li><a href="/stock/<?php echo $_SESSION["stocks"][0]['url']; ?>.html">Ассортимент</a></li>
+                            <li><span>Ассортимент</span></li>
                             <li><a href="/contact/">Контакты</a></li>
                             <li><a href="/blog/1/">Блог</a></li>
+							<li><a href="/sitemap/">Карта сайта</a></li>
                         </ul>
                     </div>
                 </div>
@@ -81,13 +84,10 @@
             <div class="footer_border"></div>
             <div class="row">
                 <div class="col-xl-12">
-                    <p class="copy_right text-center">
-                        Copyright &copy;<script>document.write(new Date().getFullYear());</script>
-                        All rights reserved | Made with <i class="fas fa-heart"
-                                                           aria-hidden="true"></i>
-                    </p>
+                    <p class="copy_right text-center">Copyright ©2020 Дарина - материалы для покрытия детских и спортивных площадок</p>
                 </div>
             </div>
         </div>
     </div>
 </footer>
+<link href="<?php echo TEMPLATE_PATH ?>css/custom.css" rel="stylesheet">
